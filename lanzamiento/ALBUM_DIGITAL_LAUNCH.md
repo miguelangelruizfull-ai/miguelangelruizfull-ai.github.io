@@ -1,100 +1,56 @@
-# KIT DE LANZAMIENTO — ALBUM DIGITAL
+# LANZAMIENTO 01 — ÁLBUM PARA MI HIJO
 
 Fecha: 2026-09-16
-Estado: PUBLICABLE_SANITIZADO
+Estado: PUBLICADO_POR_AUTORIZACION_EXPRESA
 
-## Objetivo
+## Decisión
 
-Usar la historia verificable de Album Digital para reforzar el nuevo lanzamiento profesional de Miguel Ángel Ruiz sin publicar ni amplificar fotografías, videos, documentos o contexto familiar privado.
+El primer lanzamiento público personal de Miguel Ángel Ruiz será el álbum real creado para su hijo:
 
-## Narrativa central
+- Repositorio: `miguelangelruizfull-ai/album_MiguelAngelRuiz`
+- Álbum: `https://miguelangelruizfull-ai.github.io/album_MiguelAngelRuiz/`
+- Entrada para compartir: `https://miguelangelruizfull-ai.github.io/lanzamiento/`
 
-`NECESIDAD REAL → PROTOTIPO FUNCIONAL → LIMITES DE PRIVACIDAD → MIGRACION → SEPARACION APLICACION/DATOS → PRODUCTO REUTILIZABLE`
+La exposición de este álbum personal fue autorizada expresamente por Miguel el 2026-09-16 para compartirlo en redes.
 
-Album Digital demuestra desarrollo web práctico, GitHub Pages, organización de información, migración, documentación y privacidad por diseño.
+## Papel de cada proyecto
 
-## Activos públicos autorizados
+### Álbum #1 — album_MiguelAngelRuiz
 
-- Portafolio principal: `https://miguelangelruizfull-ai.github.io/`
-- Caso de estudio: `https://miguelangelruizfull-ai.github.io/casos/album-digital/`
-- Producto público: `https://miguelangelruizfull-ai.github.io/Album_Digital/`
-- Reconstrucción sanitizada: `https://miguelangelruizfull-ai.github.io/Album_Digital/legacy/`
-- Código público: `https://github.com/miguelangelruizfull-ai/Album_Digital`
-- Página pública personal sanitizada: `https://miguelangelruizfull-ai.github.io/para-mi-hijo/`
+Es la implementación personal y humana. Contiene los recuerdos reales y funciona como el primer lanzamiento.
 
-## Material que NO debe usarse por defecto
+### Album_Digital
 
-- fotografías o videos familiares reales;
-- documentos personales;
-- nombres o datos de familiares adicionales;
-- enlaces privados de Drive;
-- repositorios personales que ROOT clasifique como `PRIVATE_PERSONAL`;
-- capturas del prototipo histórico que revelen material familiar;
-- metadatos EXIF o ubicaciones privadas.
+Permanece como base/producto reutilizable y demostración técnica separada. No sustituye al álbum personal.
 
-## Pieza 1 — Publicación principal
+## Narrativa pública
 
-### Encabezado
+El lanzamiento no debe presentarse como una demostración técnica fría. La idea principal es sencilla:
 
-**De una necesidad personal a un producto web reutilizable.**
+> Antes de construir sistemas más grandes, construí algo para alguien importante para mí.
 
-### Copy
+El álbum nació para conservar recuerdos de mi hijo y se convirtió también en una forma de volver a crear para la web.
 
-Mi regreso a tecnología no empezó con un proyecto ficticio. Empezó resolviendo una necesidad real.
+## Copy base para redes
 
-En 2025 construí una primera implementación web para organizar recuerdos. Funcionó, pero también mostró un problema importante: cuando código, navegación y contenido personal viven demasiado juntos, una solución útil es difícil de reutilizar sin comprometer privacidad.
+Este fue uno de los proyectos que me hizo volver a construir para la web.
 
-Ese aprendizaje evolucionó hasta **Album Digital**: una base web pública donde la aplicación puede demostrarse sin publicar el contenido familiar que le dio origen.
+No empezó como un producto ni como una demostración técnica. Empezó como algo personal: un álbum para mi hijo, para guardar fotografías, videos y momentos que con el tiempo pueden significar todavía más.
 
-El proyecto documenta el recorrido completo: prototipo, límites, migración, separación de datos, reconstrucción sanitizada y producto reutilizable.
+Hoy quiero compartirlo como mi primer lanzamiento personal.
 
-No lo presento como un archivo terminado aislado, sino como evidencia de cómo trabajo: detectar un problema real, construir, observar las limitaciones, reorganizar y dejar una solución más clara para la siguiente etapa.
+Álbum: https://miguelangelruizfull-ai.github.io/lanzamiento/
 
-**Caso completo:** https://miguelangelruizfull-ai.github.io/casos/album-digital/
+## Reglas del lanzamiento
 
-## Pieza 2 — Carrusel / secuencia
+- No mostrar controles ROOT en la portada pública.
+- No publicar credenciales, enlaces privados, Drive interno ni documentación operativa.
+- El álbum personal puede compartirse porque existe autorización expresa para este lanzamiento.
+- La autorización de este álbum no implica autorización automática para publicar cualquier otro contenido familiar futuro.
+- `Album_Digital` continúa como base reutilizable separada del álbum real.
 
-1. **Necesidad real** — conservar y recorrer recuerdos en una interfaz propia.
-2. **Primer prototipo** — HTML, CSS, JavaScript, multimedia y GitHub Pages.
-3. **Problema detectado** — aplicación y contenido personal demasiado acoplados.
-4. **Migración** — reorganizar sin borrar la evidencia histórica.
-5. **Privacidad por diseño** — RAW privado, historia verificable y demo pública separados.
-6. **Producto reutilizable** — Album Digital como base pública y documentada.
-7. **Aprendizaje transferible** — la misma lógica de fuentes, privacidad y continuidad aparece después en sistemas más amplios.
-8. **CTA** — ver el caso completo y el portafolio.
+## Orden
 
-## Pieza 3 — Texto corto para compartir enlace
-
-**Album Digital** empezó como una solución personal y terminó convirtiéndose en un caso de desarrollo web, migración y privacidad por diseño. Documenté el recorrido sin publicar el contenido familiar original.
-
-Caso: https://miguelangelruizfull-ai.github.io/casos/album-digital/
-
-## Pieza 4 — Puente hacia la trayectoria profesional
-
-Album Digital debe presentarse como el punto de transición entre:
-
-`SOLUCIONES WEB PERSONALES (2025) → SISTEMAS OPERATIVOS / IA / AUTOMATIZACION (2026)`
-
-No afirmar que Album Digital por sí solo demuestra dominio de áreas no presentes en el proyecto. Usarlo para evidenciar desarrollo web práctico, Git/GitHub, publicación, organización, migración, documentación y privacidad.
-
-## Sección “Para mi hijo”
-
-La página pública `/para-mi-hijo/` funciona como capa narrativa separada. No debe convertirse en una galería pública familiar. Su función es explicar el origen humano del proyecto y conectar con Album Digital sanitizado.
-
-## CTA recomendado
-
-Primario: `Ver caso de estudio`
-
-Secundarios:
-
-- `Abrir Album Digital`
-- `Ver reconstrucción sanitizada`
-- `Ver trayectoria completa`
-
-## Regla de actualización
-
-Antes de incorporar cualquier fotografía o video real al lanzamiento:
-
-`REVISAR → APROBAR MIGUEL → SANITIZAR → VERIFICAR PII/METADATOS → PUBLICAR`
-
-Sin esa aprobación, usar exclusivamente recursos generados, ficticios o sanitizados.
+1. `album_MiguelAngelRuiz` — LANZAMIENTO 01 / PERSONAL / PUBLICADO.
+2. `Album_Digital` — PRODUCTO BASE / REUTILIZABLE / PÚBLICO SANITIZADO.
+3. Próximos lanzamientos — pendientes de decisión.
