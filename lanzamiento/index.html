@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mi primer álbum | Miguel Ángel Ruiz</title>
+<meta name="description" content="Mi primer lanzamiento personal: un álbum que construí para mi hijo para conservar fotografías, videos y pequeños momentos.">
+<link rel="canonical" href="https://miguelangelruizfull-ai.github.io/lanzamiento/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mi primer álbum — para mi hijo">
+<meta property="og:description" content="Antes de construir sistemas más grandes, construí algo para alguien importante para mí. Este álbum nació para conservar recuerdos de mi hijo.">
+<meta property="og:url" content="https://miguelangelruizfull-ai.github.io/lanzamiento/">
+<meta property="og:site_name" content="Miguel Ángel Ruiz">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mi primer álbum — para mi hijo">
+<meta name="twitter:description" content="Un proyecto personal para conservar fotografías, videos y pequeños momentos con el paso del tiempo.">
+<meta name="theme-color" content="#151311">
+<style>
+:root{--paper:#f4efe7;--ink:#1e1b18;--muted:#736b62;--dark:#171512;--line:#d8cec0;--max:920px}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#171512 0,#211d19 46%,var(--paper) 46%);color:white;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}.w{width:min(calc(100% - 34px),var(--max));margin:auto}.top{padding:24px 0}.top a{color:#d7cec5;text-decoration:none}.hero{min-height:68vh;display:flex;align-items:center;padding:70px 0 92px}.eyebrow{display:inline-block;border:1px solid #ffffff35;border-radius:999px;padding:7px 11px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#e9e2da}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.4rem,10vw,7rem);line-height:.92;letter-spacing:-.055em;margin:20px 0 24px;max-width:800px}.lead{font-size:clamp(1.08rem,2.3vw,1.3rem);max-width:690px;color:#d4ccc4}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.btn{border:1px solid #ffffff40;background:#ffffff0c;color:white;border-radius:999px;padding:12px 18px;font:inherit;font-weight:800;text-decoration:none;cursor:pointer}.btn.primary{background:white;color:var(--dark);border-color:white}.story{color:var(--ink);padding:76px 0 54px}.story h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:0 0 22px;letter-spacing:-.035em}.story p{font-size:1.08rem;color:var(--muted);max-width:760px}.quote{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,3vw,2rem);line-height:1.45;color:var(--ink);border-left:3px solid #8d6149;padding-left:22px;margin:38px 0}.links{border-top:1px solid var(--line);padding:30px 0 55px;color:var(--muted)}.links a{color:var(--ink)}#shareStatus{font-size:.9rem;color:#d4ccc4;margin-top:12px;min-height:1.5em}@media(max-width:600px){body{background:linear-gradient(180deg,#171512 0,#211d19 52%,var(--paper) 52%)}.hero{min-height:72vh;padding-top:48px}.hero h1{font-size:3.7rem}}
+</style>
+</head>
+<body>
+<header class="w top"><a href="/historia/">Miguel Ángel Ruiz</a></header>
+<main>
+<section class="hero"><div class="w">
+<span class="eyebrow">Lanzamiento 01 · personal · 2026</span>
+<h1>El primer álbum fue para mi hijo.</h1>
+<p class="lead">Antes de pensar en productos, sistemas o portafolios, quise construir un lugar donde pudiera conservar fotografías, videos y pequeños momentos que algún día valdrán más que hoy.</p>
+<div class="actions">
+<a class="btn primary" href="https://miguelangelruizfull-ai.github.io/album_MiguelAngelRuiz/">Abrir el álbum</a>
+<button class="btn" id="shareButton" type="button">Compartir</button>
+</div>
+<div id="shareStatus" aria-live="polite"></div>
+</div></section>
+<section class="story"><div class="w">
+<h2>No nació como una demostración técnica.</h2>
+<p>Nació de una idea sencilla: que mi hijo pudiera volver algún día a estos recuerdos y encontrarse con una parte de su historia. Para hacerlo tuve que volver a construir para la web, organizar archivos, fotografías y videos, y aprender de nuevo mientras avanzaba.</p>
+<p>Ese proyecto terminó siendo también una parte de mi regreso a tecnología. Pero aquí prefiero dejar primero lo importante: es un álbum hecho por un papá para su hijo.</p>
+<div class="quote">“Una historia que seguimos escribiendo.”</div>
+<p>Este es mi primer lanzamiento personal. Lo demás puede crecer después.</p>
+</div></section>
+<section class="links"><div class="w">También puedes conocer <a href="/historia/">mi historia</a> o ver <a href="/">lo que estoy construyendo</a>.</div></section>
+</main>
+<script>
+const shareButton=document.getElementById('shareButton');
+const shareStatus=document.getElementById('shareStatus');
+const shareData={title:'Mi primer álbum — para mi hijo',text:'Este fue uno de los proyectos que me hizo volver a construir para la web. Empezó como algo personal: un álbum para mi hijo.',url:'https://miguelangelruizfull-ai.github.io/lanzamiento/'};
+shareButton.addEventListener('click',async()=>{try{if(navigator.share){await navigator.share(shareData);shareStatus.textContent='';return;}await navigator.clipboard.writeText(shareData.url);shareStatus.textContent='Enlace copiado.';}catch(error){if(error.name!=='AbortError')shareStatus.textContent='Puedes copiar este enlace: '+shareData.url;}});
+</script>
+</body>
+</html>
