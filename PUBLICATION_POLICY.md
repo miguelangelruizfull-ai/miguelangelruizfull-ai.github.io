@@ -1,6 +1,6 @@
 # Política de publicación
 
-Este repositorio es público. Solo debe contener información profesional revisada y sanitizada.
+Este repositorio es público. El contenido profesional debe estar revisado, sanitizado y orientado a evidencia. El contenido personal permitido debe permanecer claramente separado del perfil profesional y no exponer información sensible.
 
 ## Sí publicar
 
@@ -9,7 +9,8 @@ Este repositorio es público. Solo debe contener información profesional revisa
 - diagramas creados para el portafolio;
 - resultados agregados cuando puedan demostrarse;
 - capturas sanitizadas;
-- responsabilidades y aprendizajes sustentados por evidencia.
+- responsabilidades y aprendizajes sustentados por evidencia;
+- contenido personal expresamente autorizado cuando esté separado del perfil profesional y cumpla las reglas de privacidad.
 
 ## No publicar
 
@@ -24,7 +25,13 @@ Este repositorio es público. Solo debe contener información profesional revisa
 - material escolar o familiar sensible;
 - repositorios privados completos.
 
-## Regla editorial
+## Regla editorial profesional
+
+La presentación pública profesional debe comunicar capacidades mediante problemas resueltos, decisiones, sistemas, resultados y evidencia.
+
+Evitar textos cuyo propósito principal sea justificar el tiempo invertido, pedir reconocimiento, explicar por qué alguien debería valorar el esfuerzo o utilizar relaciones personales como prueba del valor profesional.
+
+La trayectoria personal puede aportar contexto, pero no debe sustituir la evidencia del trabajo ni mezclarse con la propuesta profesional principal.
 
 Distinguir siempre entre:
 
