@@ -20,7 +20,19 @@ Este repositorio contiene la versión pública y sanitizada del portafolio profe
 - `/historia/` — trayectoria ampliada y regreso al mundo tech;
 - `/root/` — ROOT Console pública y sanitizada;
 - `/casos/afl-autos/` — caso profesional AFL AUTOS;
-- `/para-mi-hijo/` — mensaje personal sanitizado de continuidad y vínculo con Album Digital.
+- `/casos/album-digital/` — caso de estudio de Album Digital: necesidad real, prototipo, migración, privacidad y producto reutilizable;
+- `/para-mi-hijo/` — mensaje personal sanitizado de continuidad y vínculo con Album Digital;
+- `/lanzamiento/ALBUM_DIGITAL_LAUNCH.md` — kit editorial público para el lanzamiento de Album Digital.
+
+## Album Digital en el lanzamiento
+
+La historia pública utiliza únicamente evidencia y recursos sanitizados.
+
+Secuencia documentada:
+
+`NECESIDAD REAL → PROTOTIPO FUNCIONAL → LIMITES DE PRIVACIDAD → MIGRACION → SEPARACION APLICACION/DATOS → PRODUCTO REUTILIZABLE`
+
+El contenido familiar real no se copia al portafolio ni se utiliza como recurso de lanzamiento por defecto.
 
 ## Privacidad
 
