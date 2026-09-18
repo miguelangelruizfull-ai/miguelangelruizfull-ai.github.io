@@ -1,56 +1,36 @@
-# LANZAMIENTO 01 — ÁLBUM PARA MI HIJO
+# LANZAMIENTO 01 — ALBUM DIGITAL
 
-Fecha: 2026-09-16
-Estado: PUBLICADO_POR_AUTORIZACION_EXPRESA
+Fecha de revisión: 2026-09-17
+Estado: PUBLICO_SANITIZADO
 
-## Decisión
+## Decisión vigente
 
-El primer lanzamiento público personal de Miguel Ángel Ruiz será el álbum real creado para su hijo:
+El lanzamiento público utiliza exclusivamente la versión reutilizable y sanitizada de **Album Digital**.
 
-- Repositorio: `miguelangelruizfull-ai/album_MiguelAngelRuiz`
-- Álbum: `https://miguelangelruizfull-ai.github.io/album_MiguelAngelRuiz/`
-- Entrada para compartir: `https://miguelangelruizfull-ai.github.io/lanzamiento/`
+La experiencia personal que dio origen al proyecto puede contarse como contexto, pero fotografías, videos, repositorios familiares y archivos personales no forman parte de la superficie pública del lanzamiento.
 
-La exposición de este álbum personal fue autorizada expresamente por Miguel el 2026-09-16 para compartirlo en redes.
+## Evidencia pública
 
-## Papel de cada proyecto
+- Caso: https://miguelangelruizfull-ai.github.io/casos/album-digital/
+- Producto: https://miguelangelruizfull-ai.github.io/Album_Digital/
+- Entrada de lanzamiento: https://miguelangelruizfull-ai.github.io/lanzamiento/
 
-### Álbum #1 — album_MiguelAngelRuiz
+## Narrativa
 
-Es la implementación personal y humana. Contiene los recuerdos reales y funciona como el primer lanzamiento.
+Secuencia pública:
 
-### Album_Digital
+NECESIDAD REAL → PROTOTIPO → PRIVACIDAD → SEPARACION APLICACION/DATOS → PRODUCTO REUTILIZABLE
 
-Permanece como base/producto reutilizable y demostración técnica separada. No sustituye al álbum personal.
+## Reglas
 
-## Narrativa pública
+- No publicar fotografías o videos familiares.
+- No enlazar repositorios familiares o almacenamiento privado.
+- No exponer credenciales, Drive privado, RAW ni documentación operativa.
+- La historia personal aporta contexto; la evidencia profesional se apoya en el producto y el caso sanitizados.
+- Cualquier publicación futura de material familiar requiere una decisión específica separada.
 
-El lanzamiento no debe presentarse como una demostración técnica fría. La idea principal es sencilla:
+## Orden público
 
-> Antes de construir sistemas más grandes, construí algo para alguien importante para mí.
-
-El álbum nació para conservar recuerdos de mi hijo y se convirtió también en una forma de volver a crear para la web.
-
-## Copy base para redes
-
-Este fue uno de los proyectos que me hizo volver a construir para la web.
-
-No empezó como un producto ni como una demostración técnica. Empezó como algo personal: un álbum para mi hijo, para guardar fotografías, videos y momentos que con el tiempo pueden significar todavía más.
-
-Hoy quiero compartirlo como mi primer lanzamiento personal.
-
-Álbum: https://miguelangelruizfull-ai.github.io/lanzamiento/
-
-## Reglas del lanzamiento
-
-- No mostrar controles ROOT en la portada pública.
-- No publicar credenciales, enlaces privados, Drive interno ni documentación operativa.
-- El álbum personal puede compartirse porque existe autorización expresa para este lanzamiento.
-- La autorización de este álbum no implica autorización automática para publicar cualquier otro contenido familiar futuro.
-- `Album_Digital` continúa como base reutilizable separada del álbum real.
-
-## Orden
-
-1. `album_MiguelAngelRuiz` — LANZAMIENTO 01 / PERSONAL / PUBLICADO.
-2. `Album_Digital` — PRODUCTO BASE / REUTILIZABLE / PÚBLICO SANITIZADO.
-3. Próximos lanzamientos — pendientes de decisión.
+1. Album Digital — PRODUCTO REUTILIZABLE / PÚBLICO SANITIZADO.
+2. Caso Album Digital — EVIDENCIA PROFESIONAL / PÚBLICO.
+3. Material familiar real — FUERA DE ESTA SUPERFICIE PÚBLICA.
