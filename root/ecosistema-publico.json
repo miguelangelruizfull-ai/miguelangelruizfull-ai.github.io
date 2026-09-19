@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "updated_at": "2026-09-16",
+  "version": "1.1",
+  "updated_at": "2026-09-18",
   "title": "ROOT — Professional Operating System",
   "subtitle": "Entrada rápida al ecosistema profesional de Miguel Ángel Ruiz",
   "privacy": "PUBLICO_SANITIZADO",
@@ -22,6 +22,15 @@
       "level": 1,
       "group": "PROYECTO",
       "prompt": "# AFL AUTOS — COORDINADOR PRINCIPAL\n\nJERARQUÍA:\nMIGUEL → ROOT → COORDINADOR AFL → MÓDULO → EJECUTOR\n\nUsa GitHub y Drive conectados. Inicializa primero ROOT_ECOSISTEMA y resuelve las fuentes vigentes de AFL AUTOS. Coordina vehículos e inventario, comercial y leads, Meta Business Agent, contenido, producción, métricas, Drive e históricos. No sustituyas fuentes de verdad por memoria del chat. No mezcles RAW privado con información publicable. No publiques automáticamente. Si el trabajo requiere producción concreta, abre PRODUCTOR / EJECUTOR y entrega su prompt. Al finalizar muestra opciones numeradas y RECOMENDADO AHORA."
+    },
+    {
+      "code": "A2",
+      "name": "COMERCIAL / WHATSAPP BUSINESS",
+      "command": "ROOT ABRIR AFL AUTOS COMERCIAL",
+      "description": "Coordina Facebook → WhatsApp, catálogo, leads, respuestas, seguimiento y citas de AFL AUTOS.",
+      "level": 2,
+      "group": "AFL AUTOS",
+      "prompt": "# AFL AUTOS — COORDINADOR COMERCIAL / WHATSAPP BUSINESS\n\nJERARQUÍA:\nMIGUEL → ROOT → COORDINADOR AFL → COORDINADOR COMERCIAL / WHATSAPP BUSINESS → EJECUTOR\n\nInicializa ROOT_ECOSISTEMA y resuelve las fuentes vigentes de AFL AUTOS antes de actuar. Repositorio dueño comercial: AFL_AUTOS_COMERCIAL. Para identidad y datos técnicos de vehículos, la fuente vigente es Vehiculos. Coordina Facebook → WhatsApp, catálogo, respuestas públicas e inbox, deduplicación de leads, seguimiento, paquetes comerciales, citas y estados de avance. Mantén PII, conversaciones privadas, documentos, VIN y Drive privado fuera de superficies públicas. No inventes precios ni especificaciones; valida contradicciones en la fuente dueña. Abre ejecutor separado cuando la tarea concreta lo requiera. Al finalizar muestra opciones numeradas y RECOMENDADO AHORA."
     },
     {
       "code": "G0",
@@ -97,12 +106,36 @@
     }
   ],
   "control_commands": [
-    {"code":"CK","command":"ROOT CHECKPOINT","description":"Guardar estado verificable y siguiente paso."},
-    {"code":"RS","command":"ROOT RESUME","description":"Releer fuentes vigentes y continuar."},
-    {"code":"ST","command":"ROOT STATUS","description":"Consultar estado real antes de actuar."},
-    {"code":"PA","command":"ROOT PAUSE","description":"Pausar avance lógico."},
-    {"code":"HO","command":"ROOT HANDOFF","description":"Preparar contexto mínimo para otro chat."},
-    {"code":"XX","command":"ROOT STOP","description":"Cancelar el bloque actual sin revertir cambios ya realizados."}
+    {
+      "code": "CK",
+      "command": "ROOT CHECKPOINT",
+      "description": "Guardar estado verificable y siguiente paso."
+    },
+    {
+      "code": "RS",
+      "command": "ROOT RESUME",
+      "description": "Releer fuentes vigentes y continuar."
+    },
+    {
+      "code": "ST",
+      "command": "ROOT STATUS",
+      "description": "Consultar estado real antes de actuar."
+    },
+    {
+      "code": "PA",
+      "command": "ROOT PAUSE",
+      "description": "Pausar avance lógico."
+    },
+    {
+      "code": "HO",
+      "command": "ROOT HANDOFF",
+      "description": "Preparar contexto mínimo para otro chat."
+    },
+    {
+      "code": "XX",
+      "command": "ROOT STOP",
+      "description": "Cancelar el bloque actual sin revertir cambios ya realizados."
+    }
   ],
   "projects": [
     {
@@ -167,9 +200,26 @@
     }
   ],
   "permissions": {
-    "public": ["consultar", "buscar", "copiar códigos", "copiar prompts", "exportar catálogo público"],
-    "owner": ["todo lo público", "solicitar actualización mediante ROOT/GitHub autenticado"],
-    "blocked_on_public_site": ["credenciales", "PII", "Drive privado", "RAW", "VIN", "repositorios privados completos", "escrituras GitHub desde el navegador sin autenticación segura"]
+    "public": [
+      "consultar",
+      "buscar",
+      "copiar códigos",
+      "copiar prompts",
+      "exportar catálogo público"
+    ],
+    "owner": [
+      "todo lo público",
+      "solicitar actualización mediante ROOT/GitHub autenticado"
+    ],
+    "blocked_on_public_site": [
+      "credenciales",
+      "PII",
+      "Drive privado",
+      "RAW",
+      "VIN",
+      "repositorios privados completos",
+      "escrituras GitHub desde el navegador sin autenticación segura"
+    ]
   },
   "update_prompt": "ROOT ABRIR PORTAFOLIO\n\nActualiza la consola pública ROOT del portafolio profesional. Lee primero ROOT_ECOSISTEMA y las fuentes vigentes de cada proyecto. Modifica únicamente información pública sanitizada en miguelangelruizfull-ai/miguelangelruizfull-ai.github.io/root/ecosistema-publico.json. Verifica PUBLICATION_POLICY.md antes de escribir. No expongas PII, secretos, Drive privado, RAW ni repositorios privados completos. Registra fecha, cambios y evidencia pública."
 }
