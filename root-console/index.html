@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="ROOT Console — interfaz operativa pública sanitizada.">
+  <title>ROOT Console</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">ROOT / HOY</div>
+        <h1>Centro operativo</h1>
+      </div>
+      <div class="topbar-status">
+        <span class="mode-chip">READ</span>
+        <span class="status-inline"><span class="dot dot-ok"></span>OPERATIVO</span>
+      </div>
+    </header>
+
+    <main id="app" class="content" aria-live="polite">
+      <section id="view-hoy" class="view is-active">
+        <div class="summary-grid">
+          <button class="summary-card" data-filter="operativo" type="button">
+            <strong id="count-operativos">0</strong><span>Operativos</span>
+          </button>
+          <button class="summary-card" data-filter="atencion" type="button">
+            <strong id="count-atencion">0</strong><span>Atención</span>
+          </button>
+          <button class="summary-card" data-filter="bloqueado" type="button">
+            <strong id="count-bloqueados">0</strong><span>Bloqueados</span>
+          </button>
+        </div>
+
+        <section class="panel panel-primary">
+          <div class="section-label">SIGUIENTE ACCIÓN</div>
+          <div class="row-between gap">
+            <div>
+              <h2 id="next-project">Cargando…</h2>
+              <p id="next-action">Preparando estado operativo.</p>
+            </div>
+            <span id="next-status" class="status-badge status-attention">ATENCIÓN</span>
+          </div>
+          <dl class="facts">
+            <div><dt>Motivo</dt><dd id="next-reason">—</dd></div>
+            <div><dt>Modo</dt><dd id="next-mode">READ</dd></div>
+          </dl>
+          <button id="continue-primary" class="button button-primary" type="button">CONTINUAR</button>
+          <div id="continue-note" class="note is-hidden"></div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2>Proyectos</h2>
+            <button class="text-button" data-nav="proyectos" type="button">Ver todos</button>
+          </div>
+          <div id="project-cards" class="project-grid"></div>
+        </section>
+
+        <section class="activity">
+          <div class="section-head"><h2>Actividad</h2><span class="muted">sanitizada</span></div>
+          <div id="activity-list" class="activity-list"></div>
+        </section>
+      </section>
+
+      <section id="view-proyectos" class="view">
+        <div class="section-head"><h2>Proyectos</h2><span class="muted">Vista global</span></div>
+        <div id="projects-list" class="stack"></div>
+      </section>
+
+      <section id="view-decisiones" class="view">
+        <div class="section-head"><div><h2>Decisiones</h2><p class="muted">Solo lo que requiere intervención humana.</p></div></div>
+        <div id="decisions-list" class="stack"></div>
+      </section>
+
+      <section id="view-consulta" class="view">
+        <div class="section-head"><div><h2>Consulta ROOT</h2><p class="muted">Resuelve sobre el estado sanitizado de esta consola.</p></div></div>
+        <form id="query-form" class="query-form">
+          <label for="query-input">Pregunta</label>
+          <input id="query-input" type="text" autocomplete="off" placeholder="Ej. ¿qué requiere mi atención?">
+          <div class="query-chips">
+            <button type="button" data-query="atencion">Atención</button>
+            <button type="button" data-query="afl">AFL AUTOS</button>
+            <button type="button" data-query="fuente">Fuente de verdad</button>
+          </div>
+          <button class="button button-primary" type="submit">CONSULTAR</button>
+        </form>
+        <div id="query-result" class="panel is-hidden"></div>
+      </section>
+
+      <section id="view-project-detail" class="view">
+        <button id="back-projects" class="text-button back" type="button">← Volver</button>
+        <section class="panel">
+          <div class="section-label">ROOT / PROYECTO</div>
+          <div class="row-between gap">
+            <h2 id="detail-name">Proyecto</h2>
+            <span id="detail-status" class="status-badge">—</span>
+          </div>
+          <p id="detail-summary" class="muted"></p>
+          <dl class="facts">
+            <div><dt>Pendientes</dt><dd id="detail-pending">0</dd></div>
+            <div><dt>Bloqueos</dt><dd id="detail-blocked">0</dd></div>
+            <div><dt>Espera humana</dt><dd id="detail-waiting">0</dd></div>
+          </dl>
+          <div class="divider"></div>
+          <div class="section-label">SIGUIENTE ACCIÓN</div>
+          <p id="detail-next"></p>
+          <div class="action-row">
+            <button id="detail-continue" class="button button-primary" type="button">CONTINUAR</button>
+            <a id="detail-public-link" class="button button-secondary is-hidden" href="#" target="_blank" rel="noopener">ABRIR SITIO</a>
+          </div>
+          <div id="detail-note" class="note is-hidden"></div>
+        </section>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <button type="button" data-nav="hoy" class="is-active">HOY</button>
+      <button type="button" data-nav="proyectos">PROYECTOS</button>
+      <button type="button" data-nav="decisiones">DECISIONES</button>
+      <button type="button" data-nav="consulta">CONSULTA</button>
+    </nav>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
