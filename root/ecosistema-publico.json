@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "updated_at": "2026-09-20",
+  "version": "1.2",
+  "updated_at": "2026-09-20T03:58:00-06:00",
   "title": "ROOT — Professional Operating System",
   "subtitle": "Entrada rápida al ecosistema profesional de Miguel Ángel Ruiz",
   "privacy": "PUBLICO_SANITIZADO",
@@ -18,19 +18,19 @@
       "code": "A0",
       "name": "AFL AUTOS",
       "command": "ROOT ABRIR AFL AUTOS",
-      "description": "Coordina vehículos, comercial, contenido, producción, métricas e históricos de AFL AUTOS.",
+      "description": "Entrada al caso profesional AFL AUTOS y a su coordinación autenticada, sin exponer estrategia ni arquitectura interna.",
       "level": 1,
       "group": "PROYECTO",
-      "prompt": "# AFL AUTOS — COORDINADOR PRINCIPAL\n\nJERARQUÍA:\nMIGUEL → ROOT → COORDINADOR AFL → MÓDULO → EJECUTOR\n\nUsa GitHub y Drive conectados. Inicializa primero ROOT_ECOSISTEMA y resuelve las fuentes vigentes de AFL AUTOS. Coordina vehículos e inventario, comercial y leads, Meta Business Agent, contenido, producción, métricas, Drive e históricos. No sustituyas fuentes de verdad por memoria del chat. No mezcles RAW privado con información publicable. No publiques automáticamente. Si el trabajo requiere producción concreta, abre PRODUCTOR / EJECUTOR y entrega su prompt. Al finalizar muestra opciones numeradas y RECOMENDADO AHORA."
+      "prompt": "# AFL AUTOS — COORDINADOR PRINCIPAL\n\nInicializa ROOT_ECOSISTEMA y resuelve las fuentes vigentes dentro del entorno autenticado. La consola pública no describe ni replica la estrategia, arquitectura, rutas internas, repositorios privados, datos comerciales, PII, RAW ni almacenamiento privado de AFL AUTOS. Trabaja desde las fuentes conectadas y devuelve únicamente el siguiente paso necesario, con validación humana para acciones sensibles o de publicación."
     },
     {
       "code": "A2",
       "name": "COMERCIAL / WHATSAPP BUSINESS",
       "command": "ROOT ABRIR AFL AUTOS COMERCIAL",
-      "description": "Coordina Facebook → WhatsApp, catálogo, leads, respuestas, seguimiento y citas de AFL AUTOS.",
+      "description": "Atención comercial y seguimiento desde fuentes autenticadas, sin exponer metodología, PII ni datos privados.",
       "level": 2,
       "group": "AFL AUTOS",
-      "prompt": "# AFL AUTOS — COORDINADOR COMERCIAL / WHATSAPP BUSINESS\n\nJERARQUÍA:\nMIGUEL → ROOT → COORDINADOR AFL → COORDINADOR COMERCIAL / WHATSAPP BUSINESS → EJECUTOR\n\nInicializa ROOT_ECOSISTEMA y resuelve las fuentes vigentes de AFL AUTOS antes de actuar. Repositorio dueño comercial: AFL_AUTOS_COMERCIAL. Para identidad y datos técnicos de vehículos, la fuente vigente es Vehiculos. Coordina Facebook → WhatsApp, catálogo, respuestas públicas e inbox, deduplicación de leads, seguimiento, paquetes comerciales, citas y estados de avance. Mantén PII, conversaciones privadas, documentos, VIN y Drive privado fuera de superficies públicas. No inventes precios ni especificaciones; valida contradicciones en la fuente dueña. Abre ejecutor separado cuando la tarea concreta lo requiera. Al finalizar muestra opciones numeradas y RECOMENDADO AHORA."
+      "prompt": "# AFL AUTOS — COMERCIAL\n\nInicializa ROOT_ECOSISTEMA y abre el frente comercial de AFL AUTOS desde las fuentes autenticadas. Mantén fuera de la salida pública PII, conversaciones, datos de contacto privados, rutas, repositorios internos, metodología estratégica y cualquier dato no confirmado. Usa únicamente información vigente y autorizada para la tarea solicitada."
     },
     {
       "code": "G0",
@@ -142,7 +142,7 @@
       "name": "AFL AUTOS",
       "status": "ACTIVO",
       "type": "Caso profesional",
-      "summary": "Operación digital automotriz modular con fuentes de verdad, inventario, producción, comercial, históricos consultables, medición y aprendizaje sanitizado.",
+      "summary": "Caso profesional de organización operativa, desarrollo web práctico y automatización asistida por IA aplicado a una operación automotriz. La estrategia, arquitectura interna y datos operativos permanecen privados.",
       "public_evidence": "/casos/afl-autos/"
     },
     {
@@ -161,9 +161,9 @@
     },
     {
       "name": "Ruiz Creative Studio",
-      "status": "PÚBLICO / EN DESARROLLO",
+      "status": "PÚBLICO / PRELANZAMIENTO",
       "type": "Estudio creativo",
-      "summary": "Espacio público para trabajo creativo y experimentación profesional documentada.",
+      "summary": "Proyecto público en prelanzamiento para documentar sistemas digitales, automatización práctica e IA aplicada, sin presentar servicios o resultados futuros como ya consolidados.",
       "public_evidence": "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio"
     }
   ],
@@ -191,12 +191,6 @@
       "visibility": "public",
       "purpose": "Proyecto creativo público",
       "url": "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio"
-    },
-    {
-      "name": "AFL_AUTOS-main_demo",
-      "visibility": "public",
-      "purpose": "Demo pública sanitizada de AFL AUTOS",
-      "url": "https://github.com/miguelangelruizfull-ai/AFL_AUTOS-main_demo"
     }
   ],
   "permissions": {
@@ -218,8 +212,37 @@
       "RAW",
       "VIN",
       "repositorios privados completos",
-      "escrituras GitHub desde el navegador sin autenticación segura"
+      "escrituras GitHub desde el navegador sin autenticación segura",
+      "estrategia interna de AFL AUTOS",
+      "arquitectura replicable de AFL AUTOS",
+      "demos o réplicas operativas de AFL AUTOS"
     ]
   },
-  "update_prompt": "ROOT ABRIR PORTAFOLIO\n\nActualiza la consola pública ROOT del portafolio profesional. Lee primero ROOT_ECOSISTEMA y las fuentes vigentes de cada proyecto. Modifica únicamente información pública sanitizada en miguelangelruizfull-ai/miguelangelruizfull-ai.github.io/root/ecosistema-publico.json. Verifica PUBLICATION_POLICY.md antes de escribir. No expongas PII, secretos, Drive privado, RAW ni repositorios privados completos. Registra fecha, cambios y evidencia pública."
+  "update_prompt": "ROOT ABRIR PORTAFOLIO\n\nActualiza la consola pública ROOT del portafolio profesional. Lee primero ROOT_ECOSISTEMA y las fuentes vigentes de cada proyecto. Modifica únicamente información pública sanitizada en miguelangelruizfull-ai/miguelangelruizfull-ai.github.io/root/ecosistema-publico.json. Verifica PUBLICATION_POLICY.md antes de escribir. No expongas PII, secretos, Drive privado, RAW ni repositorios privados completos. Para AFL AUTOS tampoco publiques estrategia interna, arquitectura replicable ni demos/réplicas operativas. Registra fecha, cambios y evidencia pública.",
+  "public_guardrails": {
+    "afl_autos": [
+      "mostrar capacidades y evidencia pública, no la estrategia interna",
+      "no publicar arquitectura, rutas, fuentes privadas ni detalles suficientes para replicar la operación",
+      "no listar demos o réplicas operativas de AFL AUTOS en la consola pública",
+      "mantener PII, conversaciones, datos comerciales privados, RAW y Drive privado fuera de la superficie pública"
+    ]
+  },
+  "last_public_sync": {
+    "date": "2026-09-20",
+    "scope": "ROOT Console pública",
+    "changes": [
+      "Se reforzó la separación entre evidencia profesional pública y estrategia interna de AFL AUTOS.",
+      "Se retiraron del catálogo visible las réplicas o demos operativas de AFL AUTOS.",
+      "Se simplificaron los accesos públicos de AFL AUTOS para no revelar arquitectura, rutas ni repositorios internos.",
+      "Se actualizó Ruiz Creative Studio a estado público de prelanzamiento según su fuente vigente."
+    ],
+    "public_evidence": [
+      "https://miguelangelruizfull-ai.github.io/",
+      "https://miguelangelruizfull-ai.github.io/root/",
+      "https://miguelangelruizfull-ai.github.io/Album_Digital/",
+      "https://github.com/miguelangelruizfull-ai/Album_Digital",
+      "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio",
+      "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai"
+    ]
+  }
 }
