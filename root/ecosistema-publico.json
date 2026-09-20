@@ -143,7 +143,8 @@
       "status": "ACTIVO",
       "type": "Caso profesional",
       "summary": "Caso profesional de organización operativa, desarrollo web práctico y automatización asistida por IA aplicado a una operación automotriz. La estrategia, arquitectura interna y datos operativos permanecen privados.",
-      "public_evidence": "/casos/afl-autos/"
+      "public_evidence": "https://www.tiktok.com/@afl.autos",
+      "evidence_scope": "Presencia pública del negocio; la consola no enlaza estrategia ni arquitectura interna."
     },
     {
       "name": "ROOT ECOSISTEMA",
@@ -234,7 +235,8 @@
       "Se reforzó la separación entre evidencia profesional pública y estrategia interna de AFL AUTOS.",
       "Se retiraron del catálogo visible las réplicas o demos operativas de AFL AUTOS.",
       "Se simplificaron los accesos públicos de AFL AUTOS para no revelar arquitectura, rutas ni repositorios internos.",
-      "Se actualizó Ruiz Creative Studio a estado público de prelanzamiento según su fuente vigente."
+      "Se actualizó Ruiz Creative Studio a estado público de prelanzamiento según su fuente vigente.",
+      "La evidencia pública de AFL AUTOS en la consola se limita a presencia pública del negocio y deja de enlazar el caso con mayor detalle operativo."
     ],
     "public_evidence": [
       "https://miguelangelruizfull-ai.github.io/",
@@ -242,7 +244,8 @@
       "https://miguelangelruizfull-ai.github.io/Album_Digital/",
       "https://github.com/miguelangelruizfull-ai/Album_Digital",
       "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio",
-      "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai"
+      "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai",
+      "https://www.tiktok.com/@afl.autos"
     ]
   }
 }
