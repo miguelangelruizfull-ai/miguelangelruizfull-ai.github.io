@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-20",
   "title": "ROOT — Professional Operating System",
   "subtitle": "Entrada rápida al ecosistema profesional de Miguel Ángel Ruiz",
   "privacy": "PUBLICO_SANITIZADO",
@@ -142,7 +142,7 @@
       "name": "AFL AUTOS",
       "status": "ACTIVO",
       "type": "Caso profesional",
-      "summary": "Operación digital automotriz con fuentes de verdad, inventario, producción de contenido, comercial, medición y aprendizaje sanitizado.",
+      "summary": "Operación digital automotriz modular con fuentes de verdad, inventario, producción, comercial, históricos consultables, medición y aprendizaje sanitizado.",
       "public_evidence": "/casos/afl-autos/"
     },
     {
