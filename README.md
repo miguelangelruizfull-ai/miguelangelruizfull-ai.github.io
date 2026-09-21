@@ -2,40 +2,52 @@
 
 Sitio público: https://miguelangelruizfull-ai.github.io/
 
-Este repositorio contiene la versión pública y sanitizada del portafolio profesional.
+Este repositorio contiene la versión pública y sanitizada del perfil profesional.
 
-## Objetivos
+## Objetivo editorial vigente
 
-- presentar capacidades demostrables;
-- documentar proyectos y casos de estudio;
-- conservar una trayectoria profesional verificable;
-- explicar el regreso y crecimiento de Miguel en tecnología;
-- enlazar evidencia pública verificable;
-- distinguir experiencia real de formación en progreso;
-- servir como punto de entrada para reclutadores, colaboradores y continuidad del trabajo.
+La superficie pública presenta principalmente:
 
-## Rutas principales
+- qué hace Miguel;
+- cómo trabaja;
+- capacidades demostrables;
+- trayectoria profesional verificable;
+- herramientas y áreas técnicas aplicadas;
+- criterios de privacidad, trazabilidad y validación.
 
-- `/` — síntesis profesional, capacidades, proyectos y rumbo;
-- `/historia/` — trayectoria ampliada y regreso al mundo tech;
-- `/root/` — ROOT Console pública y sanitizada;
-- `/casos/afl-autos/` — caso profesional AFL AUTOS;
-- `/casos/album-digital/` — caso de estudio de Album Digital: necesidad real, prototipo, migración, privacidad y producto reutilizable;
-- `/para-mi-hijo/` — mensaje personal sanitizado de continuidad y vínculo con Album Digital;
-- `/lanzamiento/ALBUM_DIGITAL_LAUNCH.md` — kit editorial público para el lanzamiento de Album Digital.
+Los nombres de clientes, operaciones reales, proyectos personales, marcas propias en desarrollo y repositorios de evidencia no forman parte de la presentación pública general por defecto.
 
-## Album Digital en el lanzamiento
+## Evidencia para reclutamiento
 
-La historia pública utiliza únicamente evidencia y recursos sanitizados.
+Cuando un proceso de reclutamiento requiera demostrar una capacidad específica, se seleccionará y compartirá de forma controlada el repositorio, demo, documentación o caso adecuado.
 
-Secuencia documentada:
+Regla:
 
-`NECESIDAD REAL → PROTOTIPO FUNCIONAL → LIMITES DE PRIVACIDAD → MIGRACION → SEPARACION APLICACION/DATOS → PRODUCTO REUTILIZABLE`
+`PERFIL_PUBLICO_GENERAL → CAPACIDADES`
 
-El contenido familiar real no se copia al portafolio ni se utiliza como recurso de lanzamiento por defecto.
+`EVALUACION_CONCRETA → EVIDENCIA_SELECCIONADA`
+
+La existencia de una evidencia no implica que deba permanecer enlazada permanentemente desde el perfil público.
+
+## Rutas públicas principales
+
+- `/` — síntesis profesional y capacidades;
+- `/historia/` — trayectoria ampliada.
+
+Otras rutas históricas pueden permanecer técnicamente en el repositorio mientras se revisan, pero no forman parte de la navegación ni del sitemap profesional vigente.
 
 ## Privacidad
 
-La documentación privada, evidencia original, conversaciones, datos de terceros y material sensible permanecen fuera de este repositorio.
+No publicar en la superficie profesional general:
 
-La página para su hijo no contiene PII, fotografías, videos ni documentos familiares. El contenido familiar real debe permanecer separado del portafolio público.
+- clientes u operaciones reales por defecto;
+- repositorios privados;
+- arquitectura interna;
+- datos comerciales;
+- conversaciones o PII;
+- material familiar;
+- enlaces privados;
+- RAW;
+- credenciales o secretos.
+
+La evidencia se comparte solo cuando aporta a una evaluación concreta y después de revisar su alcance publicable.
