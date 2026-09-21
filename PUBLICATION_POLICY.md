@@ -1,37 +1,60 @@
 # Política de publicación
 
-Este repositorio es público. El contenido profesional debe estar revisado, sanitizado y orientado a evidencia. El contenido personal permitido debe permanecer claramente separado del perfil profesional y no exponer información sensible.
+Este repositorio es público. La superficie profesional debe ser sanitizada, mínima y orientada a capacidades verificables.
 
-## Sí publicar
+## Regla editorial vigente
 
-- proyectos públicos propios;
-- demos y repositorios verificables;
-- diagramas creados para el portafolio;
-- resultados agregados cuando puedan demostrarse;
-- capturas sanitizadas;
-- responsabilidades y aprendizajes sustentados por evidencia;
-- contenido personal expresamente autorizado cuando esté separado del perfil profesional y cumpla las reglas de privacidad.
+Por defecto, el perfil profesional público comunica:
 
-## No publicar
+- qué problemas puede resolver Miguel;
+- cómo estructura y documenta el trabajo;
+- capacidades técnicas y operativas;
+- trayectoria verificable;
+- herramientas realmente utilizadas;
+- límites entre capacidad actual y formación en progreso.
 
+No se necesita publicar permanentemente el nombre de cada cliente, proyecto, repositorio o evidencia para demostrar una capacidad.
+
+## Evidencia selectiva
+
+Cuando una evaluación profesional requiera evidencia concreta:
+
+1. identificar la capacidad que se desea demostrar;
+2. seleccionar el repositorio, demo, documento o caso adecuado;
+3. revisar privacidad y sanitización;
+4. compartir únicamente esa evidencia con el destinatario correspondiente.
+
+Regla:
+
+`EVIDENCIA_EXISTENTE ≠ EVIDENCIA_PUBLICA_PERMANENTE`
+
+## No exponer por defecto en el perfil general
+
+- clientes y operaciones reales;
+- proyectos personales o familiares;
+- marcas/proyectos propios aún no destinados a exhibición profesional;
+- repositorios privados completos;
+- arquitectura interna o metodología sensible;
 - conversaciones privadas;
 - datos de clientes, prospectos o familiares;
 - teléfonos o correos privados;
 - credenciales, tokens o secretos;
 - documentos vehiculares o personales;
-- VIN, expedientes o identificadores sensibles;
+- VIN o identificadores sensibles;
 - enlaces privados de Drive;
-- exportaciones RAW;
-- material escolar o familiar sensible;
-- repositorios privados completos.
+- exportaciones RAW.
 
-## Regla editorial profesional
+## Evidencia pública permitida
 
-La presentación pública profesional debe comunicar capacidades mediante problemas resueltos, decisiones, sistemas, resultados y evidencia.
+Puede publicarse cuando exista decisión editorial expresa:
 
-Evitar textos cuyo propósito principal sea justificar el tiempo invertido, pedir reconocimiento, explicar por qué alguien debería valorar el esfuerzo o utilizar relaciones personales como prueba del valor profesional.
+- resultados agregados verificables;
+- capturas sanitizadas;
+- demos expresamente preparadas para exhibición;
+- documentación técnica sin datos privados;
+- repositorios creados específicamente como evidencia pública.
 
-La trayectoria personal puede aportar contexto, pero no debe sustituir la evidencia del trabajo ni mezclarse con la propuesta profesional principal.
+## Veracidad
 
 Distinguir siempre entre:
 
@@ -40,4 +63,4 @@ Distinguir siempre entre:
 - FORMACIÓN EN PROGRESO;
 - OBJETIVO FUTURO.
 
-No convertir una intención futura en una capacidad ya adquirida.
+No convertir intención futura en una capacidad adquirida.
