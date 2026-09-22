@@ -1,251 +1,99 @@
 {
-  "version": "1.2",
-  "updated_at": "2026-09-20T03:58:00-06:00",
-  "title": "ROOT — Professional Operating System",
-  "subtitle": "Entrada rápida al ecosistema profesional de Miguel Ángel Ruiz",
+  "version": "1.3",
+  "updated_at": "2026-09-21",
+  "title": "Sistema de trabajo — Perfil profesional",
+  "subtitle": "Capacidades, método de trabajo y evidencia pública seleccionada",
   "privacy": "PUBLICO_SANITIZADO",
-  "commands": [
-    {
-      "code": "R0",
-      "name": "ROOT GLOBAL",
-      "command": "ROOT INICIAR",
-      "description": "Coordina el ecosistema, identifica proyecto, fuente de verdad y siguiente rol.",
-      "level": 0,
-      "group": "ROOT",
-      "prompt": "# ROOT ECOSISTEMA — INICIALIZAR\n\nUsa GitHub conectado.\n\nREPOSITORIO_ROOT:\nmiguelangelruizfull-ai/ROOT_ECOSISTEMA\n\nLee START_HERE.md y sigue el protocolo ROOT vigente. Reconstruye el estado desde fuentes conectadas. No dependas de memoria del chat si existe una fuente vigente. No mezcles repositorios. No expongas PII, secretos ni RAW privado. No ejecutes acciones destructivas sin autorización específica.\n\nCuando termines muestra:\n1. COORDINADOR\n2. PRODUCTOR / EJECUTOR\n3. AUDITOR\n4. CONSULTA RÁPIDA\n5. MANTENIMIENTO / MIGRACIÓN\n\nIndica RECOMENDADO AHORA y cierra con GATE ROOT."
-    },
-    {
-      "code": "A0",
-      "name": "AFL AUTOS",
-      "command": "ROOT ABRIR AFL AUTOS",
-      "description": "Entrada al caso profesional AFL AUTOS y a su coordinación autenticada, sin exponer estrategia ni arquitectura interna.",
-      "level": 1,
-      "group": "PROYECTO",
-      "prompt": "# AFL AUTOS — COORDINADOR PRINCIPAL\n\nInicializa ROOT_ECOSISTEMA y resuelve las fuentes vigentes dentro del entorno autenticado. La consola pública no describe ni replica la estrategia, arquitectura, rutas internas, repositorios privados, datos comerciales, PII, RAW ni almacenamiento privado de AFL AUTOS. Trabaja desde las fuentes conectadas y devuelve únicamente el siguiente paso necesario, con validación humana para acciones sensibles o de publicación."
-    },
-    {
-      "code": "A2",
-      "name": "COMERCIAL / WHATSAPP BUSINESS",
-      "command": "ROOT ABRIR AFL AUTOS COMERCIAL",
-      "description": "Atención comercial y seguimiento desde fuentes autenticadas, sin exponer metodología, PII ni datos privados.",
-      "level": 2,
-      "group": "AFL AUTOS",
-      "prompt": "# AFL AUTOS — COMERCIAL\n\nInicializa ROOT_ECOSISTEMA y abre el frente comercial de AFL AUTOS desde las fuentes autenticadas. Mantén fuera de la salida pública PII, conversaciones, datos de contacto privados, rutas, repositorios internos, metodología estratégica y cualquier dato no confirmado. Usa únicamente información vigente y autorizada para la tarea solicitada."
-    },
-    {
-      "code": "G0",
-      "name": "GITHUB / REPOSITORIOS",
-      "command": "ROOT ABRIR GITHUB",
-      "description": "Audita y mantiene repositorios, documentación, ramas, commits y continuidad.",
-      "level": 1,
-      "group": "INFRAESTRUCTURA",
-      "prompt": "# ROOT — COORDINADOR GITHUB\n\nInicializa ROOT_ECOSISTEMA. Administra y audita los repositorios conectados sin mezclar sus fuentes de verdad. Revisa repositorio dueño, README/START_HERE, estado vigente, arquitectura, documentación, ramas, commits, duplicación, migraciones y respaldos. No hagas cambios destructivos sin autorización específica. Primero diagnostica y después indica si corresponde CONSULTA, AUDITOR, PRODUCTOR, MANTENIMIENTO o VOLVER A ROOT."
-    },
-    {
-      "code": "D0",
-      "name": "DRIVE / MIGRACIÓN",
-      "command": "ROOT ABRIR DRIVE",
-      "description": "Clasificación, respaldos, históricos, duplicados y migraciones de Drive.",
-      "level": 1,
-      "group": "INFRAESTRUCTURA",
-      "prompt": "# ROOT — COORDINADOR DRIVE\n\nInicializa ROOT_ECOSISTEMA. Coordina Google Drive, clasificación, respaldos, históricos, duplicados y migraciones. Primero trabaja en modo lectura. Determina cuenta/origen, carpeta, relación con proyecto, fuente de verdad, duplicados, archivos históricos, RAW privado y material sanitizable. No mover, borrar, reemplazar ni fusionar archivos sin gate correspondiente. Abre ejecutor separado si el barrido o migración es grande. Al finalizar muestra opciones numeradas y RECOMENDADO AHORA."
-    },
-    {
-      "code": "P0",
-      "name": "PROYECTOS PERSONALES",
-      "command": "ROOT ABRIR PROYECTOS PERSONALES",
-      "description": "Entrada a proyectos personales sin mezclar estados ni fuentes de verdad.",
-      "level": 1,
-      "group": "PROYECTO",
-      "prompt": "# ROOT — COORDINADOR PROYECTOS PERSONALES\n\nInicializa ROOT_ECOSISTEMA. Localiza el índice vigente de proyectos personales y no mezcles información entre proyectos. Para cada petición determina PROYECTO, REPOSITORIO_DUEÑO, ESTADO, FUENTE_DE_VERDAD y SIGUIENTE_PASO. Si la tarea ya está definida, abre PRODUCTOR; si todavía necesita decisión, continúa como COORDINADOR."
-    },
-    {
-      "code": "W0",
-      "name": "PORTAFOLIO / PERFIL PÚBLICO",
-      "command": "ROOT ABRIR PORTAFOLIO",
-      "description": "Publicación profesional, casos verificables y sanitización de evidencia.",
-      "level": 1,
-      "group": "PUBLICACIÓN",
-      "prompt": "# ROOT — COORDINADOR PORTAFOLIO\n\nInicializa ROOT_ECOSISTEMA. Coordina perfil público, portafolio web, proyectos demostrables y GitHub público. Regla: PRIVADO ≠ SANITIZADO ≠ PUBLICABLE. No expongas PII, credenciales, secretos, Drive privado ni evidencia RAW. Determina qué puede publicarse y qué debe sanitizarse primero."
-    },
-    {
-      "code": "AU0",
-      "name": "AUDITOR GLOBAL",
-      "command": "ROOT AUDITOR",
-      "description": "Busca contradicciones, riesgos, privacidad, duplicación y estado obsoleto.",
-      "level": 1,
-      "group": "CONTROL",
-      "prompt": "# ROOT — AUDITOR GLOBAL\n\nInicializa ROOT_ECOSISTEMA. MODO READ_ONLY por defecto. Revisa contradicciones, fuentes de verdad, duplicación, estados incoherentes, privacidad, riesgos, documentación obsoleta y trabajos marcados como terminados sin evidencia. No modifiques por defecto. Entrega HALLAZGOS, RIESGOS, CONTRADICCIONES, ACCIONES_PROPUESTAS y RECOMENDADO_AHORA."
-    },
-    {
-      "code": "Q0",
-      "name": "CONSULTA RÁPIDA GLOBAL",
-      "command": "ROOT CONSULTA",
-      "description": "Pregunta puntual; ROOT resuelve automáticamente proyecto, repositorio y fuente vigente.",
-      "level": 1,
-      "group": "CONTROL",
-      "prompt": "# ROOT — CONSULTA RÁPIDA\n\nInicializa ROOT_ECOSISTEMA. Resuelve automáticamente PROYECTO → REPOSITORIO DUEÑO → FUENTE VIGENTE. Responde la pregunta puntual sin abrir un flujo innecesario. No respondas desde memoria cuando exista una fuente conectada. Al terminar muestra opciones de siguiente movimiento y RECOMENDADO AHORA."
-    },
-    {
-      "code": "M0",
-      "name": "MANTENIMIENTO ROOT",
-      "command": "ROOT MANTENIMIENTO",
-      "description": "Mantiene mapa de repositorios, routers, fuentes, checkpoints y protocolos.",
-      "level": 1,
-      "group": "CONTROL",
-      "prompt": "# ROOT — MANTENIMIENTO\n\nInicializa ROOT_ECOSISTEMA. Revisa mapa de repositorios, fuentes de verdad, routers, protocolos, checkpoints, documentación ROOT, repositorios nuevos o retirados y continuidad entre chats. No cambies arquitectura por comodidad sin verificar primero el sistema vigente. Aplica gates ROOT para cualquier modificación."
-    },
-    {
-      "code": "L0",
-      "name": "LINUX / BASH",
-      "command": "ROOT ABRIR LINUX",
-      "description": "Aprendizaje técnico conectado a operaciones reales cuando aporta valor.",
-      "level": 1,
-      "group": "APRENDIZAJE",
-      "prompt": "# ROOT — LINUX / BASH\n\nInicializa ROOT cuando el ejercicio esté relacionado con el ecosistema. Objetivo: aprender Linux, Bash y Git usando operaciones reales cuando convenga. Separa siempre EJECUTADO_REALMENTE de CONSOLA_EQUIVALENTE. Nunca presentes comandos educativos como si hubieran sido ejecutados."
-    }
-  ],
-  "control_commands": [
-    {
-      "code": "CK",
-      "command": "ROOT CHECKPOINT",
-      "description": "Guardar estado verificable y siguiente paso."
-    },
-    {
-      "code": "RS",
-      "command": "ROOT RESUME",
-      "description": "Releer fuentes vigentes y continuar."
-    },
-    {
-      "code": "ST",
-      "command": "ROOT STATUS",
-      "description": "Consultar estado real antes de actuar."
-    },
-    {
-      "code": "PA",
-      "command": "ROOT PAUSE",
-      "description": "Pausar avance lógico."
-    },
-    {
-      "code": "HO",
-      "command": "ROOT HANDOFF",
-      "description": "Preparar contexto mínimo para otro chat."
-    },
-    {
-      "code": "XX",
-      "command": "ROOT STOP",
-      "description": "Cancelar el bloque actual sin revertir cambios ya realizados."
-    }
-  ],
+  "public_profile": {
+    "focus": [
+      "Operaciones digitales",
+      "Automatización asistida por IA",
+      "Sistemas de información",
+      "Desarrollo web práctico"
+    ],
+    "working_model": [
+      "Entender el problema y el proceso",
+      "Identificar información y fuentes",
+      "Definir una fuente de verdad",
+      "Diseñar el flujo",
+      "Construir una herramienta o sistema",
+      "Documentar y validar",
+      "Automatizar cuando aporta valor",
+      "Medir y mejorar"
+    ],
+    "applied_capabilities": [
+      "Mapeo de procesos y dependencias",
+      "Fuentes de verdad, estados y handoffs",
+      "Documentación operativa y técnica",
+      "HTML, CSS, JavaScript y JSON",
+      "Git, GitHub y GitHub Pages",
+      "Organización de datos e históricos",
+      "Privacidad por diseño",
+      "Validación humana antes de acciones sensibles"
+    ]
+  },
   "projects": [
-    {
-      "name": "AFL AUTOS",
-      "status": "ACTIVO",
-      "type": "Caso profesional",
-      "summary": "Caso profesional de organización operativa, desarrollo web práctico y automatización asistida por IA aplicado a una operación automotriz. La estrategia, arquitectura interna y datos operativos permanecen privados.",
-      "public_evidence": "https://www.tiktok.com/@afl.autos",
-      "evidence_scope": "Presencia pública del negocio; la consola no enlaza estrategia ni arquitectura interna."
-    },
-    {
-      "name": "ROOT ECOSISTEMA",
-      "status": "ACTIVO / PRIVADO",
-      "type": "Sistema operativo de proyectos",
-      "summary": "Capa de coordinación que enruta proyectos, repositorios, fuentes de verdad, roles, gates y continuidad. La implementación interna permanece privada; esta consola muestra solo su interfaz pública sanitizada.",
-      "public_evidence": "/root/"
-    },
     {
       "name": "Album Digital",
       "status": "PÚBLICO",
-      "type": "Producto web",
-      "summary": "Evolución de solución personal a producto reutilizable, con separación de contenido, privacidad y reconstrucción legacy sanitizada.",
+      "type": "Producto web reutilizable",
+      "summary": "Proyecto web que documenta la evolución de una necesidad real hacia una base reutilizable, separando aplicación y contenido privado.",
       "public_evidence": "https://miguelangelruizfull-ai.github.io/Album_Digital/"
-    },
-    {
-      "name": "Ruiz Creative Studio",
-      "status": "PÚBLICO / PRELANZAMIENTO",
-      "type": "Estudio creativo",
-      "summary": "Proyecto público en prelanzamiento para documentar sistemas digitales, automatización práctica e IA aplicada, sin presentar servicios o resultados futuros como ya consolidados.",
-      "public_evidence": "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio"
     }
   ],
-  "repositories": [
+  "public_evidence": [
     {
-      "name": "miguelangelruizfull-ai.github.io",
-      "visibility": "public",
-      "purpose": "Portafolio profesional y consola pública ROOT",
-      "url": "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai.github.io"
+      "name": "Portafolio profesional",
+      "url": "https://miguelangelruizfull-ai.github.io/",
+      "scope": "Síntesis profesional, capacidades y trayectoria verificable."
     },
     {
-      "name": "miguelangelruizfull-ai",
-      "visibility": "public",
-      "purpose": "Perfil técnico GitHub",
-      "url": "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai"
+      "name": "Perfil técnico GitHub",
+      "url": "https://github.com/miguelangelruizfull-ai",
+      "scope": "Perfil técnico público."
     },
     {
-      "name": "Album_Digital",
-      "visibility": "public",
-      "purpose": "Producto web demostrable",
-      "url": "https://github.com/miguelangelruizfull-ai/Album_Digital"
+      "name": "Album Digital",
+      "url": "https://miguelangelruizfull-ai.github.io/Album_Digital/",
+      "scope": "Producto web público y sanitizado."
     },
     {
-      "name": "Ruiz_Creative_Studio",
-      "visibility": "public",
-      "purpose": "Proyecto creativo público",
-      "url": "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio"
+      "name": "Repositorio Album Digital",
+      "url": "https://github.com/miguelangelruizfull-ai/Album_Digital",
+      "scope": "Código y documentación pública del producto reutilizable."
     }
   ],
-  "permissions": {
-    "public": [
-      "consultar",
-      "buscar",
-      "copiar códigos",
-      "copiar prompts",
-      "exportar catálogo público"
-    ],
-    "owner": [
-      "todo lo público",
-      "solicitar actualización mediante ROOT/GitHub autenticado"
-    ],
-    "blocked_on_public_site": [
-      "credenciales",
-      "PII",
-      "Drive privado",
-      "RAW",
-      "VIN",
+  "publication_rules": {
+    "general_profile": "CAPACIDADES_Y_EVIDENCIA_PUBLICA_SELECCIONADA",
+    "evidence_sharing": "EVALUACION_CONCRETA → EVIDENCIA_REVISADA_Y_SANITIZADA",
+    "excluded": [
+      "clientes y operaciones reales por defecto",
+      "proyectos personales o familiares",
+      "marcas privadas o en desarrollo no destinadas a exhibición",
       "repositorios privados completos",
-      "escrituras GitHub desde el navegador sin autenticación segura",
-      "estrategia interna de AFL AUTOS",
-      "arquitectura replicable de AFL AUTOS",
-      "demos o réplicas operativas de AFL AUTOS"
-    ]
-  },
-  "update_prompt": "ROOT ABRIR PORTAFOLIO\n\nActualiza la consola pública ROOT del portafolio profesional. Lee primero ROOT_ECOSISTEMA y las fuentes vigentes de cada proyecto. Modifica únicamente información pública sanitizada en miguelangelruizfull-ai/miguelangelruizfull-ai.github.io/root/ecosistema-publico.json. Verifica PUBLICATION_POLICY.md antes de escribir. No expongas PII, secretos, Drive privado, RAW ni repositorios privados completos. Para AFL AUTOS tampoco publiques estrategia interna, arquitectura replicable ni demos/réplicas operativas. Registra fecha, cambios y evidencia pública.",
-  "public_guardrails": {
-    "afl_autos": [
-      "mostrar capacidades y evidencia pública, no la estrategia interna",
-      "no publicar arquitectura, rutas, fuentes privadas ni detalles suficientes para replicar la operación",
-      "no listar demos o réplicas operativas de AFL AUTOS en la consola pública",
-      "mantener PII, conversaciones, datos comerciales privados, RAW y Drive privado fuera de la superficie pública"
+      "arquitectura interna o metodología sensible",
+      "PII y conversaciones privadas",
+      "teléfonos o correos privados",
+      "credenciales, tokens o secretos",
+      "documentos personales o vehiculares",
+      "identificadores sensibles",
+      "enlaces privados de almacenamiento",
+      "exportaciones RAW"
     ]
   },
   "last_public_sync": {
-    "date": "2026-09-20",
-    "scope": "ROOT Console pública",
+    "date": "2026-09-21",
+    "scope": "Consola pública sanitizada del portafolio profesional",
     "changes": [
-      "Se reforzó la separación entre evidencia profesional pública y estrategia interna de AFL AUTOS.",
-      "Se retiraron del catálogo visible las réplicas o demos operativas de AFL AUTOS.",
-      "Se simplificaron los accesos públicos de AFL AUTOS para no revelar arquitectura, rutas ni repositorios internos.",
-      "Se actualizó Ruiz Creative Studio a estado público de prelanzamiento según su fuente vigente.",
-      "La evidencia pública de AFL AUTOS en la consola se limita a presencia pública del negocio y deja de enlazar el caso con mayor detalle operativo."
+      "Se alineó el catálogo público con la política editorial vigente orientada a capacidades.",
+      "Se retiraron del catálogo general nombres y accesos de operaciones reales, proyectos privados y arquitectura interna.",
+      "Se eliminó la representación pública incorrecta de proyectos cuya fuente vigente los clasifica como privados.",
+      "Se conservó únicamente evidencia pública verificable y apropiada para la superficie profesional general."
     ],
-    "public_evidence": [
-      "https://miguelangelruizfull-ai.github.io/",
-      "https://miguelangelruizfull-ai.github.io/root/",
-      "https://miguelangelruizfull-ai.github.io/Album_Digital/",
-      "https://github.com/miguelangelruizfull-ai/Album_Digital",
-      "https://github.com/miguelangelruizfull-ai/Ruiz_Creative_Studio",
-      "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai",
-      "https://www.tiktok.com/@afl.autos"
+    "evidence": [
+      "README público del perfil técnico",
+      "README y política de publicación del portafolio",
+      "README público de Album Digital"
     ]
   }
 }
