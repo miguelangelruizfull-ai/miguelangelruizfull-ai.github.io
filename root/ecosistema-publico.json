@@ -1,6 +1,6 @@
 {
-  "version": "1.3",
-  "updated_at": "2026-09-21",
+  "version": "1.4",
+  "updated_at": "2026-09-22",
   "title": "Sistema de trabajo — Perfil profesional",
   "subtitle": "Capacidades, método de trabajo y evidencia pública seleccionada",
   "privacy": "PUBLICO_SANITIZADO",
@@ -82,18 +82,102 @@
     ]
   },
   "last_public_sync": {
-    "date": "2026-09-21",
-    "scope": "Consola pública sanitizada del portafolio profesional",
+    "date": "2026-09-22",
+    "scope": "ROOT Console pública sanitizada",
     "changes": [
-      "Se alineó el catálogo público con la política editorial vigente orientada a capacidades.",
-      "Se retiraron del catálogo general nombres y accesos de operaciones reales, proyectos privados y arquitectura interna.",
-      "Se eliminó la representación pública incorrecta de proyectos cuya fuente vigente los clasifica como privados.",
-      "Se conservó únicamente evidencia pública verificable y apropiada para la superficie profesional general."
+      "Se añadió un saludo de entrada y comandos ROOT genéricos listos para copiar.",
+      "Se conservó fuera de la superficie pública la operación real, proyectos privados y arquitectura interna.",
+      "Se reparó el catálogo de comandos y repositorios consumido por la interfaz pública.",
+      "La consola pública sigue siendo un lanzador sanitizado y no una fuente de verdad."
     ],
     "evidence": [
-      "README público del perfil técnico",
-      "README y política de publicación del portafolio",
-      "README público de Album Digital"
+      "PUBLICATION_POLICY.md",
+      "ROOT Console pública",
+      "repositorios públicos seleccionados"
     ]
-  }
+  },
+  "commands": [
+    {
+      "code": "R0",
+      "group": "ROOT",
+      "name": "Iniciar ROOT",
+      "command": "ROOT INICIAR",
+      "description": "Inicializa el sistema y muestra opciones antes de actuar.",
+      "prompt": "ROOT INICIAR\n\nLee las fuentes vigentes del sistema ROOT. No reconstruyas estado desde memoria si existe una fuente actual. Cuando termines, muestra opciones numeradas y RECOMENDADO AHORA."
+    },
+    {
+      "code": "R1",
+      "group": "ROOT",
+      "name": "Coordinador",
+      "command": "ROOT COORDINADOR",
+      "description": "Resuelve proyecto, fuente de verdad y siguiente ruta de trabajo.",
+      "prompt": "ROOT COORDINADOR\n\nInicializa ROOT, resuelve el proyecto y la fuente vigente antes de proponer acciones. Mantén navegación de regreso a ROOT."
+    },
+    {
+      "code": "R2",
+      "group": "ROOT",
+      "name": "Productor / Ejecutor",
+      "command": "ROOT PRODUCTOR",
+      "description": "Ejecuta una tarea concreta una vez definido el alcance.",
+      "prompt": "ROOT PRODUCTOR\n\nInicializa ROOT y ejecuta solo la tarea definida en la fuente dueña correspondiente. No redefinas arquitectura global."
+    },
+    {
+      "code": "R3",
+      "group": "ROOT",
+      "name": "Auditor",
+      "command": "ROOT AUDITOR",
+      "description": "Revisa estado, contradicciones, privacidad y calidad sin modificar por defecto.",
+      "prompt": "ROOT AUDITOR\n\nInicializa ROOT y audita sin modificar por defecto. Devuelve hallazgos, riesgos, opciones y RECOMENDADO AHORA."
+    },
+    {
+      "code": "R4",
+      "group": "ROOT",
+      "name": "Consulta rápida",
+      "command": "ROOT CONSULTA RÁPIDA",
+      "description": "Resuelve una pregunta puntual desde la fuente vigente.",
+      "prompt": "ROOT CONSULTA RÁPIDA\n\nResuelve la pregunta puntual desde la fuente vigente. Evita abrir un flujo innecesario. Al terminar muestra siguientes movimientos cuando aporten."
+    },
+    {
+      "code": "R5",
+      "group": "ROOT",
+      "name": "Mantenimiento / Migración",
+      "command": "ROOT MANTENIMIENTO",
+      "description": "Estructura, repositorios, archivos y movimientos con gates aplicables.",
+      "prompt": "ROOT MANTENIMIENTO\n\nInicializa ROOT. Revisa estructura y fuentes antes de modificar. No ejecutes acciones destructivas sin autorización específica."
+    },
+    {
+      "code": "R6",
+      "group": "ROOT",
+      "name": "Retomar",
+      "command": "ROOT RESUME",
+      "description": "Recupera el estado durable y continúa desde la fuente vigente.",
+      "prompt": "ROOT RESUME\n\nRecupera el último estado durable desde las fuentes vigentes. Indica dónde estás, opciones disponibles y RECOMENDADO AHORA."
+    },
+    {
+      "code": "R7",
+      "group": "ROOT",
+      "name": "Abrir área",
+      "command": "ROOT ABRIR <PROYECTO O ÁREA>",
+      "description": "Entra a un dominio sin tener que recordar repositorios o rutas.",
+      "prompt": "ROOT ABRIR <PROYECTO O ÁREA>\n\nResuelve automáticamente el repositorio dueño y sus fuentes vigentes antes de actuar."
+    }
+  ],
+  "repositories": [
+    {
+      "name": "Album_Digital",
+      "purpose": "Producto web público y sanitizado.",
+      "url": "https://github.com/miguelangelruizfull-ai/Album_Digital"
+    },
+    {
+      "name": "miguelangelruizfull-ai",
+      "purpose": "Perfil técnico público.",
+      "url": "https://github.com/miguelangelruizfull-ai"
+    },
+    {
+      "name": "miguelangelruizfull-ai.github.io",
+      "purpose": "Portafolio profesional público y sanitizado.",
+      "url": "https://github.com/miguelangelruizfull-ai/miguelangelruizfull-ai.github.io"
+    }
+  ],
+  "update_prompt": "ROOT ABRIR PORTAFOLIO\n\nActualiza únicamente la consola pública sanitizada después de verificar la política de publicación. No expongas operaciones reales, PII, secretos, RAW, enlaces privados ni arquitectura interna."
 }
