@@ -1,6 +1,6 @@
 {
-  "version": "1.4",
-  "updated_at": "2026-09-22",
+  "version": "1.5",
+  "updated_at": "2026-09-25",
   "title": "Sistema de trabajo — Perfil profesional",
   "subtitle": "Capacidades, método de trabajo y evidencia pública seleccionada",
   "privacy": "PUBLICO_SANITIZADO",
@@ -45,7 +45,7 @@
     {
       "name": "Portafolio profesional",
       "url": "https://miguelangelruizfull-ai.github.io/",
-      "scope": "Síntesis profesional, capacidades y trayectoria verificable."
+      "scope": "Síntesis profesional, capacidades y evidencia pública seleccionada."
     },
     {
       "name": "Perfil técnico GitHub",
@@ -82,18 +82,19 @@
     ]
   },
   "last_public_sync": {
-    "date": "2026-09-22",
-    "scope": "ROOT Console pública sanitizada",
+    "date": "2026-09-25",
+    "scope": "ROOT Console pública sanitizada — reconciliación editorial y accesibilidad",
     "changes": [
-      "Se añadió un saludo de entrada y comandos ROOT genéricos listos para copiar.",
-      "Se conservó fuera de la superficie pública la operación real, proyectos privados y arquitectura interna.",
-      "Se reparó el catálogo de comandos y repositorios consumido por la interfaz pública.",
-      "La consola pública sigue siendo un lanzador sanitizado y no una fuente de verdad."
+      "Se retiró del catálogo público la referencia a la trayectoria como parte del perfil profesional general.",
+      "La trayectoria profesional permanece como evidencia selectiva para reclutamiento y no forma parte de la navegación pública general.",
+      "Se registraron las mejoras de accesibilidad aplicadas al Home profesional y a ROOT Console.",
+      "La consola pública continúa como lanzador sanitizado y no como fuente de verdad."
     ],
     "evidence": [
       "PUBLICATION_POLICY.md",
+      "Home profesional público",
       "ROOT Console pública",
-      "repositorios públicos seleccionados"
+      "root/ecosistema-publico.json"
     ]
   },
   "commands": [
