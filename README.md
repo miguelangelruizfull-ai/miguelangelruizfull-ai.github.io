@@ -51,3 +51,18 @@ No publicar en la superficie profesional general:
 - credenciales o secretos.
 
 La evidencia se comparte solo cuando aporta a una evaluación concreta y después de revisar su alcance publicable.
+
+## SEO y previews sociales
+
+Las rutas profesionales principales `/` y `/historia/` mantienen:
+
+- title y description específicos;
+- canonical;
+- robots explícitos;
+- Open Graph;
+- Twitter Card;
+- `hreflang=es-MX`;
+- datos estructurados JSON-LD;
+- sitemap con `lastmod`.
+
+No reutilizar imágenes o metadatos de proyectos personales como preview general del portafolio. Una imagen social dedicada puede añadirse después si existe un activo público específicamente aprobado para esa función.
