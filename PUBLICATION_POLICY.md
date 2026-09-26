@@ -28,6 +28,23 @@ Regla:
 
 `EVIDENCIA_EXISTENTE ≠ EVIDENCIA_PUBLICA_PERMANENTE`
 
+
+## Rutas de evidencia selectiva
+
+Un caso sanitizado puede conservar una URL directa para una evaluación profesional concreta sin formar parte del perfil público general.
+
+Para esas rutas:
+
+- usar `noindex,nofollow,noarchive`;
+- no incluirlas en el sitemap profesional principal;
+- no enlazarlas desde la navegación general por defecto;
+- mantener únicamente contenido previamente sanitizado;
+- compartir la URL de forma intencional cuando la evidencia sea pertinente.
+
+Regla:
+
+`URL_PUBLICA_DIRECTA ≠ PERFIL_PUBLICO_GENERAL`
+
 ## No exponer por defecto en el perfil general
 
 - clientes y operaciones reales;
