@@ -14,6 +14,16 @@ Por defecto, el perfil profesional público comunica:
 
 No se necesita publicar permanentemente el nombre de cada cliente, proyecto, repositorio o evidencia para demostrar una capacidad.
 
+## Home público mínimo
+
+La superficie general del Home no muestra secciones de trayectoria ni evidencia profesional.
+
+Regla:
+
+`HOME_PUBLICO = CAPACIDADES + FORMA_DE_TRABAJO`
+
+Los casos, demos, repositorios y evidencia verificable se administran fuera del Home general y solo se comparten según su política de publicación correspondiente.
+
 ## Trayectoria profesional
 
 La trayectoria ampliada se comparte únicamente como evidencia selectiva para procesos de reclutamiento.
