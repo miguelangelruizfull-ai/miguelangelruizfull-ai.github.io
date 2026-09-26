@@ -16,17 +16,15 @@ La superficie pública presenta principalmente:
 
 Los nombres de clientes, operaciones reales, proyectos personales, marcas propias en desarrollo y repositorios de evidencia no forman parte de la presentación pública general por defecto.
 
-## Evidencia para reclutamiento
 
-Cuando un proceso de reclutamiento requiera demostrar una capacidad específica, se seleccionará y compartirá de forma controlada el repositorio, demo, documentación o caso adecuado.
+## Regla del Home público
 
-Regla:
+El Home general muestra únicamente:
+- qué hace Miguel;
+- cómo trabaja;
+- capacidades y áreas técnicas aplicadas.
 
-`PERFIL_PUBLICO_GENERAL → CAPACIDADES`
-
-`EVALUACION_CONCRETA → EVIDENCIA_SELECCIONADA`
-
-La existencia de una evidencia no implica que deba permanecer enlazada permanentemente desde el perfil público.
+Trayectoria, casos, repositorios, demos y otras evidencias no se presentan como secciones del Home general.
 
 ## Rutas públicas principales
 
