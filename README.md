@@ -11,7 +11,6 @@ La superficie pública presenta principalmente:
 - qué hace Miguel;
 - cómo trabaja;
 - capacidades demostrables;
-- trayectoria profesional verificable;
 - herramientas y áreas técnicas aplicadas;
 - criterios de privacidad, trazabilidad y validación.
 
@@ -31,8 +30,14 @@ La existencia de una evidencia no implica que deba permanecer enlazada permanent
 
 ## Rutas públicas principales
 
-- `/` — síntesis profesional y capacidades;
-- `/historia/` — trayectoria ampliada.
+- `/` — síntesis profesional y capacidades.
+
+## Evidencia selectiva para reclutamiento
+
+- `/historia/` — trayectoria ampliada por enlace directo;
+- no forma parte de la navegación pública;
+- no forma parte del sitemap;
+- usa `noindex,nofollow,noarchive`.
 
 Otras rutas históricas pueden permanecer técnicamente en el repositorio mientras se revisan, pero no forman parte de la navegación ni del sitemap profesional vigente.
 
@@ -54,7 +59,7 @@ La evidencia se comparte solo cuando aporta a una evaluación concreta y despué
 
 ## SEO y previews sociales
 
-Las rutas profesionales principales `/` y `/historia/` mantienen:
+La ruta pública principal `/` mantiene:
 
 - title y description específicos;
 - canonical;
