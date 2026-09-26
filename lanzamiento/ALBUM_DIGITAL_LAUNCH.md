@@ -1,13 +1,19 @@
 # LANZAMIENTO 01 — ALBUM DIGITAL
 
-Fecha de revisión: 2026-09-17
-Estado: PUBLICO_SANITIZADO
+Fecha de revisión: 2026-09-25
+Estado: PROGRAMADO_2026-12-07 / PUBLICO_SANITIZADO
 
 ## Decisión vigente
 
 El lanzamiento público utiliza exclusivamente la versión reutilizable y sanitizada de **Album Digital**.
 
 La experiencia personal que dio origen al proyecto puede contarse como contexto, pero fotografías, videos, repositorios familiares y archivos personales no forman parte de la superficie pública del lanzamiento.
+
+## Alcance del hito
+
+**Lanzamiento 01 — 7 de diciembre de 2026** corresponde exclusivamente al producto público y sanitizado **Album Digital**.
+
+Las implementaciones personales o familiares permanecen fuera de este lanzamiento y no cambian de visibilidad por esta programación.
 
 ## Evidencia pública
 
