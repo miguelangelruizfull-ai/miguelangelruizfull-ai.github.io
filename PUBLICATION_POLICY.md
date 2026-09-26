@@ -9,11 +9,22 @@ Por defecto, el perfil profesional público comunica:
 - qué problemas puede resolver Miguel;
 - cómo estructura y documenta el trabajo;
 - capacidades técnicas y operativas;
-- trayectoria verificable;
 - herramientas realmente utilizadas;
 - límites entre capacidad actual y formación en progreso.
 
 No se necesita publicar permanentemente el nombre de cada cliente, proyecto, repositorio o evidencia para demostrar una capacidad.
+
+## Trayectoria profesional
+
+La trayectoria ampliada se comparte únicamente como evidencia selectiva para procesos de reclutamiento.
+
+Regla:
+
+`HOME_PUBLICO → CAPACIDADES`
+
+`RECLUTADOR / EVALUACION_CONCRETA → TRAYECTORIA_POR_ENLACE_DIRECTO`
+
+La ruta de trayectoria no debe aparecer en navegación pública, sitemap ni indexación orgánica.
 
 ## Evidencia selectiva
 
