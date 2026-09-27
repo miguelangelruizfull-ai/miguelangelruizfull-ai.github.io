@@ -113,3 +113,17 @@ Revisar que:
 - `/historia/` siga representando correctamente la trayectoria;
 - `/para-mi-hijo/` permanezca sanitizada y sin PII;
 - no se haya filtrado información privada.
+
+
+## Cronograma público sanitizado
+
+El Home mantiene un cronograma compacto de avances profesionales verificables desde la primera versión pública.
+
+Reglas:
+
+- usar fechas respaldadas por historial público o evidencia verificable;
+- agrupar cambios menores en hitos relevantes;
+- describir el resultado a alto nivel, no la implementación interna;
+- excluir PII, datos comerciales, conversaciones, documentos, identificadores sensibles, enlaces privados, RAW y arquitectura interna sensible;
+- no publicar automáticamente cada cambio del repositorio;
+- añadir un nuevo hito solo cuando cambie de forma relevante la capacidad demostrable, la calidad del portafolio, su privacidad, accesibilidad, estructura pública o evidencia profesional.
