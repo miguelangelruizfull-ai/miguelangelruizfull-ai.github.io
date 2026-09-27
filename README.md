@@ -19,16 +19,17 @@ Los nombres de clientes, operaciones reales, proyectos personales, marcas propia
 
 ## Regla del Home público
 
-El Home general muestra únicamente:
+El Home general muestra:
 - qué hace Miguel;
 - cómo trabaja;
-- capacidades y áreas técnicas aplicadas.
+- capacidades y áreas técnicas aplicadas;
+- un cronograma público sanitizado de avances verificables desde la primera versión del portafolio.
 
-Trayectoria, casos, repositorios, demos y otras evidencias no se presentan como secciones del Home general.
+El cronograma resume hitos sin exponer operaciones internas ni información sensible. Trayectoria detallada, casos, repositorios, demos y otras evidencias permanecen fuera del Home general salvo decisión editorial expresa.
 
 ## Rutas públicas principales
 
-- `/` — síntesis profesional y capacidades.
+- `/` — síntesis profesional, capacidades, método de trabajo y cronograma sanitizado de avances.
 
 ## Evidencia selectiva para reclutamiento
 
