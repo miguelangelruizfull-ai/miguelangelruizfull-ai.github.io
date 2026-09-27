@@ -16,13 +16,15 @@ No se necesita publicar permanentemente el nombre de cada cliente, proyecto, rep
 
 ## Home público mínimo
 
-La superficie general del Home no muestra secciones de trayectoria ni evidencia profesional.
+La superficie general del Home muestra capacidades, forma de trabajo y un cronograma de avances sanitizado. El cronograma documenta únicamente hitos públicos relevantes y verificables; no sustituye una bitácora operativa ni expone detalles internos.
 
 Regla:
 
-`HOME_PUBLICO = CAPACIDADES + FORMA_DE_TRABAJO`
+`HOME_PUBLICO = CAPACIDADES + FORMA_DE_TRABAJO + CRONOGRAMA_SANITIZADO`
 
-Los casos, demos, repositorios y evidencia verificable se administran fuera del Home general y solo se comparten según su política de publicación correspondiente.
+El cronograma puede mostrar fecha, tipo de avance y resultado público a alto nivel. Debe excluir clientes u operaciones reales por defecto, PII, contactos, conversaciones, documentos, identificadores sensibles, rutas internas, enlaces privados, RAW, arquitectura sensible y cualquier dato cuya publicación no sea necesaria.
+
+Los casos, demos, repositorios y evidencia verificable detallada se administran fuera del Home general y solo se comparten según su política de publicación correspondiente.
 
 ## Trayectoria profesional
 
@@ -102,3 +104,13 @@ Distinguir siempre entre:
 - OBJETIVO FUTURO.
 
 No convertir intención futura en una capacidad adquirida.
+
+
+## Cronograma público sanitizado
+
+- inicia con la primera versión verificable del portafolio;
+- agrupa cambios menores en hitos comprensibles;
+- usa fechas verificables del historial público;
+- diferencia mejoras públicas de trabajo privado no publicable;
+- no convierte intención futura en avance realizado;
+- se actualiza cuando existe un cambio profesional relevante, no por cada commit.
