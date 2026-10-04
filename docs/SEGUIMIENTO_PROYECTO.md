@@ -317,3 +317,23 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Maps/presencial: enfatiza negocio local y prueba real antes de pagar.
 - La estructura del formulario y reglas de datos permanecen iguales.
 - Caso actual recomendado para negocio de pasteles con página de Facebook: usar `?src=facebook&camp=MUESTRA_GRATIS`.
+
+
+## 2026-10-04 — Rediseño visual tipo Stories / Canva simple
+- Investigación 2026: video corto continúa como formato prioritario; imagen, Stories y carruseles siguen siendo útiles; autenticidad y material real importan especialmente para pequeños negocios.
+- Decisión UX: no convertir la landing en un editor tipo Canva. Se adopta una entrada visual tipo Stories/TikTok, con mínima lectura.
+- Nueva pantalla superior:
+  - tarjeta `Producto` con ejemplo visual;
+  - tarjeta `Servicio` con ejemplo visual;
+  - tarjeta `Recomiéndame` para quien no sabe qué publicar;
+  - selector rápido `Ya publico` / `Voy empezando`;
+  - recomendación visual del formato.
+- Para foto real: priorizar Historia vertical / post.
+- Para video real suficiente: considerar Reel corto.
+- El formulario recibe ahora `TIPO` y `ETAPA` dentro del pedido de WhatsApp.
+- Imágenes de ejemplo Creative Commons:
+  - pastel: Arnold Gatilao, CC BY 2.0, Wikimedia Commons;
+  - barbería: Hair Spies, CC BY 2.0, Wikimedia Commons.
+- Las atribuciones quedaron visibles en el footer.
+- El formulario usa lenguaje genérico para producto o servicio.
+- Siguiente prueba: entregar enlace a un negocio real y observar si logra elegir el camino visual sin explicación previa.
