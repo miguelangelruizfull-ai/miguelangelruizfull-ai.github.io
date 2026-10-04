@@ -29,7 +29,8 @@ El cronograma resume hitos sin exponer operaciones internas ni información sens
 
 ## Rutas públicas principales
 
-- `/` — síntesis profesional, capacidades, método de trabajo y cronograma sanitizado de avances.
+- `/` — síntesis profesional, capacidades, método de trabajo, caso aplicado y CTA.
+- `/servicios.html` — oferta pública de servicios y solicitud de contacto orientada a leads.
 
 ## Evidencia selectiva para reclutamiento
 
