@@ -16,7 +16,6 @@ La superficie pública presenta principalmente:
 
 Los nombres de clientes, operaciones reales, proyectos personales, marcas propias en desarrollo y repositorios de evidencia no forman parte de la presentación pública general por defecto.
 
-
 ## Regla del Home público
 
 El Home general muestra:
@@ -31,7 +30,27 @@ El cronograma resume hitos sin exponer operaciones internas ni información sens
 
 - `/` — síntesis profesional, capacidades, método de trabajo, caso aplicado y CTA.
 - `/servicios.html` — oferta pública de servicios y solicitud de contacto orientada a leads.
-- `/probar.html` — demo interactiva: flyer, historia y textos comerciales generados localmente con datos del visitante.
+- `/probar.html` — embudo de primer pedido gratuito: captura datos confirmados, prepara un pedido estructurado y abre WhatsApp para completar el envío de imágenes/logo y continuar la atención.
+
+## Flujo comercial de `/probar.html`
+
+La ruta `/probar.html` funciona como punto de captación, no como generador automático final.
+
+Flujo vigente:
+
+`VISITANTE -> PEDIDO ESTRUCTURADO -> WHATSAPP -> REVISION -> PRODUCCION CON IA -> ENTREGA -> SEGUIMIENTO`
+
+Reglas:
+
+- primera solicitud anunciada como gratuita;
+- no inventar datos del producto;
+- imágenes y logo se adjuntan manualmente en WhatsApp;
+- el repositorio público no almacena expedientes de leads ni PII;
+- el seguimiento real debe vivir en un origen privado.
+
+Documentación operativa:
+- `docs/FLUJO_PEDIDOS_WHATSAPP_V1.md`
+- `ROOT_CONTINUIDAD_PEDIDOS.md`
 
 ## Evidencia selectiva para reclutamiento
 
