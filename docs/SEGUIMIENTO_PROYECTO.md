@@ -162,3 +162,15 @@ Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
 - Después de recibir el pedido: producir la primera propuesta y anotar fricciones antes de invitar al siguiente referido.
 - Siguiente acción: ejecutar `PRUEBA01`.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Guía exacta para iniciar PRUEBA01
+1. Elegir una sola persona conocida con un producto/servicio real y al menos una foto disponible.
+2. Enviar enlace: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA01&src=whatsapp`.
+3. Presentarlo como ayuda para probar, no como venta.
+4. No explicar el formulario paso a paso salvo que la persona se bloquee; las dudas son evidencia de fricción.
+5. Cuando llegue el WhatsApp, comprobar que incluya PEDIDO-ID, datos suficientes y que la persona adjunte las fotos.
+6. Producir la propuesta y entregarla.
+7. Después preguntar únicamente: "¿Qué parte te costó o no entendiste?" y "¿Lo volverías a usar o recomendarías?".
+8. Registrar lo observado antes de pasar a PRUEBA02.
+Estado: listo para ejecutar `PRUEBA01`.
