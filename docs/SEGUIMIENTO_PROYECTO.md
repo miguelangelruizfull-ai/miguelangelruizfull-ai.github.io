@@ -137,3 +137,17 @@ Siguiente acción: realizar pruebas reales con códigos distintos y registrar qu
 - Validación: observar comprensión, finalización del formulario, adjuntos, calidad del pedido y reacción a la entrega.
 - Siguiente acción: compartir enlaces de prueba con códigos distintos y registrar fricciones.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Respuesta registrada
+Se confirmó continuar con la estrategia de referidos. Se creó `docs/PLAN_REFERIDOS_V1.md` y se enlazó desde el ROOT.
+
+Estado:
+- fase activa: `REFERRAL_FIRST_VALIDATION`;
+- meta: 5–10 pedidos reales completos;
+- usar códigos `?ref=` sin PII;
+- observar comprensión, abandono, adjuntos, calidad del pedido y reacción a la entrega;
+- no escalar a publicidad pagada todavía;
+- siguiente acción: compartir los primeros enlaces codificados y registrar fricciones.
+
+Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
