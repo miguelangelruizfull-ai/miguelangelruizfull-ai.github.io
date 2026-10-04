@@ -137,3 +137,24 @@ Formato recomendado por entrada:
 - cambios ejecutados;
 - siguiente acción recomendada;
 - comando de reanudación aplicable.
+
+
+## Separación laboratorio / lanzamiento
+Arquitectura aprobada:
+- repositorio actual `miguelangelruizfull-ai.github.io`: laboratorio temporal;
+- página de pruebas: `/pruebas.html`;
+- **no usar este repo como enlace final de lanzamiento**;
+- repositorio público final: `primer-pedido-gratis`;
+- cuando el producto esté validado, migrar únicamente los archivos sanitizados necesarios al nuevo repo;
+- después de verificar el nuevo lanzamiento, los demás repositorios podrán pasar a privado según decisión del usuario.
+
+## Regla de publicación
+El enlace que se comparta en lanzamiento comercial debe pertenecer al repo `primer-pedido-gratis`.
+`pruebas.html` queda para desarrollo, validación y control de calidad.
+
+## Condición de migración
+Migrar al repo final cuando:
+1. el flujo haya sido probado con usuarios reales;
+2. el formulario y mensaje de WhatsApp estén estables;
+3. el registro privado de leads esté definido;
+4. se haya revisado que el nuevo repo no contenga información privada, histórica o interna.
