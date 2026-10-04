@@ -174,3 +174,13 @@ Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
 7. Después preguntar únicamente: "¿Qué parte te costó o no entendiste?" y "¿Lo volverías a usar o recomendarías?".
 8. Registrar lo observado antes de pasar a PRUEBA02.
 Estado: listo para ejecutar `PRUEBA01`.
+
+
+## 2026-10-04 — Procedimiento al recibir un pedido por WhatsApp
+- Fase: `REFERRAL_FIRST_VALIDATION`
+- Se creó `docs/SOP_PEDIDO_RECIBIDO_WHATSAPP_V1.md`.
+- Flujo: identificar pedido -> verificar fotos/logo -> validar datos -> llevar a IA -> producir -> revisar -> entregar -> pedir feedback -> seguimiento.
+- Regla: no inventar datos y no guardar PII en repositorio público.
+- Estados clave: `PEDIDO_RECIBIDO_PENDIENTE_DE_ARCHIVOS -> ARCHIVOS_COMPLETOS -> EN_PRODUCCION -> MUESTRA_ENVIADA -> SEGUIMIENTO`.
+- Siguiente acción: ejecutar este SOP cuando llegue `PRUEBA01`.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
