@@ -257,3 +257,18 @@ Enlace: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=
 - Objetivo: que la persona entre, lea la interfaz y complete la prueba con mínima guía previa.
 - Enlace recomendado: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=whatsapp`.
 - Siguiente acción: enviar mensaje corto y observar dónde se detiene o pregunta.
+
+
+## 2026-10-04 — Cambio estratégico: SAMPLE_FIRST
+- Se elimina `REFERRAL_FIRST` como estrategia principal.
+- Nueva estrategia: `SAMPLE_FIRST` — una muestra real gratis antes de vender.
+- Analogía operativa: como una degustación física; el prospecto experimenta valor primero y decide después.
+- Oferta sugerida: `1 muestra gratis por negocio`.
+- `pruebas.html` actualizado para eliminar lenguaje de referido.
+- La atribución cambia de `ref=` a `src=` + `camp=MUESTRA_GRATIS`.
+- Nuevo documento canónico: `docs/PLAN_MUESTRA_GRATIS_V1.md`.
+- `docs/PLAN_REFERIDOS_V1.md` queda marcado como superado.
+- Canales iniciales: WhatsApp, Facebook, Instagram/TikTok, Google Maps y contacto presencial.
+- Regla: outreach personalizado y de bajo volumen; no spam masivo.
+- Meta: 5–10 negocios que reciban una muestra completa y medir cuántos piden una segunda pieza.
+- Siguiente acción: PRUEBA02 debe ejecutarse como `MUESTRA02`, no como referido.
