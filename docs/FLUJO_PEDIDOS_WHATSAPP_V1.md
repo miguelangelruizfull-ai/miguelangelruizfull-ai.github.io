@@ -3,6 +3,18 @@
 ## Objetivo
 Convertir `probar.html` en un punto de captación real para el primer pedido gratuito.
 
+## Estado actual
+**ACTIVO — V1 implementada en `main`.**
+
+La página ya:
+1. captura datos confirmados;
+2. permite seleccionar imágenes y logo localmente;
+3. genera un `PEDIDO-ID`;
+4. prepara un mensaje estructurado;
+5. abre WhatsApp con el pedido;
+6. indica adjuntar manualmente imágenes y logo;
+7. deja la producción y revisión fuera del navegador.
+
 ## Flujo
 1. El visitante captura únicamente datos confirmados.
 2. Selecciona imágenes y logo localmente.
@@ -12,6 +24,7 @@ Convertir `probar.html` en un punto de captación real para el primer pedido gra
 6. El usuario adjunta manualmente fotos y logo en WhatsApp.
 7. El pedido se procesa con el sistema de IA y revisión humana.
 8. Se entrega una propuesta recomendada o hasta 3 opciones cuando aporte valor.
+9. Se realiza seguimiento comercial.
 
 ## Datos solicitados
 - nombre del solicitante, opcional;
@@ -52,10 +65,34 @@ La primera solicitud se anuncia como gratuita. La verificación de si el número
 ## Limitación técnica actual
 Un enlace `wa.me` puede precargar texto y destinatario, pero no adjuntar automáticamente los archivos seleccionados en el formulario. Por eso la interfaz instruye al usuario a adjuntar fotos y logo antes de enviar.
 
-## Siguiente versión
-Agregar almacenamiento privado y registro de leads para:
-- validar automáticamente la primera muestra gratis;
-- conservar historial;
-- programar seguimiento;
-- asociar entregables;
-- medir conversión por origen.
+## Acción recomendada siguiente — prioridad 1
+**Crear un registro privado de leads antes de automatizar más la producción.**
+
+Motivo:
+- evita repetir la primera prueba gratuita a un mismo número;
+- permite saber quién necesita seguimiento;
+- conserva relación `LEAD-ID <-> PEDIDO-ID`;
+- permite medir conversión;
+- evita guardar PII en GitHub público.
+
+La siguiente implementación debería aceptar como mínimo:
+`LEAD-ID, PEDIDO-ID, nombre, WhatsApp, fecha, origen, prueba_gratis_usada, estado, siguiente_accion`.
+
+## Acción posterior — prioridad 2
+Crear el prompt/contrato de producción que reciba un pedido normalizado y produzca:
+- propuesta principal recomendada;
+- hasta 3 variantes cuando aporte valor;
+- validación de fidelidad;
+- prohibición de inventar datos;
+- salida lista para devolver al lead.
+
+## Acción posterior — prioridad 3
+Integrar:
+`CAPTURA -> REGISTRO PRIVADO -> PRODUCCION -> ENTREGA -> SEGUIMIENTO -> CONVERSION`.
+
+## Continuidad
+La autoridad de reanudación de este flujo es:
+`ROOT_CONTINUIDAD_PEDIDOS.md`
+
+Comando recomendado para iniciar cualquier sesión futura:
+`REANUDAR_PEDIDOS_DESDE_ROOT`
