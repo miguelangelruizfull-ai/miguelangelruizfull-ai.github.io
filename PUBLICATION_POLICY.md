@@ -114,3 +114,18 @@ No convertir intención futura en una capacidad adquirida.
 - diferencia mejoras públicas de trabajo privado no publicable;
 - no convierte intención futura en avance realizado;
 - se actualiza cuando existe un cambio profesional relevante, no por cada commit.
+
+
+## Decisión editorial — 4 oct 2026
+
+Se autoriza incorporar en el Home profesional:
+
+- una referencia sanitizada a AFL AUTOS como caso aplicado;
+- enlaces a la evidencia pública expresamente preparada para evaluación;
+- una llamada a proyectos, pilotos, colaboraciones y referidos.
+
+Esta decisión **no** autoriza publicar repositorios privados, arquitectura interna detallada, prompts/contratos sensibles, rutas privadas, datos operativos, conversaciones, PII, VIN/documentos, precios internos, RAW ni credenciales.
+
+Regla vigente:
+
+`CASO_PUBLICO_SANITIZADO + CTA_PROFESIONAL != EXPOSICION_DE_OPERACION_PRIVADA`
