@@ -64,8 +64,15 @@ input,select,textarea{width:100%;border:1px solid var(--line);border-radius:13px
 input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #8bd7ff70;outline-offset:2px;border-color:#8bd7ff}
 .req{color:var(--accent2)}.formActions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:20px}.formActions .right{display:flex;gap:10px;margin-left:auto}
 .notice{border:1px solid #83efb72a;background:#83efb708;border-radius:14px;padding:13px 14px;color:#d7e5df;margin-top:16px}.notice b{color:#effff6}
+.uploadHero{border:1px dashed #4b6685;background:linear-gradient(180deg,#0a1521,#08111b);border-radius:18px;padding:16px}
+.uploadHero label{display:block;font-size:1.05rem;margin-bottom:5px}.uploadHero small{display:block;margin-bottom:12px}
+.thumbGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}.thumb{aspect-ratio:1;border:1px solid #ffffff18;border-radius:12px;overflow:hidden;background:#050a10;position:relative}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.thumb span{position:absolute;left:6px;right:6px;bottom:6px;background:#050a10d9;border-radius:8px;padding:4px 6px;font-size:.68rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.transferAlert{margin-top:14px;border:1px solid #ffd58a45;background:#ffd58a0b;border-radius:16px;padding:15px}.transferAlert strong{display:block;color:#ffe6b6;font-size:1.02rem;margin-bottom:4px}.transferAlert p{margin:0;color:#d7c7a8}
+.transferSteps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.transferStep{border:1px solid #ffffff10;background:#07101888;border-radius:12px;padding:10px;font-size:.88rem;color:#d9e4eb}.transferStep b{display:block;color:#fff;margin-bottom:2px}
 .consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px}.consent input{width:auto;min-height:auto;margin-top:5px}.consent label{font-weight:600;color:#d9e1e8}
 .status{color:var(--muted);font-size:.92rem;margin:14px 0 0}.ok{color:var(--ok);font-weight:850}.error{color:var(--danger);font-weight:800}
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:end center;background:#0009;padding:16px;backdrop-filter:blur(8px)}.modal.hidden{display:none}.modalCard{width:min(100%,620px);background:#0b1420;border:1px solid #ffffff1c;border-radius:24px;padding:20px;box-shadow:0 30px 100px #000c;max-height:min(88vh,760px);overflow:auto}.modalTop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.modalTop h3{font-size:1.5rem;line-height:1.05;margin:0}.closeBtn{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:#111b28;color:#fff;font-size:1.2rem;cursor:pointer}.handoffBox{border:1px solid #ffd58a45;background:#ffd58a0b;border-radius:16px;padding:14px;margin:16px 0}.handoffBox b{color:#ffe8bb}.handoffList{margin:10px 0 0;padding-left:20px;color:#d9e2e8}.handoffActions{display:grid;gap:10px}.btn.native{background:linear-gradient(135deg,#eafff2,#c8ffe4);color:#06140d;border-color:transparent}.btn.wa{background:linear-gradient(135deg,#e8f6ff,#c9dcff);color:#071018;border-color:transparent}.shareSupport{font-size:.84rem;color:var(--muted);margin:8px 0 0}
+
 .preview{white-space:pre-wrap;background:#071018;border:1px dashed #345269;border-radius:14px;padding:14px;min-height:300px;color:#dce7ee;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere;max-height:520px;overflow:auto}
 .sideCard h3{margin:6px 0 12px;font-size:1.25rem}
 .sideNote{color:var(--muted);font-size:.9rem;margin:12px 0 0}
@@ -79,7 +86,7 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 @media(max-width:640px){
   .wrap{width:min(calc(100% - 22px),var(--max))}.topin{min-height:56px}.brand{font-size:.95rem}.lab{font-size:.66rem;padding:6px 8px}
   .hero{padding:38px 0 28px}h1{font-size:clamp(2.9rem,14vw,4.8rem)}.lead{font-size:1.02rem}.heroActions .btn{width:100%}
-  .proofGrid,.faq,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formCard,.sideCard{border-radius:18px}.formActions{flex-direction:column}.formActions .right{width:100%;margin-left:0}.formActions .btn,.formActions .right .btn{width:100%}
+  .proofGrid,.faq,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formCard,.sideCard{border-radius:18px}.formActions{flex-direction:column}.formActions .right{width:100%;margin-left:0}.formActions .btn,.formActions .right .btn{width:100%}.thumbGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.transferSteps{grid-template-columns:1fr}
   .mobileCta{position:fixed;z-index:60;display:flex;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));background:#08111bea;border:1px solid #ffffff18;backdrop-filter:blur(16px);border-radius:16px;padding:8px;box-shadow:0 18px 45px #0009;transition:transform .2s ease,opacity .2s ease}.mobileCta .btn{width:100%}
   .mobileCta.hide{transform:translateY(130%);opacity:0;pointer-events:none}
 }
@@ -188,21 +195,41 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
         </div>
 
         <div class="stepPane" data-step="3">
-          <h3 class="stepTitle">Adjunta el material.</h3>
-          <p class="stepCopy">Selecciona tus fotos. Por ahora deberás adjuntarlas otra vez cuando se abra WhatsApp.</p>
-          <div class="formGrid">
-            <div class="field full"><label for="images">Fotos del producto <span class="req">*</span></label><input id="images" type="file" accept="image/*" multiple required><small>Una o varias fotos reales.</small></div>
-            <div class="field full"><label for="logo">Logo, si existe</label><input id="logo" type="file" accept="image/*,.svg,.pdf"><small>Opcional.</small></div>
+          <h3 class="stepTitle">Selecciona tus fotos.</h3>
+          <p class="stepCopy">Aquí podrás comprobar exactamente qué archivos elegiste antes de salir a WhatsApp.</p>
+
+          <div class="uploadHero">
+            <label for="images">Fotos del producto <span class="req">*</span></label>
+            <small>Selecciona una o varias fotos reales. Verás una vista previa abajo.</small>
+            <input id="images" type="file" accept="image/*" multiple required>
+            <div class="thumbGrid hidden" id="imagePreview"></div>
           </div>
-          <div class="notice"><b>Privacidad:</b> esta página de prueba no almacena tus fotos ni el formulario. Prepara el mensaje y abre WhatsApp para que tú decidas qué enviar.</div>
-          <div class="consent"><input id="consent" type="checkbox" required><label for="consent">Acepto enviar estos datos por WhatsApp para preparar mi pedido y recibir seguimiento relacionado con esta solicitud.</label></div>
+
+          <div class="field full" style="margin-top:14px">
+            <label for="logo">Logo, si existe</label>
+            <input id="logo" type="file" accept="image/*,.svg,.pdf">
+            <small id="logoStatus">Opcional.</small>
+          </div>
+
+          <div class="transferAlert" id="transferAlert">
+            <strong>Importante: seleccionar una foto aquí no la adjunta automáticamente a WhatsApp.</strong>
+            <p>PRUEBA01 confirmó esta limitación. Antes de enviar, te mostraremos dos formas de continuar.</p>
+            <div class="transferSteps">
+              <div class="transferStep"><b>1 · Selecciona</b>Comprueba tus fotos aquí.</div>
+              <div class="transferStep"><b>2 · Comparte</b>Usa compartir archivos si tu móvil lo permite.</div>
+              <div class="transferStep"><b>3 · Verifica</b>En WhatsApp confirma que la foto aparezca antes de enviar.</div>
+            </div>
+          </div>
+
+          <div class="notice"><b>Privacidad:</b> las fotos se mantienen en tu dispositivo durante esta prueba. Tú decides qué archivos compartir al salir de la página.</div>
+          <div class="consent"><input id="consent" type="checkbox" required><label for="consent">Acepto compartir estos datos y archivos para preparar mi pedido y recibir seguimiento relacionado con esta solicitud.</label></div>
         </div>
 
         <div class="formActions">
           <button class="btn ghost hidden" id="back" type="button">Atrás</button>
           <div class="right">
             <button class="btn primary" id="next" type="button">Continuar</button>
-            <button class="btn primary hidden" id="send" type="submit">Enviar por WhatsApp</button>
+            <button class="btn primary hidden" id="send" type="submit">Revisar envío</button>
           </div>
         </div>
         <p class="status" id="status" aria-live="polite">Primera prueba gratis. Completa solo información que quieras usar.</p>
@@ -235,6 +262,34 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 
 <div class="mobileCta" id="mobileCta"><a class="btn primary" href="#pedido">Probar gratis</a></div>
 
+<div class="modal hidden" id="handoffModal" role="dialog" aria-modal="true" aria-labelledby="handoffTitle">
+  <div class="modalCard">
+    <div class="modalTop">
+      <div>
+        <div class="eyebrow"><span class="dot"></span>Último paso</div>
+        <h3 id="handoffTitle">Asegura que tus fotos sí lleguen.</h3>
+      </div>
+      <button class="closeBtn" id="closeModal" type="button" aria-label="Cerrar">×</button>
+    </div>
+
+    <div class="handoffBox">
+      <b id="handoffCount">Tienes fotos seleccionadas.</b>
+      <ol class="handoffList">
+        <li>Elige una opción de envío.</li>
+        <li>Si usas WhatsApp directo, adjunta manualmente las mismas fotos.</li>
+        <li>No envíes hasta comprobar que las miniaturas aparecen dentro del chat.</li>
+      </ol>
+    </div>
+
+    <div class="handoffActions">
+      <button class="btn native hidden" id="nativeShare" type="button">Compartir fotos + pedido</button>
+      <button class="btn wa" id="openWhatsapp" type="button">Abrir WhatsApp con el pedido</button>
+      <button class="btn ghost" id="copyOrder" type="button">Copiar texto del pedido</button>
+    </div>
+    <p class="shareSupport" id="shareSupport">La opción de compartir archivos aparece solo en dispositivos y navegadores compatibles.</p>
+  </div>
+</div>
+
 <script>
 const WA_NUMBER="522491211725";
 const $=id=>document.getElementById(id);
@@ -243,6 +298,7 @@ const ref=(params.get("ref")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
 const source=(params.get("src")||"referido").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
 let currentOrderId="";
 let currentStep=1;
+let previewUrls=[];
 
 function val(id){return $(id).value.trim();}
 function orderId(){
@@ -251,12 +307,16 @@ function orderId(){
   currentOrderId="PRB-"+d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+"-"+p(d.getHours())+p(d.getMinutes())+"-"+Math.random().toString(36).slice(2,6).toUpperCase();
   return currentOrderId;
 }
-function counts(){
-  return {
-    images:$("images").files ? $("images").files.length : 0,
-    logo:$("logo").files&&$("logo").files.length ? "Sí, adjuntar en WhatsApp" : "No"
-  };
+function selectedFiles(){
+  const photos=[...($("images").files||[])];
+  const logos=[...($("logo").files||[])];
+  return {photos,logos,all:[...photos,...logos]};
 }
+function counts(){
+  const f=selectedFiles();
+  return {images:f.photos.length,logo:f.logos.length?"Sí":"No"};
+}
+function compact(value,fallback="No indicado"){return value||fallback;}
 function buildMessage(){
   const c=counts();
   const lines=[
@@ -265,28 +325,23 @@ function buildMessage(){
     ref?"REFERIDO: "+ref:null,
     "ORIGEN: "+source,
     "",
-    "SOLICITANTE: "+(val("customerName")||"No indicado"),
-    "MARCA / NEGOCIO: "+(val("brand")||"No indicado"),
-    "PRODUCTO / SERVICIO: "+(val("product")||"No indicado"),
-    "PIEZA SOLICITADA: "+$("piece").value,
+    "*PRODUCTO:* "+compact(val("product")),
+    "*NEGOCIO:* "+compact(val("brand")),
+    "*PIEZA:* "+$("piece").value,
+    "*DISPONIBLE:* "+$("availability").value,
+    val("price")?"*PRECIO:* "+val("price"):null,
+    val("contact")?"*CONTACTO:* "+val("contact"):null,
+    val("location")?"*UBICACIÓN:* "+val("location"):null,
+    val("maps")?"*MAPS:* "+val("maps"):null,
     "",
-    "PRECIO: "+(val("price")||"No mostrar / no confirmado"),
-    "DISPONIBILIDAD: "+$("availability").value,
-    "CONTACTO A MOSTRAR: "+(val("contact")||"No indicado"),
-    "UBICACIÓN: "+(val("location")||"No indicada"),
-    "GOOGLE MAPS: "+(val("maps")||"No indicado"),
-    "",
-    "IMÁGENES SELECCIONADAS: "+c.images+" — adjuntar en este chat",
+    "FOTOS SELECCIONADAS: "+c.images,
     "LOGO: "+c.logo,
+    "IMPORTANTE: confirmar que los archivos estén adjuntos en este chat antes de enviar.",
     "",
-    "DATOS CONFIRMADOS:",
-    val("confirmed")||"No se agregaron datos adicionales.",
+    val("confirmed")?"*DATOS CONFIRMADOS:*\n"+val("confirmed"):null,
+    val("notes")?"*OBJETIVO:* "+val("notes"):null,
     "",
-    "OBJETIVO / INDICACIONES:",
-    val("notes")||"Sin indicaciones adicionales.",
-    "",
-    "REGLA: usar únicamente información confirmada; no inventar datos.",
-    "ENTREGA: propuesta recomendada o hasta 3 opciones cuando aporte valor.",
+    "REGLA: usar solo información confirmada; no inventar datos.",
     "ESTADO: PEDIDO_RECIBIDO_PENDIENTE_DE_ARCHIVOS"
   ].filter(v=>v!==null);
   return lines.join("\n");
@@ -311,7 +366,7 @@ function validateStep(step){
   }
   if(step===3){
     const missing=[];
-    if(!$("images").files||!$("images").files.length) missing.push("al menos una foto");
+    if(!selectedFiles().photos.length) missing.push("al menos una foto");
     if(!$("consent").checked) missing.push("aceptar el envío y seguimiento");
     if(missing.length){setStatus("Falta: "+missing.join(", ")+".","error");return false;}
   }
@@ -328,22 +383,94 @@ function showStep(step){
   $("progressTitle").textContent=titles[step];
   $("progressText").textContent=step+" de 3";
   $("progressBar").style.width=(step/3*100)+"%";
-  setStatus(step===3?"Selecciona las fotos y revisa el pedido antes de enviar.":"Completa solo lo necesario.");
+  setStatus(step===3?"Selecciona las fotos y comprueba la vista previa.":"Completa solo lo necesario.");
   document.querySelector("#pedido").scrollIntoView({behavior:"smooth",block:"start"});
 }
+function renderImagePreview(){
+  previewUrls.forEach(URL.revokeObjectURL);previewUrls=[];
+  const grid=$("imagePreview"),photos=selectedFiles().photos;
+  grid.innerHTML="";
+  grid.classList.toggle("hidden",!photos.length);
+  photos.slice(0,8).forEach(file=>{
+    const url=URL.createObjectURL(file);previewUrls.push(url);
+    const cell=document.createElement("div");cell.className="thumb";
+    const img=document.createElement("img");img.src=url;img.alt="Vista previa de "+file.name;
+    const name=document.createElement("span");name.textContent=file.name;
+    cell.append(img,name);grid.appendChild(cell);
+  });
+  if(photos.length>8){
+    const cell=document.createElement("div");cell.className="thumb";
+    cell.style.display="grid";cell.style.placeItems="center";cell.textContent="+"+(photos.length-8);
+    grid.appendChild(cell);
+  }
+}
+function updateLogoStatus(){
+  const logos=selectedFiles().logos;
+  $("logoStatus").textContent=logos.length?("Seleccionado: "+logos[0].name):"Opcional.";
+}
+function canNativeShare(){
+  const files=selectedFiles().all;
+  if(!files.length||!navigator.share||!navigator.canShare) return false;
+  try{return navigator.canShare({files});}catch(e){return false;}
+}
+function openHandoff(){
+  const f=selectedFiles();
+  $("handoffCount").textContent="Seleccionaste "+f.photos.length+" foto"+(f.photos.length===1?"":"s")+(f.logos.length?" y 1 logo.":".");
+  const supported=canNativeShare();
+  $("nativeShare").classList.toggle("hidden",!supported);
+  $("shareSupport").textContent=supported
+    ?"Tu dispositivo permite compartir archivos desde el navegador. Elige WhatsApp y luego la conversación correcta."
+    :"En este dispositivo usa WhatsApp directo y adjunta manualmente las mismas fotos antes de enviar.";
+  $("handoffModal").classList.remove("hidden");
+}
+function closeHandoff(){$("handoffModal").classList.add("hidden");}
+async function nativeShare(){
+  const files=selectedFiles().all;
+  try{
+    await navigator.share({title:"Primer pedido gratis",text:buildMessage(),files});
+    setStatus("Se abrió el menú de compartir. Verifica que fotos y texto aparezcan antes de enviar.","ok");
+    closeHandoff();
+  }catch(e){
+    if(e&&e.name==="AbortError") return;
+    $("shareSupport").textContent="No se pudo compartir archivos desde el navegador. Usa WhatsApp directo y adjúntalos manualmente.";
+    $("nativeShare").classList.add("hidden");
+  }
+}
+function openWhatsapp(){
+  const url="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage());
+  setStatus("WhatsApp abierto. Antes de enviar, adjunta las mismas fotos y confirma que las miniaturas aparezcan en el chat.","ok");
+  closeHandoff();
+  window.open(url,"_blank","noopener,noreferrer");
+}
+async function copyOrder(){
+  try{
+    await navigator.clipboard.writeText(buildMessage());
+    $("shareSupport").textContent="Texto copiado. Puedes pegarlo manualmente si lo necesitas.";
+  }catch(e){
+    $("shareSupport").textContent="No se pudo copiar automáticamente. Selecciona el resumen del pedido y cópialo manualmente.";
+  }
+}
+
 $("next").addEventListener("click",()=>{if(validateStep(currentStep))showStep(Math.min(3,currentStep+1));});
 $("back").addEventListener("click",()=>showStep(Math.max(1,currentStep-1)));
 $("orderForm").addEventListener("submit",e=>{
   e.preventDefault();renderPreview();
   if(!validateStep(3)) return;
-  const url="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage());
-  setStatus("Abriendo WhatsApp. Adjunta tus fotos y logo antes de enviar.","ok");
-  window.open(url,"_blank","noopener,noreferrer");
+  openHandoff();
 });
-["customerName","brand","product","piece","availability","price","contact","location","maps","confirmed","notes","images","logo","consent"].forEach(id=>{
+$("images").addEventListener("change",()=>{renderImagePreview();renderPreview();});
+$("logo").addEventListener("change",()=>{updateLogoStatus();renderPreview();});
+["customerName","brand","product","piece","availability","price","contact","location","maps","confirmed","notes","consent"].forEach(id=>{
   $(id).addEventListener("input",renderPreview);
   $(id).addEventListener("change",renderPreview);
 });
+$("closeModal").addEventListener("click",closeHandoff);
+$("handoffModal").addEventListener("click",e=>{if(e.target===$("handoffModal"))closeHandoff();});
+$("nativeShare").addEventListener("click",nativeShare);
+$("openWhatsapp").addEventListener("click",openWhatsapp);
+$("copyOrder").addEventListener("click",copyOrder);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeHandoff();});
+
 if(ref){
   $("eyebrowText").textContent="Llegaste por una recomendación";
   $("refHeadline").textContent="Te compartieron una invitación para probarlo.";
