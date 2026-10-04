@@ -100,15 +100,15 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 <header class="hero">
   <div class="wrap heroGrid">
     <div>
-      <div class="eyebrow"><span class="dot"></span><span id="eyebrowText">¿Te compartieron este enlace?</span></div>
-      <h1><span class="gradient">Pruébalo con tu producto.</span><br>Sin inventar nada.</h1>
-      <p class="lead">Sube fotos reales, agrega lo que sí está confirmado y envía el pedido por WhatsApp. Yo preparo la propuesta con IA y revisión humana.</p>
+      <div class="eyebrow"><span class="dot"></span><span id="eyebrowText">Prueba real · sin pagar primero</span></div>
+      <h1><span class="gradient">Prueba con tu negocio.</span><br>Primero mira el resultado.</h1>
+      <p class="lead">Mándame un producto real de tu negocio. Tu primera pieza es una muestra gratis: subes fotos y datos confirmados, recibo el pedido por WhatsApp y preparo una propuesta comercial revisada.</p>
       <div class="heroActions">
         <a class="btn primary" href="#pedido">Probar mi primer pedido gratis</a>
         <a class="btn ghost" href="#como-funciona">Ver cómo funciona</a>
       </div>
       <div class="trustRow">
-        <span class="chip">Primera prueba gratis</span>
+        <span class="chip">1 muestra gratis por negocio</span>
         <span class="chip">Sin cuenta</span>
         <span class="chip">Datos reales</span>
         <span class="chip">Revisión humana</span>
@@ -117,9 +117,9 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 
     <aside class="heroCard" aria-label="Resumen de la experiencia">
       <div class="refBox">
-        <div class="refLabel">Invitación</div>
-        <div class="refText" id="refHeadline">Alguien pensó que esto podría servirte.</div>
-        <p class="refSub" id="refSub">No necesitas saber de diseño. Solo manda tu producto y la información que sí quieras mostrar.</p>
+        <div class="refLabel">Muestra gratis</div>
+        <div class="refText" id="refHeadline">Como probar antes de comprar.</div>
+        <p class="refSub" id="refSub">No tienes que contratar primero. Prueba con un producto real y decide después de ver el resultado.</p>
       </div>
       <div class="miniFlow">
         <div class="mini"><span class="num">1</span><span>Fotos + datos reales</span></div>
@@ -132,8 +132,8 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 
 <section id="como-funciona">
   <div class="wrap">
-    <h2 class="sectionTitle">Menos explicación. Más prueba real.</h2>
-    <p class="sectionIntro">La página está diseñada para que una recomendación de persona a persona termine en una acción clara: probar el servicio con un producto real.</p>
+    <h2 class="sectionTitle">Primero la muestra. Después decides.</h2>
+    <p class="sectionIntro">La idea es simple: igual que una muestra de producto, aquí pruebas el servicio con algo real de tu negocio antes de decidir si quieres volver a usarlo.</p>
     <div class="proofGrid">
       <div class="proof"><strong>Usa lo que ya tienes</strong><span>Fotos del celular, nombre del producto y datos confirmados.</span></div>
       <div class="proof"><strong>Elige o deja que recomiende</strong><span>Flyer, historia, Marketplace, WhatsApp o el formato más conveniente.</span></div>
@@ -249,7 +249,7 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
   <div class="wrap">
     <h2 class="sectionTitle">Antes de enviar.</h2>
     <div class="faq">
-      <details><summary>¿La primera prueba cuesta?</summary><p>No. La primera solicitud se maneja como prueba gratuita mientras validamos el servicio.</p></details>
+      <details><summary>¿La primera muestra cuesta?</summary><p>No. La primera pieza funciona como una muestra gratis para que pruebes el servicio con un producto real antes de decidir si quieres contratar.</p></details>
       <details><summary>¿Qué pasa si no sé qué formato necesito?</summary><p>Elige “Recomiéndame el formato”. Se revisa el producto y se propone la pieza más útil.</p></details>
       <details><summary>¿Inventan características o precios?</summary><p>No. La regla del flujo es usar únicamente información confirmada.</p></details>
       <details><summary>¿Por qué termina en WhatsApp?</summary><p>Porque en esta etapa permite recibir el pedido, completar los archivos y dar seguimiento de forma directa.</p></details>
@@ -295,8 +295,8 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 const WA_NUMBER="522491211725";
 const $=id=>document.getElementById(id);
 const params=new URLSearchParams(location.search);
-const ref=(params.get("ref")||"").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
-const source=(params.get("src")||"referido").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+const campaign=(params.get("camp")||"MUESTRA_GRATIS").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+const source=(params.get("src")||"directo").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
 let currentOrderId="";
 let currentStep=1;
 let previewUrls=[];
@@ -323,7 +323,7 @@ function buildMessage(){
   const lines=[
     "*NUEVO PEDIDO — PRIMERA PRUEBA GRATIS*",
     "PEDIDO-ID: "+orderId(),
-    ref?"REFERIDO: "+ref:null,
+    "CAMPAÑA: "+campaign,
     "ORIGEN: "+source,
     "",
     "*PRODUCTO:* "+compact(val("product")),
@@ -472,11 +472,6 @@ $("openWhatsapp").addEventListener("click",openWhatsapp);
 $("copyOrder").addEventListener("click",copyOrder);
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeHandoff();});
 
-if(ref){
-  $("eyebrowText").textContent="Llegaste por una recomendación";
-  $("refHeadline").textContent="Te compartieron una invitación para probarlo.";
-  $("refSub").textContent="Código de referido: "+ref+". Tu primera prueba sigue siendo gratis.";
-}
 const formObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>$("mobileCta").classList.toggle("hide",entry.isIntersecting));
 },{threshold:.15});
