@@ -47,3 +47,14 @@ Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
 - Objetivo: obtener primeros pedidos reales y detectar fricciones antes de difusión amplia.
 - Siguiente acción: enviar el enlace a contactos de confianza y registrar qué dudas aparecen.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`
+
+
+## 2026-10-04 — Recomendación de repositorio final del producto
+- Fase: `VALIDACION_COMERCIAL_INICIAL`
+- Solicitud del usuario: decidir si mantener el producto en el repositorio actual o crear uno dedicado, y definir nombre.
+- Recomendación: mantener temporalmente `/probar.html` en el repositorio actual durante la validación; cuando el flujo esté probado, migrar a un repositorio público dedicado si será el producto público principal.
+- Motivo: separar portafolio profesional de producto comercial, reducir riesgo de mezclar documentación interna y permitir evolucionar el producto de forma independiente.
+- Nombre recomendado de repositorio: `primer-pedido-gratis` si se prioriza claridad; alternativa de marca: `creativo-ruiz`.
+- Ruta temporal vigente: `https://miguelangelruizfull-ai.github.io/probar.html`.
+- Siguiente criterio de migración: completar varios pedidos reales, definir marca final y tener registro privado de leads.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
