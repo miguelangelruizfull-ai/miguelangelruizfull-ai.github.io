@@ -31,6 +31,7 @@ El cronograma resume hitos sin exponer operaciones internas ni información sens
 
 - `/` — síntesis profesional, capacidades, método de trabajo, caso aplicado y CTA.
 - `/servicios.html` — oferta pública de servicios y solicitud de contacto orientada a leads.
+- `/probar.html` — demo interactiva: flyer, historia y textos comerciales generados localmente con datos del visitante.
 
 ## Evidencia selectiva para reclutamiento
 
