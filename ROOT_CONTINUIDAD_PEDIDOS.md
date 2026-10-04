@@ -8,11 +8,24 @@
 ## Propósito
 Permitir que cualquier sesión futura retome el flujo de captación y producción iniciado en `/probar.html` sin reconstruir decisiones ya tomadas.
 
+## Principio de continuidad
+**El repositorio es la autoridad de continuidad; el chat es una sesión de trabajo temporal.**
+
+Si ocurre cualquiera de estos eventos:
+- se corta internet;
+- se cierra o elimina el chat;
+- la sesión se pausa;
+- una IA deja de responder;
+- se alcanza un límite de contexto o herramientas;
+- el proceso debe continuar en otra IA;
+
+la siguiente sesión debe comenzar desde este archivo y no desde recuerdos parciales del chat.
+
 ## Autoridades
 1. Implementación pública vigente: `probar.html`.
 2. Contrato operativo: `docs/FLUJO_PEDIDOS_WHATSAPP_V1.md`.
 3. Contexto público general: `README.md`.
-4. Datos privados de leads: **nunca usar este repositorio como fuente de almacenamiento**.
+4. Datos privados de leads: **nunca usar este repositorio público como almacenamiento**.
 
 ## Checkpoint vigente
 - `/probar.html` ya fue convertido de demo local a embudo de pedido.
@@ -25,6 +38,37 @@ Permitir que cualquier sesión futura retome el flujo de captación y producció
 - La producción se realiza posteriormente con IA + revisión humana.
 - La salida puede ser una propuesta recomendada o hasta 3 opciones.
 - El seguimiento del lead todavía no está automatizado.
+
+## Política de checkpoint antes de cambios
+Antes de una actualización importante o una operación de varios pasos:
+1. comprobar este root y el estado real del repositorio;
+2. identificar la fase y siguiente acción;
+3. si el trabajo tiene riesgo de quedar incompleto, guardar primero un checkpoint verificable;
+4. ejecutar la actualización;
+5. actualizar este root cuando cambie el estado, arquitectura o prioridad.
+
+No crear checkpoints triviales que solo agreguen ruido.
+
+## Criterio para recomendar un nuevo chat
+Recomendar una nueva sesión **solo cuando mejore la confiabilidad**, por ejemplo:
+- el contexto actual ya es demasiado largo o confuso;
+- hay señales de respuestas incompletas/repetitivas;
+- una operación extensa quedó a medias;
+- se cambia de una fase mayor a otra y conviene aislar el trabajo;
+- otra IA debe tomar el relevo.
+
+Si el chat actual conserva suficiente contexto y herramientas, continuar aquí.
+
+## Mensaje de relevo recomendado
+En una nueva sesión pegar solamente:
+
+`REANUDAR_PEDIDOS_DESDE_ROOT`
+
+y, si se quiere ir directo a la siguiente fase:
+
+`INICIAR_REGISTRO_PRIVADO_DE_LEADS`
+
+La nueva IA debe leer primero el repositorio y verificar el estado antes de modificar nada.
 
 ## Siguiente acción recomendada
 **PRIORIDAD 1 — REGISTRO_PRIVADO_DE_LEADS**
@@ -58,7 +102,8 @@ la sesión debe:
 3. comprobar el estado vigente de `probar.html`;
 4. continuar desde la primera acción pendiente;
 5. preservar la regla de no almacenar PII en el repositorio público;
-6. actualizar este checkpoint si cambia la arquitectura o la prioridad.
+6. revisar la situación actual antes de decidir si seguir aquí o abrir nueva sesión;
+7. actualizar este checkpoint si cambia la arquitectura o la prioridad.
 
 ## Inicio alternativo más específico
 Para saltar directamente a la siguiente fase:
@@ -72,3 +117,4 @@ No marcar la fase de leads como completa hasta que exista un origen privado real
 Fecha local de referencia: 2026-10-04.
 Fase: `CAPTACION_WHATSAPP_V1_IMPLEMENTADA`.
 Siguiente fase: `REGISTRO_PRIVADO_DE_LEADS`.
+Continuidad: `CHECKPOINT_REPO_CANONICO_ACTIVO`.
