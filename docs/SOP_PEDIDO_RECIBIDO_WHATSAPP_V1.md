@@ -100,3 +100,13 @@ Hasta que exista automatización privada, verificar manualmente si ese número y
 
 ## Comando de continuidad
 `REANUDAR_PEDIDOS_DESDE_ROOT`
+
+
+## Hallazgo validado en PRUEBA01
+En la prueba `PRB-20261004-1416-3KY8` se confirmó que seleccionar una imagen en el formulario web **no adjunta ese archivo automáticamente al abrir WhatsApp mediante `wa.me`**.
+
+Por tanto, al recibir cada pedido:
+1. no asumir que `IMÁGENES SELECCIONADAS: 1` significa que la imagen llegó;
+2. comprobar visualmente que exista un adjunto real en el chat;
+3. si no existe, pedir la imagen antes de producir;
+4. mantener el estado `PEDIDO_RECIBIDO_PENDIENTE_DE_ARCHIVOS` hasta recibirla.
