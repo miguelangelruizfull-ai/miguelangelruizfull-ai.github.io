@@ -294,3 +294,13 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Enlace de prueba recomendado: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
 - Uso: compartir con negocios para ofrecer una primera muestra gratis sin esquema de referidos.
 - Estado: `SAMPLE_FIRST_ACTIVO`.
+
+
+## 2026-10-04 — Copy de WhatsApp y público objetivo para SAMPLE_FIRST
+- Estrategia: contacto directo personalizado con una muestra gratuita, no venta inicial.
+- Público prioritario: negocios que ya venden y publican productos/servicios activamente, especialmente comercios locales, comida, talleres, herrería, muebles, ropa, repostería, piñatas, autos y servicios visuales.
+- Criterio: contactar primero negocios con fotos reales disponibles y necesidad evidente de contenido comercial.
+- Copy principal recomendado: ofrecer una pieza real gratis con un producto del negocio y dejar que el resultado demuestre el valor.
+- Regla: personalizar una línea con el negocio/producto cuando sea posible; evitar envío masivo genérico.
+- Enlace vigente: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
+- Siguiente acción: enviar 5 contactos personalizados y medir apertura, inicio de formulario y pedido completo.
