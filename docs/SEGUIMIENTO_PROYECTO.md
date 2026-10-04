@@ -25,3 +25,15 @@ Desde ahora, para este proyecto:
 El protocolo ya está activo. Siguiente fase vigente: `REGISTRO_PRIVADO_DE_LEADS`.
 
 Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Recomendación de lanzamiento controlado
+- Fase: `VALIDACION_COMERCIAL_INICIAL`
+- Solicitud del usuario: decidir si el producto ya debe compartirse y cómo hacerlo.
+- Recomendación: sí compartirlo, pero como lanzamiento controlado/beta con un grupo pequeño de negocios reales antes de una difusión masiva.
+- Canal inicial recomendado: enlace directo a `/probar.html` por WhatsApp, Facebook y contactos cercanos.
+- Objetivo de la prueba: validar que el usuario entienda la oferta, complete el pedido, adjunte archivos en WhatsApp y que el flujo de entrega/seguimiento sea operable.
+- Límite recomendado inicial: 5 a 10 primeros pedidos reales antes de escalar.
+- Condición antes de campaña amplia: implementar `REGISTRO_PRIVADO_DE_LEADS` y validar al menos varios pedidos completos.
+- Siguiente acción: iniciar difusión controlada y registrar observaciones de los primeros usuarios.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`
