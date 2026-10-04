@@ -184,3 +184,11 @@ Estado: listo para ejecutar `PRUEBA01`.
 - Estados clave: `PEDIDO_RECIBIDO_PENDIENTE_DE_ARCHIVOS -> ARCHIVOS_COMPLETOS -> EN_PRODUCCION -> MUESTRA_ENVIADA -> SEGUIMIENTO`.
 - Siguiente acción: ejecutar este SOP cuando llegue `PRUEBA01`.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Confirmación de actualización
+- El procedimiento para pedidos recibidos por WhatsApp ya estaba guardado en `docs/SOP_PEDIDO_RECIBIDO_WHATSAPP_V1.md`.
+- También estaba registrado en `docs/SEGUIMIENTO_PROYECTO.md`.
+- Esta respuesta confirma que el repo adecuado ya contiene la continuidad necesaria.
+- Regla vigente: cada respuesta del proyecto debe dejar registro sanitizado en el repo.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
