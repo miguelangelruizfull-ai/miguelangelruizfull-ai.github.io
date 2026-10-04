@@ -101,10 +101,10 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
   <div class="wrap heroGrid">
     <div>
       <div class="eyebrow"><span class="dot"></span><span id="eyebrowText">Prueba real · sin pagar primero</span></div>
-      <h1><span class="gradient">Prueba con tu negocio.</span><br>Primero mira el resultado.</h1>
-      <p class="lead">Mándame un producto real de tu negocio. Tu primera pieza es una muestra gratis: subes fotos y datos confirmados, recibo el pedido por WhatsApp y preparo una propuesta comercial revisada.</p>
+      <h1><span class="gradient" id="heroLine1">Prueba con tu negocio.</span><br><span id="heroLine2">Primero mira el resultado.</span></h1>
+      <p class="lead" id="heroLead">Mándame un producto real de tu negocio. Tu primera pieza es una muestra gratis: subes fotos y datos confirmados, recibo el pedido por WhatsApp y preparo una propuesta comercial revisada.</p>
       <div class="heroActions">
-        <a class="btn primary" href="#pedido">Probar mi primer pedido gratis</a>
+        <a class="btn primary" id="primaryCta" href="#pedido">Probar mi primera muestra gratis</a>
         <a class="btn ghost" href="#como-funciona">Ver cómo funciona</a>
       </div>
       <div class="trustRow">
@@ -117,7 +117,7 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 
     <aside class="heroCard" aria-label="Resumen de la experiencia">
       <div class="refBox">
-        <div class="refLabel">Muestra gratis</div>
+        <div class="refLabel" id="channelLabel">Muestra gratis</div>
         <div class="refText" id="refHeadline">Como probar antes de comprar.</div>
         <p class="refSub" id="refSub">No tienes que contratar primero. Prueba con un producto real y decide después de ver el resultado.</p>
       </div>
@@ -471,6 +471,68 @@ $("nativeShare").addEventListener("click",nativeShare);
 $("openWhatsapp").addEventListener("click",openWhatsapp);
 $("copyOrder").addEventListener("click",copyOrder);
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeHandoff();});
+
+const channelCopy={
+  facebook:{
+    eyebrow:"Llegaste desde Facebook",
+    line1:"Haz que tu producto",
+    line2:"se vea listo para publicar.",
+    lead:"Sube una foto real de tu producto y sus datos confirmados. Te preparo una primera pieza gratis para que veas cómo puede verse en Facebook antes de pagar.",
+    cta:"Probar con un producto de mi negocio",
+    label:"Para Facebook",
+    headline:"Una foto real. Una pieza lista para publicar.",
+    sub:"Ideal si ya vendes por Facebook y quieres probar una presentación más clara de uno de tus productos."
+  },
+  instagram:{
+    eyebrow:"Llegaste desde Instagram",
+    line1:"Convierte una foto real",
+    line2:"en contenido para vender.",
+    lead:"Sube una foto de tu producto y datos confirmados. Recibe una primera propuesta gratis y decide después si quieres seguir.",
+    cta:"Crear mi primera muestra",
+    label:"Para Instagram",
+    headline:"Prueba cómo puede verse tu producto.",
+    sub:"Sin contratar primero y sin inventar información."
+  },
+  whatsapp:{
+    eyebrow:"Muestra gratis para tu negocio",
+    line1:"Mándame un producto.",
+    line2:"Primero mira el resultado.",
+    lead:"Sube fotos reales y datos confirmados. Te preparo una primera pieza gratis y te la regreso por WhatsApp.",
+    cta:"Probar mi primera muestra gratis",
+    label:"Desde WhatsApp",
+    headline:"Prueba antes de pagar.",
+    sub:"Solo necesitas una foto real de tu producto y la información que sí quieras mostrar."
+  },
+  maps:{
+    eyebrow:"Negocio local · muestra gratis",
+    line1:"Prueba una pieza",
+    line2:"con tu negocio real.",
+    lead:"Si ya vendes un producto o servicio, puedes probar una primera pieza comercial gratis con tus propias fotos y datos.",
+    cta:"Probar con mi negocio",
+    label:"Negocio local",
+    headline:"Primero mira una muestra real.",
+    sub:"Después decides si quieres volver a usar el servicio."
+  },
+  presencial:{
+    eyebrow:"Muestra gratis · pruébalo ahora",
+    line1:"Escanea, sube una foto",
+    line2:"y mira qué podemos hacer.",
+    lead:"Usa un producto real de tu negocio. La primera pieza es una muestra gratis para que veas el resultado antes de pagar.",
+    cta:"Empezar mi muestra",
+    label:"Prueba presencial",
+    headline:"Una muestra real con tu producto.",
+    sub:"Sin registro y sin contratar primero."
+  }
+};
+const cc=channelCopy[source]||channelCopy.whatsapp;
+$("eyebrowText").textContent=cc.eyebrow;
+$("heroLine1").textContent=cc.line1;
+$("heroLine2").textContent=cc.line2;
+$("heroLead").textContent=cc.lead;
+$("primaryCta").textContent=cc.cta;
+$("channelLabel").textContent=cc.label;
+$("refHeadline").textContent=cc.headline;
+$("refSub").textContent=cc.sub;
 
 const formObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>$("mobileCta").classList.toggle("hide",entry.isIntersecting));
