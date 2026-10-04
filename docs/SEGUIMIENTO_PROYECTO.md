@@ -192,3 +192,18 @@ Estado: listo para ejecutar `PRUEBA01`.
 - Esta respuesta confirma que el repo adecuado ya contiene la continuidad necesaria.
 - Regla vigente: cada respuesta del proyecto debe dejar registro sanitizado en el repo.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — PRUEBA01 revisada en video
+- Pedido: `PRB-20261004-1416-3KY8`.
+- Evidencia revisada: grabación vertical de aproximadamente 4:16 min.
+- Flujo observado: landing -> paso 1 -> paso 2 -> Google Maps -> regreso a landing -> paso 3 -> selección de imagen -> consentimiento -> abrir WhatsApp -> mensaje precargado.
+- Resultado positivo: el formulario conserva el flujo, el usuario completa los tres pasos y el pedido llega estructurado por WhatsApp.
+- Hallazgo crítico confirmado: el archivo `84800.jpg` aparece seleccionado dentro de la página, pero **no se transfiere al abrir WhatsApp**; solo llega el texto del pedido.
+- Implicación: la selección de archivo del navegador no equivale a adjuntarlo en WhatsApp mediante `wa.me`.
+- Hallazgo UX: el mensaje es largo y WhatsApp lo colapsa con "Leer más", aunque PEDIDO-ID, referido, origen y datos principales permanecen visibles.
+- Hallazgo positivo: salir a Google Maps y regresar no destruyó los datos ya capturados durante esta prueba.
+- Recomendación prioritaria: reforzar el paso final con una instrucción explícita e imposible de pasar por alto: "Cuando se abra WhatsApp, adjunta aquí la foto seleccionada antes de enviar".
+- Estado del pedido tras recibir posteriormente la imagen: `ARCHIVOS_COMPLETOS`.
+- Siguiente acción recomendada: ajustar UX del paso 3 antes de PRUEBA02.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
