@@ -71,3 +71,23 @@ Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
 - Estado: `PRUEBAS_EN_REPO_ACTUAL / LANZAMIENTO_EN_REPO_NUEVO`.
 - Siguiente acción: validar el flujo en `pruebas.html`, luego crear/publicar `primer-pedido-gratis`.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Respuesta registrada
+Sí. Esa arquitectura queda mejor y ya la dejé aplicada.
+
+- El repo actual queda como **laboratorio temporal**.
+- Creé `pruebas.html` para validar el flujo sin tratarlo como lanzamiento final.
+- El producto que realmente compartirás debe vivir después en un repo nuevo y sanitizado: `primer-pedido-gratis`.
+- Cuando ese repo esté validado y publicado, podrás poner los demás repos privados sin romper el producto público.
+- La migración al nuevo repo deberá copiar solo lo necesario: página, estilos, scripts y documentación pública; nada de historial interno, PII, enlaces privados ni archivos operativos.
+
+Página de pruebas actual:
+`https://miguelangelruizfull-ai.github.io/pruebas.html`
+
+No la trataría como enlace comercial definitivo.
+
+El lanzamiento final será algo como:
+`https://miguelangelruizfull-ai.github.io/primer-pedido-gratis/`
+
+Siguiente paso: probar `pruebas.html` con unos pocos usuarios, estabilizar el flujo y después crear el repo público final.
