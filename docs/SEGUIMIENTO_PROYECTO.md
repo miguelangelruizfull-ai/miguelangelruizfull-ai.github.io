@@ -127,3 +127,13 @@ Ejemplo de referido:
 `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=JUAN01&src=whatsapp`
 
 Siguiente acción: realizar pruebas reales con códigos distintos y registrar qué fricciones aparecen.
+
+
+## 2026-10-04 — Inicio de validación por referidos
+- Fase: `REFERRAL_FIRST_VALIDATION`
+- Acción: creado/actualizado `docs/PLAN_REFERIDOS_V1.md`.
+- Meta: 5–10 pedidos reales completos.
+- Regla: códigos de referido sin PII.
+- Validación: observar comprensión, finalización del formulario, adjuntos, calidad del pedido y reacción a la entrega.
+- Siguiente acción: compartir enlaces de prueba con códigos distintos y registrar fricciones.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
