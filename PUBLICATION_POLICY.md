@@ -129,3 +129,30 @@ Esta decisión **no** autoriza publicar repositorios privados, arquitectura inte
 Regla vigente:
 
 `CASO_PUBLICO_SANITIZADO + CTA_PROFESIONAL != EXPOSICION_DE_OPERACION_PRIVADA`
+
+
+## Superficie comercial autorizada — 4 oct 2026
+
+Se autoriza una página pública de servicios orientada a captación profesional:
+
+- `/servicios.html`;
+- servicios descritos únicamente con capacidades demostrables;
+- CTA para solicitar servicio;
+- CTA para referidos;
+- generación local de una solicitud que el prospecto copia y envía por LinkedIn;
+- sin almacenamiento ni envío automático de datos desde el sitio;
+- sin precios públicos hasta definirlos expresamente;
+- sin promesas de ROI, ventas o ahorro no medidos.
+
+Servicios públicos vigentes:
+
+1. contenido comercial para vender;
+2. sistema de contenido;
+3. herramienta operativa ligera;
+4. diagnóstico y mapa de automatización.
+
+Regla:
+
+`OFERTA_PUBLICA = PROBLEMA + ENTREGABLE + EVIDENCIA + CTA`
+
+La estrategia completa de precios, prospección, monetización, scripts internos y ventaja competitiva permanece privada.
