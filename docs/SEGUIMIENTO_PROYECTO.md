@@ -304,3 +304,16 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Regla: personalizar una línea con el negocio/producto cuando sea posible; evitar envío masivo genérico.
 - Enlace vigente: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
 - Siguiente acción: enviar 5 contactos personalizados y medir apertura, inicio de formulario y pedido completo.
+
+
+## 2026-10-04 — Interfaz única con copy adaptado por canal
+- Decisión: no crear una landing distinta por giro o negocio.
+- Arquitectura: una sola interfaz general `pruebas.html`, con mensaje adaptado según `src=`.
+- Canales implementados: `facebook`, `instagram`, `whatsapp`, `maps`, `presencial`.
+- Objetivo: mantener un producto único, reducir mantenimiento y medir qué canal convierte mejor.
+- Facebook: la interfaz enfatiza transformar una foto real en una pieza lista para publicar.
+- WhatsApp: enfatiza muestra gratis y devolución directa.
+- Instagram: enfatiza contenido visual para vender.
+- Maps/presencial: enfatiza negocio local y prueba real antes de pagar.
+- La estructura del formulario y reglas de datos permanecen iguales.
+- Caso actual recomendado para negocio de pasteles con página de Facebook: usar `?src=facebook&camp=MUESTRA_GRATIS`.
