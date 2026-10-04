@@ -185,3 +185,24 @@ Documento operativo:
 
 Meta de esta fase:
 **5–10 pedidos reales completos por referidos antes del lanzamiento público final.**
+
+
+## Mejora de interfaz posterior a PRUEBA01
+Estado: `PRUEBA02_UX_LISTA`.
+
+Cambios aplicados en `pruebas.html`:
+- vista previa real de fotos seleccionadas;
+- confirmación explícita de que seleccionar una foto no significa que ya esté adjunta en WhatsApp;
+- pantalla final de handoff antes de salir;
+- opción progresiva `Compartir fotos + pedido` cuando el navegador móvil soporta Web Share con archivos;
+- fallback `Abrir WhatsApp con el pedido` con instrucción de adjuntar manualmente;
+- opción de copiar el texto del pedido;
+- mensaje de WhatsApp más corto para reducir el colapso por "Leer más";
+- confirmación visible del logo seleccionado;
+- FAQ actualizada sobre transferencia de fotos.
+
+Regla:
+Nunca asumir que la vía nativa de compartir está disponible o que WhatsApp recibirá automáticamente los archivos. Verificar siempre los adjuntos reales en el chat.
+
+Siguiente prueba recomendada:
+`PRUEBA02` en un teléfono real, probando primero la opción nativa si aparece y después el fallback de WhatsApp directo.
