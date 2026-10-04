@@ -249,3 +249,11 @@ Enlace: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=
 - Objetivo: mantener una prueba por código para evitar mezclar resultados.
 - Siguiente acción: usar `PRUEBA02` para la prueba con un segundo usuario y observar el nuevo paso de fotos/WhatsApp.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Mensaje PRUEBA02 ajustado
+- Fase: `REFERRAL_FIRST_VALIDATION`.
+- Decisión: simplificar el mensaje enviado al segundo usuario para evitar sobreexplicar el flujo.
+- Objetivo: que la persona entre, lea la interfaz y complete la prueba con mínima guía previa.
+- Enlace recomendado: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=whatsapp`.
+- Siguiente acción: enviar mensaje corto y observar dónde se detiene o pregunta.
