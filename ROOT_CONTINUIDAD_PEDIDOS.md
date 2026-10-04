@@ -158,3 +158,22 @@ Migrar al repo final cuando:
 2. el formulario y mensaje de WhatsApp estén estables;
 3. el registro privado de leads esté definido;
 4. se haya revisado que el nuevo repo no contenga información privada, histórica o interna.
+
+
+## Estrategia de adquisición vigente
+Fase inicial recomendada: `REFERRAL_FIRST`.
+
+Motivo:
+- el producto todavía incluye producción/revisión manual;
+- la primera prueba gratuita funciona mejor con confianza previa;
+- los referidos permiten validar calidad antes de generar volumen;
+- la landing puede recibir `?ref=CODIGO` y añadir ese código al pedido de WhatsApp sin almacenar PII en el repo.
+
+Secuencia:
+1. referidos directos y contactos de confianza;
+2. obtener pedidos completos y resultados;
+3. reunir prueba social real y autorizada;
+4. abrir difusión orgánica más amplia;
+5. considerar campañas pagadas solo cuando conversión, capacidad y seguimiento estén medidos.
+
+No usar testimonios, cifras de conversión o logos inventados.
