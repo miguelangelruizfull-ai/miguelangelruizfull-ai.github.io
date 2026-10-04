@@ -207,3 +207,16 @@ Estado: listo para ejecutar `PRUEBA01`.
 - Estado del pedido tras recibir posteriormente la imagen: `ARCHIVOS_COMPLETOS`.
 - Siguiente acción recomendada: ajustar UX del paso 3 antes de PRUEBA02.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Interfaz mejorada autorizada después de PRUEBA01
+- Fase: `PRUEBA02_UX_LISTA`.
+- Cambio principal: el paso 3 ahora muestra miniaturas de las fotos seleccionadas y una advertencia explícita sobre la limitación de `wa.me`.
+- Handoff final: modal antes de salir de la página con instrucciones de verificación.
+- Mejora móvil: si el navegador soporta compartir archivos, aparece `Compartir fotos + pedido`; el usuario debe elegir WhatsApp y la conversación correcta.
+- Fallback garantizado: `Abrir WhatsApp con el pedido` mantiene el texto precargado y obliga visualmente a recordar el adjunto manual.
+- Respaldo: botón para copiar el pedido.
+- Mensaje: reducido para mantener producto, negocio, pieza, datos clave, archivos y regla de no inventar.
+- Privacidad: no se agregó almacenamiento de fotos ni PII en el repo público.
+- Siguiente acción: ejecutar `PRUEBA02` desde un móvil y comprobar si el archivo llega por la ruta nativa; si no, validar que el aviso evita enviar el pedido sin foto.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
