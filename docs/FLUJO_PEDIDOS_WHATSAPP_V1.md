@@ -96,3 +96,19 @@ La autoridad de reanudación de este flujo es:
 
 Comando recomendado para iniciar cualquier sesión futura:
 `REANUDAR_PEDIDOS_DESDE_ROOT`
+
+
+## Protocolo de resiliencia de sesión
+La continuidad operativa no depende de conservar este chat.
+
+Fuente canónica de reanudación:
+`ROOT_CONTINUIDAD_PEDIDOS.md`
+
+Ante corte de internet, pérdida del chat, pausa, límite de contexto o cambio de IA:
+1. iniciar una nueva sesión;
+2. indicar `REANUDAR_PEDIDOS_DESDE_ROOT`;
+3. leer el root y este documento;
+4. verificar el estado real del repositorio;
+5. continuar desde la primera acción pendiente.
+
+Solo se recomienda abrir un nuevo chat cuando hacerlo aumente la confiabilidad o reduzca riesgo de pérdida de contexto. No interrumpir una sesión sana únicamente por protocolo.
