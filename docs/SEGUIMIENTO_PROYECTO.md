@@ -37,3 +37,13 @@ Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
 - Condición antes de campaña amplia: implementar `REGISTRO_PRIVADO_DE_LEADS` y validar al menos varios pedidos completos.
 - Siguiente acción: iniciar difusión controlada y registrar observaciones de los primeros usuarios.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`
+
+
+## 2026-10-04 — Forma recomendada de compartir con familiares o conocidos
+- Fase: `VALIDACION_COMERCIAL_INICIAL`
+- Solicitud del usuario: cómo presentar el producto a familiares o conocidos.
+- Recomendación: compartirlo como invitación a probar y pedir retroalimentación, no como venta directa.
+- Mensaje clave: primera prueba gratis, usar fotos/datos reales, enviar pedido por WhatsApp y comentar si el flujo se entiende.
+- Objetivo: obtener primeros pedidos reales y detectar fricciones antes de difusión amplia.
+- Siguiente acción: enviar el enlace a contactos de confianza y registrar qué dudas aparecen.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`
