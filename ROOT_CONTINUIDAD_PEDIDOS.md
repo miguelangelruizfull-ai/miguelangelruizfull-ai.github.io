@@ -161,31 +161,37 @@ Migrar al repo final cuando:
 
 
 ## Estrategia de adquisición vigente
-Fase inicial recomendada: `REFERRAL_FIRST`.
+Fase recomendada: `SAMPLE_FIRST`.
 
-Motivo:
-- el producto todavía incluye producción/revisión manual;
-- la primera prueba gratuita funciona mejor con confianza previa;
-- los referidos permiten validar calidad antes de generar volumen;
-- la landing puede recibir `?ref=CODIGO` y añadir ese código al pedido de WhatsApp sin almacenar PII en el repo.
+Idea:
+**dar una muestra real del servicio antes de vender**, igual que una prueba gratuita física.
+
+Oferta:
+`1 MUESTRA GRATIS POR NEGOCIO`
+
+No depende de referidos. La atribución se hace por canal/campaña:
+`src=whatsapp|facebook|instagram|maps|presencial`
+y
+`camp=MUESTRA_GRATIS`.
+
+Documento canónico:
+`docs/PLAN_MUESTRA_GRATIS_V1.md`
 
 Secuencia:
-1. referidos directos y contactos de confianza;
-2. obtener pedidos completos y resultados;
-3. reunir prueba social real y autorizada;
-4. abrir difusión orgánica más amplia;
-5. considerar campañas pagadas solo cuando conversión, capacidad y seguimiento estén medidos.
+1. negocio descubre la muestra;
+2. prueba con un producto real;
+3. recibe una pieza terminada;
+4. decide si quiere una segunda pieza o paquete;
+5. seguimiento privado.
 
-No usar testimonios, cifras de conversión o logos inventados.
-
+No usar nuevos enlaces `?ref=`.
 
 ## Plan de validación activo
 Documento operativo:
-`docs/PLAN_REFERIDOS_V1.md`
+`docs/PLAN_MUESTRA_GRATIS_V1.md`
 
 Meta de esta fase:
-**5–10 pedidos reales completos por referidos antes del lanzamiento público final.**
-
+**5–10 negocios con muestras reales completas antes del lanzamiento público final.**
 
 ## Mejora de interfaz posterior a PRUEBA01
 Estado: `PRUEBA02_UX_LISTA`.
