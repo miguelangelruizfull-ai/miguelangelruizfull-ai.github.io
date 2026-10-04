@@ -288,3 +288,9 @@ Recomendación final:
 - no inventar testimonios ni resultados.
 
 La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfoque de referidos.
+
+
+## 2026-10-04 — Enlace vigente para estrategia SAMPLE_FIRST
+- Enlace de prueba recomendado: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
+- Uso: compartir con negocios para ofrecer una primera muestra gratis sin esquema de referidos.
+- Estado: `SAMPLE_FIRST_ACTIVO`.
