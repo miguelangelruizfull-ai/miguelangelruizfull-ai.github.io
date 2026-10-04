@@ -227,3 +227,25 @@ Canales:
 No crear una página diferente por tipo de negocio salvo que la evidencia de conversión futura lo justifique.
 
 La lógica actual vive en `pruebas.html`.
+
+
+## UX visual tipo Stories
+La landing `pruebas.html` usa una experiencia visual primero:
+1. elegir `Producto`, `Servicio` o `Recomiéndame`;
+2. indicar si `Ya publico` o `Voy empezando`;
+3. continuar al formulario mínimo;
+4. adjuntar material real;
+5. finalizar por WhatsApp.
+
+Principio:
+**menos lectura, más decisiones visuales**.
+
+No construir un editor tipo Canva en esta fase. El sistema recomienda el formato en lugar de pedir al usuario dominar plantillas.
+
+Para fotos:
+- Historia vertical / post de producto o servicio.
+
+Para video real suficiente:
+- Reel corto.
+
+Las imágenes de ejemplo deben ser propias, autorizadas o con licencia reutilizable y atribución correspondiente.
