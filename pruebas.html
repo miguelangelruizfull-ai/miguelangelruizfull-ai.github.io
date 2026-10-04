@@ -46,6 +46,12 @@ h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.91;letter-spacing:-.06em;margin
 .btn.primary{background:linear-gradient(135deg,#e9fff3,#cdefff);color:#071018;border-color:transparent;box-shadow:0 12px 32px #9be6ff1c}
 .btn.ghost{background:#0b121c99}
 .trustRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.chip{border:1px solid #ffffff14;background:#ffffff08;border-radius:999px;padding:8px 11px;color:#dfe8f0;font-size:.88rem;font-weight:750}
+.storyChooser{margin-top:24px}.storyChooserHead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:10px}.storyChooserHead strong{font-size:1.05rem}.storyChooserHead span{font-size:.82rem;color:var(--muted)}
+.choiceRail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.choiceCard{position:relative;min-height:250px;border:1px solid #ffffff18;border-radius:20px;overflow:hidden;background:#0b121c;color:#fff;text-align:left;cursor:pointer;padding:0;font:inherit}.choiceCard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.choiceCard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,#03070dd9 78%,#03070df5 100%)}.choiceCard.noImg{background:radial-gradient(circle at 70% 20%,#7b6cff35,transparent 38%),linear-gradient(145deg,#172131,#0a111c)}.choiceCard.noImg:after{background:linear-gradient(180deg,transparent,#03070dbd)}
+.choiceContent{position:absolute;z-index:2;left:14px;right:14px;bottom:14px}.choiceKicker{font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#d6e7ef}.choiceTitle{font-size:1.35rem;font-weight:950;line-height:1;letter-spacing:-.03em;margin-top:4px}.choiceSub{font-size:.82rem;color:#d3dbe2;margin-top:6px}.choiceCard.selected{outline:3px solid #bff7ff;outline-offset:2px}
+.stageRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.stageBtn{border:1px solid #ffffff18;background:#ffffff08;color:#eaf1f5;border-radius:999px;padding:10px 13px;font:inherit;font-weight:850;cursor:pointer}.stageBtn.selected{background:#e8f8ff;color:#071018;border-color:transparent}
+.formatHint{margin-top:12px;border:1px solid #ffffff14;background:#ffffff07;border-radius:16px;padding:13px 14px;display:flex;align-items:center;gap:12px}.formatShape{width:42px;aspect-ratio:9/16;border:2px solid #d9efff;border-radius:8px;flex:0 0 auto;position:relative}.formatShape:after{content:"";position:absolute;inset:7px;border:1px solid #ffffff38;border-radius:4px}.formatHint strong{display:block}.formatHint span{display:block;color:var(--muted);font-size:.86rem}
+
 .heroCard{background:linear-gradient(180deg,#121d2bdd,#0b131edb);border:1px solid #ffffff16;border-radius:26px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
 .heroCard:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#8bd7ff1a;filter:blur(10px);right:-100px;top:-100px}
 .refBox{position:relative}.refLabel{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;color:#b7c6d7;font-weight:900}.refText{font-size:1.35rem;font-weight:950;letter-spacing:-.03em;margin:8px 0 10px}.refSub{color:var(--muted);margin:0}
@@ -86,7 +92,7 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 @media(max-width:640px){
   .wrap{width:min(calc(100% - 22px),var(--max))}.topin{min-height:56px}.brand{font-size:.95rem}.lab{font-size:.66rem;padding:6px 8px}
   .hero{padding:38px 0 28px}h1{font-size:clamp(2.9rem,14vw,4.8rem)}.lead{font-size:1.02rem}.heroActions .btn{width:100%}
-  .proofGrid,.faq,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formCard,.sideCard{border-radius:18px}.formActions{flex-direction:column}.formActions .right{width:100%;margin-left:0}.formActions .btn,.formActions .right .btn{width:100%}.thumbGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.transferSteps{grid-template-columns:1fr}
+  .proofGrid,.faq,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formCard,.sideCard{border-radius:18px}.formActions{flex-direction:column}.formActions .right{width:100%;margin-left:0}.formActions .btn,.formActions .right .btn{width:100%}.thumbGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.transferSteps{grid-template-columns:1fr}.choiceRail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 8px;gap:10px}.choiceCard{flex:0 0 82%;min-height:330px;scroll-snap-align:center}.storyChooserHead span{display:none}
   .mobileCta{position:fixed;z-index:60;display:flex;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));background:#08111bea;border:1px solid #ffffff18;backdrop-filter:blur(16px);border-radius:16px;padding:8px;box-shadow:0 18px 45px #0009;transition:transform .2s ease,opacity .2s ease}.mobileCta .btn{width:100%}
   .mobileCta.hide{transform:translateY(130%);opacity:0;pointer-events:none}
 }
@@ -94,24 +100,50 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap topin"><div class="brand">Primer pedido gratis</div><div class="lab">Prueba interna</div></div></div>
+<div class="topbar"><div class="wrap topin"><div class="brand">Primer pedido gratis</div><div class="lab">Muestra gratis</div></div></div>
 
 <main>
 <header class="hero">
   <div class="wrap heroGrid">
     <div>
-      <div class="eyebrow"><span class="dot"></span><span id="eyebrowText">Prueba real · sin pagar primero</span></div>
-      <h1><span class="gradient" id="heroLine1">Prueba con tu negocio.</span><br><span id="heroLine2">Primero mira el resultado.</span></h1>
-      <p class="lead" id="heroLead">Mándame un producto real de tu negocio. Tu primera pieza es una muestra gratis: subes fotos y datos confirmados, recibo el pedido por WhatsApp y preparo una propuesta comercial revisada.</p>
+      <div class="eyebrow"><span class="dot"></span><span id="eyebrowText">Muestra gratis para negocios</span></div>
+      <h1><span class="gradient" id="heroLine1">¿Qué quieres publicar?</span><br><span id="heroLine2">Toca una opción.</span></h1>
+      <p class="lead" id="heroLead">Sin aprender diseño. Elige visualmente, sube tu foto real y te recomiendo la pieza.</p>
+
+      <div class="storyChooser" aria-label="Elige el tipo de negocio">
+        <div class="storyChooserHead"><strong>1 · Elige</strong><span>desliza si estás en móvil</span></div>
+        <div class="choiceRail">
+          <button class="choiceCard" type="button" data-mode="Producto">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Tartine_bakery_opera_cake_in_2007.jpg" alt="Ejemplo de producto: pastel">
+            <span class="choiceContent"><span class="choiceKicker">Vendo algo</span><span class="choiceTitle">Producto</span><span class="choiceSub">Pasteles · ropa · muebles · autos</span></span>
+          </button>
+          <button class="choiceCard" type="button" data-mode="Servicio">
+            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Barber_shop_haircutting_session_%2851210342653%29.jpg" alt="Ejemplo de servicio: barbería">
+            <span class="choiceContent"><span class="choiceKicker">Hago algo</span><span class="choiceTitle">Servicio</span><span class="choiceSub">Barbería · taller · estética · instalación</span></span>
+          </button>
+          <button class="choiceCard noImg" type="button" data-mode="No sé qué publicar">
+            <span class="choiceContent"><span class="choiceKicker">Estoy empezando</span><span class="choiceTitle">Recomiéndame</span><span class="choiceSub">Yo pongo la foto. Tú dime qué conviene.</span></span>
+          </button>
+        </div>
+
+        <div class="stageRow" aria-label="Experiencia publicando">
+          <button class="stageBtn" type="button" data-stage="Ya publico">Ya publico</button>
+          <button class="stageBtn" type="button" data-stage="Voy empezando">Voy empezando</button>
+        </div>
+
+        <div class="formatHint" id="formatHint">
+          <span class="formatShape" aria-hidden="true"></span>
+          <div><strong>Te recomiendo el formato.</strong><span>Historia/post para foto real. Si después tienes video, podemos llevarlo a Reel corto.</span></div>
+        </div>
+      </div>
+
       <div class="heroActions">
-        <a class="btn primary" id="primaryCta" href="#pedido">Probar mi primera muestra gratis</a>
-        <a class="btn ghost" href="#como-funciona">Ver cómo funciona</a>
+        <a class="btn primary" id="primaryCta" href="#pedido">Usar esta idea</a>
       </div>
       <div class="trustRow">
-        <span class="chip">1 muestra gratis por negocio</span>
+        <span class="chip">1 muestra gratis</span>
         <span class="chip">Sin cuenta</span>
-        <span class="chip">Datos reales</span>
-        <span class="chip">Revisión humana</span>
+        <span class="chip">Foto real</span>
       </div>
     </div>
 
@@ -132,12 +164,12 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 
 <section id="como-funciona">
   <div class="wrap">
-    <h2 class="sectionTitle">Primero la muestra. Después decides.</h2>
-    <p class="sectionIntro">La idea es simple: igual que una muestra de producto, aquí pruebas el servicio con algo real de tu negocio antes de decidir si quieres volver a usarlo.</p>
+    <h2 class="sectionTitle">Lo que más conviene hoy.</h2>
+    <p class="sectionIntro">No necesitas elegir entre veinte plantillas. La muestra empieza con lo más útil para tu material real.</p>
     <div class="proofGrid">
-      <div class="proof"><strong>Usa lo que ya tienes</strong><span>Fotos del celular, nombre del producto y datos confirmados.</span></div>
-      <div class="proof"><strong>Elige o deja que recomiende</strong><span>Flyer, historia, Marketplace, WhatsApp o el formato más conveniente.</span></div>
-      <div class="proof"><strong>Recibes una propuesta</strong><span>Una opción recomendada o hasta 3 alternativas cuando realmente aporte valor.</span></div>
+      <div class="proof"><strong>Historia / vertical</strong><span>Rápida para Facebook, Instagram y WhatsApp.</span></div>
+      <div class="proof"><strong>Post de producto</strong><span>Para mostrar qué vendes con una foto clara.</span></div>
+      <div class="proof"><strong>Reel corto</strong><span>Lo priorizamos cuando tengas video real suficiente.</span></div>
     </div>
   </div>
 </section>
@@ -259,7 +291,7 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 </section>
 </main>
 
-<footer><div class="wrap">Entorno de prueba · Primer pedido gratis · El lanzamiento público final vivirá en un repositorio dedicado.</div></footer>
+<footer><div class="wrap">Entorno de prueba · Primer pedido gratis. Fotos de ejemplo: <a href="https://commons.wikimedia.org/wiki/File:Tartine_bakery_opera_cake_in_2007.jpg" target="_blank" rel="noopener">Arnold Gatilao / CC BY 2.0</a> y <a href="https://commons.wikimedia.org/wiki/File:Barber_shop_haircutting_session_(51210342653).jpg" target="_blank" rel="noopener">Hair Spies / CC BY 2.0</a>.</div></footer>
 
 <div class="mobileCta" id="mobileCta"><a class="btn primary" href="#pedido">Probar gratis</a></div>
 
@@ -300,6 +332,8 @@ const source=(params.get("src")||"directo").replace(/[^a-zA-Z0-9_-]/g,"").slice(
 let currentOrderId="";
 let currentStep=1;
 let previewUrls=[];
+let businessMode="Recomiéndame";
+let publishingStage="No indicado";
 
 function val(id){return $(id).value.trim();}
 function orderId(){
@@ -326,6 +360,8 @@ function buildMessage(){
     "CAMPAÑA: "+campaign,
     "ORIGEN: "+source,
     "",
+    "*TIPO:* "+businessMode,
+    "*ETAPA:* "+publishingStage,
     "*PRODUCTO:* "+compact(val("product")),
     "*NEGOCIO:* "+compact(val("brand")),
     "*PIEZA:* "+$("piece").value,
@@ -472,6 +508,34 @@ $("openWhatsapp").addEventListener("click",openWhatsapp);
 $("copyOrder").addEventListener("click",copyOrder);
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeHandoff();});
 
+document.querySelectorAll(".choiceCard").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".choiceCard").forEach(x=>x.classList.remove("selected"));
+    btn.classList.add("selected");
+    businessMode=btn.dataset.mode||"Recomiéndame";
+    const hint=$("formatHint");
+    if(businessMode==="Servicio"){
+      hint.querySelector("strong").textContent="Servicio: muestra el resultado o la transformación.";
+      hint.querySelector("span:last-child").textContent="Historia/post con foto real; Reel corto si después agregas video del proceso.";
+    }else if(businessMode==="Producto"){
+      hint.querySelector("strong").textContent="Producto: haz que se entienda en un vistazo.";
+      hint.querySelector("span:last-child").textContent="Historia vertical + post de producto son una buena primera muestra.";
+    }else{
+      hint.querySelector("strong").textContent="No tienes que saber qué formato usar.";
+      hint.querySelector("span:last-child").textContent="Sube tu material y el sistema recomienda la primera pieza.";
+    }
+    renderPreview();
+  });
+});
+document.querySelectorAll(".stageBtn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".stageBtn").forEach(x=>x.classList.remove("selected"));
+    btn.classList.add("selected");
+    publishingStage=btn.dataset.stage||"No indicado";
+    renderPreview();
+  });
+});
+
 const channelCopy={
   facebook:{
     eyebrow:"Llegaste desde Facebook",
@@ -526,10 +590,6 @@ const channelCopy={
 };
 const cc=channelCopy[source]||channelCopy.whatsapp;
 $("eyebrowText").textContent=cc.eyebrow;
-$("heroLine1").textContent=cc.line1;
-$("heroLine2").textContent=cc.line2;
-$("heroLead").textContent=cc.lead;
-$("primaryCta").textContent=cc.cta;
 $("channelLabel").textContent=cc.label;
 $("refHeadline").textContent=cc.headline;
 $("refSub").textContent=cc.sub;
