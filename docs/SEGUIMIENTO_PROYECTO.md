@@ -272,3 +272,19 @@ Enlace: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=
 - Regla: outreach personalizado y de bajo volumen; no spam masivo.
 - Meta: 5–10 negocios que reciban una muestra completa y medir cuántos piden una segunda pieza.
 - Siguiente acción: PRUEBA02 debe ejecutarse como `MUESTRA02`, no como referido.
+
+
+## 2026-10-04 — Respuesta registrada: estrategia MUESTRA PRIMERO
+Recomendación final:
+- no basar la adquisición en referidos;
+- usar una estrategia `SAMPLE_FIRST`: una muestra real gratis antes de vender;
+- oferta principal: `1 muestra gratis por negocio`;
+- mensaje de entrada: `Prueba una pieza real para tu negocio antes de pagar`;
+- canales iniciales: WhatsApp, Facebook, Instagram/TikTok, Google Maps y contacto presencial;
+- medir por `src=` y `camp=MUESTRA_GRATIS`, sin identificar personas;
+- después de entregar la muestra, ofrecer una segunda pieza pagada o un paquete simple;
+- validar con 5–10 negocios antes de escalar;
+- no usar publicidad pagada todavía;
+- no inventar testimonios ni resultados.
+
+La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfoque de referidos.
