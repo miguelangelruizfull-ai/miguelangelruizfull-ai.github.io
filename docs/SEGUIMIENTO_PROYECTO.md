@@ -104,3 +104,26 @@ Siguiente paso: probar `pruebas.html` con unos pocos usuarios, estabilizar el fl
 - Fundamentación externa: buenas prácticas actuales recomiendan CTA visible, experiencia móvil intencional, formularios cortos y landing específica para quien llega referido.
 - Siguiente prueba: compartir enlaces con códigos simples, por ejemplo `pruebas.html?ref=MIGUEL01&src=whatsapp`, y observar si completan los 3 pasos.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Respuesta: estrategia recomendada de lanzamiento
+La interfaz de `pruebas.html` ya quedó responsive para móvil y PC, con CTA visible, formulario en 3 pasos, resumen del pedido, FAQ y soporte de códigos de referido mediante `?ref=` y `?src=`.
+
+Estrategia recomendada:
+1. `REFERRAL_FIRST`: compartir primero con familiares, conocidos y negocios cercanos.
+2. Crear un código simple por persona/canal, por ejemplo `?ref=JUAN01&src=whatsapp`.
+3. No pagar incentivos todavía; la primera prueba gratuita ya funciona como incentivo para probar.
+4. Buscar entre 5 y 10 pedidos completos y observar: comprensión, abandono, dudas, calidad de archivos, tiempo operativo y respuesta a la entrega.
+5. Después, con permiso, usar resultados reales como prueba social y pedir a quienes quedaron satisfechos que compartan su enlace.
+6. Escalar a difusión orgánica más amplia solo después de estabilizar el flujo.
+7. Considerar tráfico pagado únicamente cuando el registro privado de leads, capacidad de producción y conversión estén medidos.
+
+Motivo de usar referidos primero: el servicio depende de confianza y todavía incluye producción/revisión manual, por lo que conviene recibir tráfico con intención más alta y volumen controlado.
+
+Enlace de prueba:
+`https://miguelangelruizfull-ai.github.io/pruebas.html`
+
+Ejemplo de referido:
+`https://miguelangelruizfull-ai.github.io/pruebas.html?ref=JUAN01&src=whatsapp`
+
+Siguiente acción: realizar pruebas reales con códigos distintos y registrar qué fricciones aparecen.
