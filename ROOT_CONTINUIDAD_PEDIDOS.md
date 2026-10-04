@@ -118,3 +118,22 @@ Fecha local de referencia: 2026-10-04.
 Fase: `CAPTACION_WHATSAPP_V1_IMPLEMENTADA`.
 Siguiente fase: `REGISTRO_PRIVADO_DE_LEADS`.
 Continuidad: `CHECKPOINT_REPO_CANONICO_ACTIVO`.
+
+
+## Regla de seguimiento después de cada respuesta
+Después de cada respuesta relacionada con este proyecto:
+1. actualizar el repositorio con un registro de seguimiento;
+2. dejar constancia de la decisión, acción realizada, estado y siguiente paso;
+3. no depender del historial del chat para reconstruir el proyecto;
+4. si la respuesta contiene PII, datos privados, enlaces privados, credenciales, conversaciones privadas o material no publicable, **no copiarla literalmente** al repositorio público;
+5. en esos casos, guardar únicamente una versión sanitizada y operativa;
+6. el registro canónico de seguimiento vive en `docs/SEGUIMIENTO_PROYECTO.md`.
+
+Formato recomendado por entrada:
+- fecha/hora;
+- fase;
+- solicitud del usuario;
+- respuesta/decisión resumida;
+- cambios ejecutados;
+- siguiente acción recomendada;
+- comando de reanudación aplicable.
