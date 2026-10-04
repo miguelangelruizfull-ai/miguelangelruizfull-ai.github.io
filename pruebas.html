@@ -181,7 +181,7 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
 
     <div class="orderLayout">
       <form class="formCard" id="orderForm" novalidate>
-        <div class="progressHead"><div class="progressTitle" id="progressTitle">Paso 1 · Tu producto</div><div class="progressText" id="progressText">1 de 3</div></div>
+        <div class="progressHead"><div class="progressTitle" id="progressTitle">Paso 1 · Tu negocio</div><div class="progressText" id="progressText">1 de 3</div></div>
         <div class="bar" aria-hidden="true"><span id="progressBar"></span></div>
 
         <div class="stepPane active" data-step="1">
@@ -231,8 +231,8 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
           <p class="stepCopy">Aquí podrás comprobar exactamente qué archivos elegiste antes de salir a WhatsApp.</p>
 
           <div class="uploadHero">
-            <label for="images">Fotos del producto <span class="req">*</span></label>
-            <small>Selecciona una o varias fotos reales. Verás una vista previa abajo.</small>
+            <label for="images">Fotos reales <span class="req">*</span></label>
+            <small>Selecciona una o varias fotos reales de tu producto, servicio o resultado. Verás una vista previa abajo.</small>
             <input id="images" type="file" accept="image/*" multiple required>
             <div class="thumbGrid hidden" id="imagePreview"></div>
           </div>
@@ -416,7 +416,7 @@ function showStep(step){
   $("back").classList.toggle("hidden",step===1);
   $("next").classList.toggle("hidden",step===3);
   $("send").classList.toggle("hidden",step!==3);
-  const titles=["","Paso 1 · Tu producto","Paso 2 · Datos confirmados","Paso 3 · Fotos y envío"];
+  const titles=["","Paso 1 · Tu negocio","Paso 2 · Datos confirmados","Paso 3 · Fotos y envío"];
   $("progressTitle").textContent=titles[step];
   $("progressText").textContent=step+" de 3";
   $("progressBar").style.width=(step/3*100)+"%";
