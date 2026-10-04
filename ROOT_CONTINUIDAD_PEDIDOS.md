@@ -177,3 +177,11 @@ Secuencia:
 5. considerar campañas pagadas solo cuando conversión, capacidad y seguimiento estén medidos.
 
 No usar testimonios, cifras de conversión o logos inventados.
+
+
+## Plan de validación activo
+Documento operativo:
+`docs/PLAN_REFERIDOS_V1.md`
+
+Meta de esta fase:
+**5–10 pedidos reales completos por referidos antes del lanzamiento público final.**
