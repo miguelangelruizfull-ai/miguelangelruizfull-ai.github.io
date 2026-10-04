@@ -58,3 +58,16 @@ Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
 - Ruta temporal vigente: `https://miguelangelruizfull-ai.github.io/probar.html`.
 - Siguiente criterio de migración: completar varios pedidos reales, definir marca final y tener registro privado de leads.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Separación definitiva entre laboratorio y producto público
+- Fase: `ARQUITECTURA_DE_PUBLICACION`
+- Decisión: el repositorio actual se conserva temporalmente como laboratorio.
+- Página de ensayo: `/pruebas.html`.
+- Regla: no compartir el repo actual como lanzamiento comercial final.
+- Lanzamiento público previsto: repositorio dedicado `primer-pedido-gratis`.
+- Objetivo: permitir que, después de validar el producto, los demás repositorios puedan hacerse privados sin afectar el enlace público comercial.
+- Migración: solo contenido sanitizado y necesario para operar el producto.
+- Estado: `PRUEBAS_EN_REPO_ACTUAL / LANZAMIENTO_EN_REPO_NUEVO`.
+- Siguiente acción: validar el flujo en `pruebas.html`, luego crear/publicar `primer-pedido-gratis`.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
