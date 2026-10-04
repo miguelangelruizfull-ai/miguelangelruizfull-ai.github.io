@@ -220,3 +220,22 @@ Estado: listo para ejecutar `PRUEBA01`.
 - Privacidad: no se agregó almacenamiento de fotos ni PII en el repo público.
 - Siguiente acción: ejecutar `PRUEBA02` desde un móvil y comprobar si el archivo llega por la ruta nativa; si no, validar que el aviso evita enviar el pedido sin foto.
 - Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Respuesta registrada: interfaz recomendada para PRUEBA02
+La interfaz mejorada ya está aplicada en `pruebas.html`.
+
+Recomendación:
+- mantener 3 pasos;
+- hacer que el paso 3 sea visual y verificable;
+- mostrar miniaturas de las fotos seleccionadas;
+- advertir claramente que seleccionar una foto no significa que WhatsApp ya la tenga;
+- mostrar una pantalla final antes de salir;
+- ofrecer `Compartir fotos + pedido` solo cuando el móvil/navegador soporte archivos compartidos;
+- mantener `Abrir WhatsApp con el pedido` como fallback;
+- incluir `Copiar texto del pedido` como respaldo;
+- acortar el mensaje para reducir "Leer más";
+- validar siempre que el adjunto real aparezca en WhatsApp antes de enviar.
+
+Siguiente prueba: `PRUEBA02` en móvil real.
+Enlace: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=whatsapp`.
