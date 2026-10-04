@@ -239,3 +239,13 @@ Recomendación:
 
 Siguiente prueba: `PRUEBA02` en móvil real.
 Enlace: `https://miguelangelruizfull-ai.github.io/pruebas.html?ref=PRUEBA02&src=whatsapp`.
+
+
+## 2026-10-04 — Enlace enviado antes de actualización
+- Evidencia: captura de WhatsApp donde se compartió `pruebas.html?ref=PRUEBA01&src=whatsapp` antes de la mejora de interfaz.
+- Hallazgo: el mismo URL base ahora sirve la versión actualizada de `pruebas.html`, por lo que un usuario que abra el enlace después de la actualización debería recibir la versión nueva; si la página quedó abierta previamente, debe recargarla.
+- Corrección de tracking: `PRUEBA01` ya fue usada por la primera prueba interna, así que no debe reutilizarse para otra persona.
+- Recomendación: reenviar a la siguiente persona `?ref=PRUEBA02&src=whatsapp`.
+- Objetivo: mantener una prueba por código para evitar mezclar resultados.
+- Siguiente acción: usar `PRUEBA02` para la prueba con un segundo usuario y observar el nuevo paso de fotos/WhatsApp.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
