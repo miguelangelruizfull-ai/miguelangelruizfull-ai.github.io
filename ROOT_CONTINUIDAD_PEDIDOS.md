@@ -212,3 +212,18 @@ Nunca asumir que la vía nativa de compartir está disponible o que WhatsApp rec
 
 Siguiente prueba recomendada:
 `PRUEBA02` en un teléfono real, probando primero la opción nativa si aparece y después el fallback de WhatsApp directo.
+
+
+## Interfaz adaptativa por canal
+Usar una sola landing y adaptar únicamente el mensaje superior según `src=`.
+
+Canales:
+- `facebook`
+- `instagram`
+- `whatsapp`
+- `maps`
+- `presencial`
+
+No crear una página diferente por tipo de negocio salvo que la evidencia de conversión futura lo justifique.
+
+La lógica actual vive en `pruebas.html`.
