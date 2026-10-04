@@ -151,3 +151,14 @@ Estado:
 - siguiente acción: compartir los primeros enlaces codificados y registrar fricciones.
 
 Comando de continuidad: `REANUDAR_PEDIDOS_DESDE_ROOT`.
+
+
+## 2026-10-04 — Primer paso operativo de validación
+- Fase: `REFERRAL_FIRST_VALIDATION`
+- Instrucción al usuario: comenzar con una sola persona conocida que tenga un producto o servicio real.
+- Acción recomendada: enviar un enlace con código simple `?ref=PRUEBA01&src=whatsapp`.
+- Objetivo de la primera prueba: comprobar si la persona entiende la propuesta, completa los 3 pasos, abre WhatsApp y adjunta las fotos sin asistencia excesiva.
+- Regla: no explicar de más antes de que pruebe; observar dónde pregunta o se detiene.
+- Después de recibir el pedido: producir la primera propuesta y anotar fricciones antes de invitar al siguiente referido.
+- Siguiente acción: ejecutar `PRUEBA01`.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
