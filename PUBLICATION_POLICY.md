@@ -156,3 +156,30 @@ Regla:
 `OFERTA_PUBLICA = PROBLEMA + ENTREGABLE + EVIDENCIA + CTA`
 
 La estrategia completa de precios, prospección, monetización, scripts internos y ventaja competitiva permanece privada.
+
+
+## Producto de prueba público
+
+Se autoriza la ruta `/probar.html` como demostración funcional orientada a captación.
+
+Puede:
+- generar flyer 1080 × 1350;
+- generar historia 1080 × 1920;
+- generar copy para WhatsApp;
+- generar descripción comercial;
+- procesar foto y datos únicamente en el navegador;
+- permitir descarga local de PNG;
+- enlazar al servicio pagado.
+
+No puede:
+- inventar datos;
+- persistir fotografías o información del visitante;
+- prometer resultados comerciales;
+- publicar automáticamente;
+- sustituir la revisión profesional cuando el cliente contrate un servicio.
+
+Regla:
+
+`PRUEBA = VALOR_INMEDIATO + DATOS_DEL_USUARIO + CTA`
+
+`SERVICIO_PAGADO = PERSONALIZACION + CRITERIO + PRODUCCION + CONTINUIDAD`
