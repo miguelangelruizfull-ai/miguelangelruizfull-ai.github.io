@@ -91,3 +91,16 @@ El lanzamiento final será algo como:
 `https://miguelangelruizfull-ai.github.io/primer-pedido-gratis/`
 
 Siguiente paso: probar `pruebas.html` con unos pocos usuarios, estabilizar el flujo y después crear el repo público final.
+
+
+## 2026-10-04 — Landing responsive y estrategia referral-first
+- Fase: `VALIDACION_COMERCIAL_INICIAL`
+- Cambio: `pruebas.html` rediseñada mobile-first y desktop.
+- Interfaz: hero claro, CTA visible sin scroll, formulario en 3 pasos, botones táctiles, resumen lateral en PC, CTA flotante en móvil y FAQ.
+- Conversión: navegación reducida y una sola acción principal.
+- Referidos: soporte de `?ref=CODIGO` y `?src=CANAL`; el código se incorpora al pedido enviado por WhatsApp y no se persiste en el repositorio.
+- SEO de laboratorio: `noindex,nofollow,noarchive`.
+- Estrategia recomendada: empezar con referidos/contactos de confianza, validar el ciclo completo y después escalar a difusión orgánica. No pagar tráfico todavía.
+- Fundamentación externa: buenas prácticas actuales recomiendan CTA visible, experiencia móvil intencional, formularios cortos y landing específica para quien llega referido.
+- Siguiente prueba: compartir enlaces con códigos simples, por ejemplo `pruebas.html?ref=MIGUEL01&src=whatsapp`, y observar si completan los 3 pasos.
+- Reanudación: `REANUDAR_PEDIDOS_DESDE_ROOT`.
