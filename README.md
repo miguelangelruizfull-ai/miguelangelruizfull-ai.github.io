@@ -9,8 +9,10 @@ La estrategia, prompts, flujos internos, expedientes, pedidos y material privado
 Producto público independiente:
 https://miguelangelruizfull-ai.github.io/primer-pedido-gratis/
 
-## Pausa de publicación — 2026-10-05
+## Presentación de Doña Gloria — 2026-10-05
 
-Por instrucción del usuario, la presentación de Doña Gloria queda pendiente de aprobación de diseño. Se retiró la tarjeta del portafolio, se sustituyó la página comercial por un aviso de preparación con noindex y se retiró del sitemap. La versión anterior permanece en el historial de Git. No restaurar ni publicar automáticamente el cartel o la página por autorizaciones anteriores.
+La instrucción posterior del usuario sustituye la pausa: mantener posicionamiento local, publicidad compartible y pedido por WhatsApp; relacionar el portafolio únicamente mediante crédito pequeño en el pie. La página comercial se reconstruyó con foto real, cartel para compartir, datos estructurados, metadatos sociales y sitemap. La tarjeta destacada sigue retirada del inicio del portafolio.
 
-Pendiente: preparar una vista previa con fotos reales como protagonistas, menos texto, espacios compactos y un único botón principal de pedido; mantener enlaces profesionales discretos en el pie. Revisar móvil y obtener aprobación de diseño antes de volver a mostrar la sección.
+Verificación: ancho móvil de 390 px sin desbordamiento; enlace de pedido con personaje, fecha y tamaño; cuatro opciones de compartir/descargar. No se publicaron mensajes en redes ni se creó un Perfil de Empresa de Google.
+
+Investigación: ejemplos de personalización por personaje y temática; sin datos suficientes para afirmar personajes más vendidos en Quecholac. Priorizar trabajos reales y consultas recibidas. Fuentes: https://pinatilandia.com.mx/categoria-producto/pinatas/ y https://support.google.com/business/answer/7091 . No prometer posiciones en Google. Pendiente: verificar indexación mediante Search Console y evaluar Perfil de Empresa con datos reales del negocio; medir consultas antes de ampliar campañas.
