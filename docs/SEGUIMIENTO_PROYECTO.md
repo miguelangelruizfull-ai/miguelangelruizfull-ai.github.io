@@ -379,3 +379,14 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Regla vigente: cada nuevo pedido terminado se archiva por PEDIDO-ID en privado; públicamente solo se agrega el resultado final autorizado.
 - Estado operativo: `MUESTRA_ENVIADA / PRIMER_RESULTADO_REAL`.
 - Siguiente acción recomendada: entregar la pieza final al cliente, confirmar recepción y pedir una sola observación de feedback antes de ofrecer la segunda pieza.
+
+## 2026-10-05 — RESULTADOS_SOCIAL_V2
+- Home actualizado: `pruebas.html#trabajos`.
+- La primera muestra deja de presentarse como explicación técnica de “material real / datos confirmados” y pasa a funcionar como prueba social y escaparate comercial.
+- Tarjeta vigente: `Piñatas personalizadas en Quecholac`.
+- CTA principal: pedido directo al WhatsApp confirmado del negocio.
+- CTA secundario: compartir la muestra mediante Web Share; en móvil puede ofrecer las apps instaladas compatibles (WhatsApp, Facebook, Instagram, TikTok, etc.).
+- Se creó una página pública específica: `trabajos/pinatas-personalizadas-quecholac.html`.
+- SEO: `pruebas.html` pasa a `index,follow`; se añadió canonical, datos estructurados `Service`, página local específica y ambas URLs al `sitemap.xml`.
+- Regla: no publicar precio, domicilio exacto, disponibilidad concreta ni otros datos que el pedido no haya confirmado.
+- Patrón para próximos trabajos: cada pedido autorizado puede agregarse como tarjeta al Home y, cuando tenga valor de búsqueda local, generar una página individual enlazada desde el Home.
