@@ -3,115 +3,148 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Prueba — Primer pedido gratis</title>
-<meta name="description" content="Prueba el flujo de Primer pedido gratis con un producto real. Envía fotos y datos confirmados por WhatsApp.">
+<title>Muestra gratis para tu negocio</title>
+<meta name="description" content="Sube una foto real de tu producto o servicio y prueba una primera pieza comercial gratis.">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<link rel="canonical" href="https://miguelangelruizfull-ai.github.io/pruebas.html">
-<meta name="author" content="Miguel Ángel Ruiz">
-<meta name="theme-color" content="#070b12">
+<meta name="theme-color" content="#7c3aed">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
-<meta property="og:title" content="Primer pedido gratis — prueba">
-<meta property="og:description" content="Manda fotos y datos reales de tu producto. Recibe una propuesta comercial revisada.">
-<meta property="og:url" content="https://miguelangelruizfull-ai.github.io/pruebas.html">
+<meta property="og:title" content="Tu primera muestra gratis">
+<meta property="og:description" content="Una foto real. Una pieza lista para publicar.">
 <style>
 :root{
-  --bg:#070b12;--bg2:#0b111b;--panel:#0e1622cc;--panel2:#111c2a;
-  --text:#f5f7fb;--muted:#9caabd;--line:#263449;--accent:#a8ffcf;
-  --accent2:#8bd7ff;--violet:#b7a3ff;--warn:#ffd58a;--ok:#83efb7;
-  --danger:#ff9d9d;--max:1160px;--r:22px;--shadow:0 24px 90px #0008;
+  --bg:#fbf9ff;--ink:#171321;--muted:#6d6578;--card:#ffffffdc;--line:#e8e0f2;
+  --purple:#7c3aed;--violet:#9f67ff;--pink:#ff4fa3;--coral:#ff7657;--cyan:#27c7e8;
+  --lime:#b8ef70;--ok:#159b69;--danger:#c43d5c;--shadow:0 24px 70px #6d45a51a;
+  --max:1120px;--r:28px
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0;color:var(--text);background:
-  radial-gradient(700px 420px at 10% -5%,#163a4f80,transparent 62%),
-  radial-gradient(680px 460px at 92% 3%,#39255b70,transparent 60%),
-  linear-gradient(180deg,#070b12 0,#09101a 55%,#070b12 100%);
-  font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  margin:0;color:var(--ink);
+  background:
+    radial-gradient(580px 440px at -8% 2%,#ffd3e9 0,transparent 67%),
+    radial-gradient(620px 440px at 102% 3%,#d8d0ff 0,transparent 65%),
+    radial-gradient(560px 360px at 80% 46%,#c9f7ff 0,transparent 66%),
+    linear-gradient(180deg,#fff 0,#fbf9ff 48%,#fff8fb 100%);
+  font:16px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
 }
-a{color:inherit}.wrap{width:min(calc(100% - 32px),var(--max));margin:auto}
-.topbar{position:sticky;top:0;z-index:50;border-bottom:1px solid #ffffff10;background:#070b12d9;backdrop-filter:blur(18px)}
-.topin{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:900;letter-spacing:-.02em}.lab{font-size:.76rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#ffdca0;border:1px solid #ffdca02c;background:#ffdca00b;border-radius:999px;padding:7px 10px}
-.hero{padding:58px 0 38px}
-.heroGrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:26px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#d5f8ff;font-size:.79rem;font-weight:900;text-transform:uppercase;letter-spacing:.09em}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 20px var(--accent)}
-h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.91;letter-spacing:-.06em;margin:18px 0 20px;max-width:800px}
-.gradient{background:linear-gradient(95deg,#fff 10%,#bff7ff 50%,#d6c9ff 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:clamp(1.05rem,2vw,1.22rem);color:var(--muted);max-width:760px}
-.heroActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
-.btn{border:1px solid var(--line);border-radius:14px;min-height:50px;padding:12px 18px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;font-weight:900;cursor:pointer;background:#111b28;color:var(--text);font:inherit}
-.btn.primary{background:linear-gradient(135deg,#e9fff3,#cdefff);color:#071018;border-color:transparent;box-shadow:0 12px 32px #9be6ff1c}
-.btn.ghost{background:#0b121c99}
-.trustRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.chip{border:1px solid #ffffff14;background:#ffffff08;border-radius:999px;padding:8px 11px;color:#dfe8f0;font-size:.88rem;font-weight:750}
-.storyChooser{margin-top:24px}.storyChooserHead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:10px}.storyChooserHead strong{font-size:1.05rem}.storyChooserHead span{font-size:.82rem;color:var(--muted)}
-.choiceRail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.choiceCard{position:relative;min-height:250px;border:1px solid #ffffff18;border-radius:20px;overflow:hidden;background:#0b121c;color:#fff;text-align:left;cursor:pointer;padding:0;font:inherit}.choiceCard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.choiceCard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,#03070dd9 78%,#03070df5 100%)}.choiceCard.noImg{background:radial-gradient(circle at 70% 20%,#7b6cff35,transparent 38%),linear-gradient(145deg,#172131,#0a111c)}.choiceCard.noImg:after{background:linear-gradient(180deg,transparent,#03070dbd)}
-.choiceContent{position:absolute;z-index:2;left:14px;right:14px;bottom:14px}.choiceKicker{font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#d6e7ef}.choiceTitle{font-size:1.35rem;font-weight:950;line-height:1;letter-spacing:-.03em;margin-top:4px}.choiceSub{font-size:.82rem;color:#d3dbe2;margin-top:6px}.choiceCard.selected{outline:3px solid #bff7ff;outline-offset:2px}
-.stageRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.stageBtn{border:1px solid #ffffff18;background:#ffffff08;color:#eaf1f5;border-radius:999px;padding:10px 13px;font:inherit;font-weight:850;cursor:pointer}.stageBtn.selected{background:#e8f8ff;color:#071018;border-color:transparent}
-.formatHint{margin-top:12px;border:1px solid #ffffff14;background:#ffffff07;border-radius:16px;padding:13px 14px;display:flex;align-items:center;gap:12px}.formatShape{width:42px;aspect-ratio:9/16;border:2px solid #d9efff;border-radius:8px;flex:0 0 auto;position:relative}.formatShape:after{content:"";position:absolute;inset:7px;border:1px solid #ffffff38;border-radius:4px}.formatHint strong{display:block}.formatHint span{display:block;color:var(--muted);font-size:.86rem}
-
-.heroCard{background:linear-gradient(180deg,#121d2bdd,#0b131edb);border:1px solid #ffffff16;border-radius:26px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
-.heroCard:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#8bd7ff1a;filter:blur(10px);right:-100px;top:-100px}
-.refBox{position:relative}.refLabel{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;color:#b7c6d7;font-weight:900}.refText{font-size:1.35rem;font-weight:950;letter-spacing:-.03em;margin:8px 0 10px}.refSub{color:var(--muted);margin:0}
-.miniFlow{display:grid;gap:9px;margin-top:20px}.mini{display:flex;align-items:center;gap:10px;border:1px solid #ffffff10;background:#07101880;border-radius:14px;padding:11px 13px}.num{width:28px;height:28px;border-radius:9px;background:#ffffff0d;display:grid;place-items:center;font-weight:900;color:#cff5ff}
-section{padding:50px 0;border-top:1px solid #ffffff0e}
-.sectionTitle{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.045em;line-height:1;margin:0 0 12px}.sectionIntro{color:var(--muted);max-width:760px;margin:0}
-.proofGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.proof{border:1px solid var(--line);background:#0d1622b8;border-radius:18px;padding:18px}.proof strong{display:block;font-size:1.05rem;margin-bottom:5px}.proof span{color:var(--muted);font-size:.94rem}
-.orderLayout{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:18px;margin-top:24px;align-items:start}
-.formCard,.sideCard{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
-.formCard{padding:18px}.sideCard{padding:18px;position:sticky;top:82px}
-.progressHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.progressTitle{font-weight:900}.progressText{color:var(--muted);font-size:.9rem}
-.bar{height:7px;border-radius:999px;background:#ffffff0d;overflow:hidden;margin-bottom:20px}.bar>span{display:block;height:100%;width:33.333%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .25s ease}
-.stepPane{display:none}.stepPane.active{display:block}.stepTitle{font-size:1.35rem;font-weight:950;letter-spacing:-.025em;margin:0 0 4px}.stepCopy{color:var(--muted);margin:0 0 18px}
-.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}label{font-weight:850}small{color:var(--muted)}
-input,select,textarea{width:100%;border:1px solid var(--line);border-radius:13px;background:#08111b;color:var(--text);padding:13px 14px;font:inherit;min-height:48px}textarea{min-height:110px;resize:vertical}input[type=file]{padding:10px}
-input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #8bd7ff70;outline-offset:2px;border-color:#8bd7ff}
-.req{color:var(--accent2)}.formActions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:20px}.formActions .right{display:flex;gap:10px;margin-left:auto}
-.notice{border:1px solid #83efb72a;background:#83efb708;border-radius:14px;padding:13px 14px;color:#d7e5df;margin-top:16px}.notice b{color:#effff6}
-.uploadHero{border:1px dashed #4b6685;background:linear-gradient(180deg,#0a1521,#08111b);border-radius:18px;padding:16px}
-.uploadHero label{display:block;font-size:1.05rem;margin-bottom:5px}.uploadHero small{display:block;margin-bottom:12px}
-.thumbGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}.thumb{aspect-ratio:1;border:1px solid #ffffff18;border-radius:12px;overflow:hidden;background:#050a10;position:relative}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.thumb span{position:absolute;left:6px;right:6px;bottom:6px;background:#050a10d9;border-radius:8px;padding:4px 6px;font-size:.68rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.transferAlert{margin-top:14px;border:1px solid #ffd58a45;background:#ffd58a0b;border-radius:16px;padding:15px}.transferAlert strong{display:block;color:#ffe6b6;font-size:1.02rem;margin-bottom:4px}.transferAlert p{margin:0;color:#d7c7a8}
-.transferSteps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.transferStep{border:1px solid #ffffff10;background:#07101888;border-radius:12px;padding:10px;font-size:.88rem;color:#d9e4eb}.transferStep b{display:block;color:#fff;margin-bottom:2px}
-.consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px}.consent input{width:auto;min-height:auto;margin-top:5px}.consent label{font-weight:600;color:#d9e1e8}
-.status{color:var(--muted);font-size:.92rem;margin:14px 0 0}.ok{color:var(--ok);font-weight:850}.error{color:var(--danger);font-weight:800}
-.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:end center;background:#0009;padding:16px;backdrop-filter:blur(8px)}.modal.hidden{display:none}.modalCard{width:min(100%,620px);background:#0b1420;border:1px solid #ffffff1c;border-radius:24px;padding:20px;box-shadow:0 30px 100px #000c;max-height:min(88vh,760px);overflow:auto}.modalTop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.modalTop h3{font-size:1.5rem;line-height:1.05;margin:0}.closeBtn{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:#111b28;color:#fff;font-size:1.2rem;cursor:pointer}.handoffBox{border:1px solid #ffd58a45;background:#ffd58a0b;border-radius:16px;padding:14px;margin:16px 0}.handoffBox b{color:#ffe8bb}.handoffList{margin:10px 0 0;padding-left:20px;color:#d9e2e8}.handoffActions{display:grid;gap:10px}.btn.native{background:linear-gradient(135deg,#eafff2,#c8ffe4);color:#06140d;border-color:transparent}.btn.wa{background:linear-gradient(135deg,#e8f6ff,#c9dcff);color:#071018;border-color:transparent}.shareSupport{font-size:.84rem;color:var(--muted);margin:8px 0 0}
-
-.preview{white-space:pre-wrap;background:#071018;border:1px dashed #345269;border-radius:14px;padding:14px;min-height:300px;color:#dce7ee;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere;max-height:520px;overflow:auto}
-.sideCard h3{margin:6px 0 12px;font-size:1.25rem}
-.sideNote{color:var(--muted);font-size:.9rem;margin:12px 0 0}
-.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.faq details{border:1px solid var(--line);background:#0c1520;border-radius:16px;padding:15px 16px}.faq summary{font-weight:900;cursor:pointer}.faq p{color:var(--muted);margin:10px 0 0}
-footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
-.mobileCta{display:none}
-.hidden{display:none!important}
-@media(max-width:920px){
-  .heroGrid,.orderLayout{grid-template-columns:1fr}.heroCard{max-width:680px}.sideCard{position:static}.proofGrid{grid-template-columns:1fr 1fr}
-}
+button,input,select,textarea{font:inherit}
+a{color:inherit}
+.wrap{width:min(calc(100% - 28px),var(--max));margin:auto}
+.topbar{position:sticky;top:0;z-index:40;background:#ffffffd9;border-bottom:1px solid #ffffffcc;backdrop-filter:blur(18px)}
+.topin{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:950;letter-spacing:-.035em;font-size:1.04rem}
+.contactTop{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:9px 13px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:#fff;font-weight:850;font-size:.9rem}
+.hero{padding:48px 0 28px}
+.heroGrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:24px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.78rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 8px 30px #7c3aed0c}
+.badgeDot{width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple))}
+h1{font-size:clamp(3rem,7vw,6.1rem);line-height:.92;letter-spacing:-.065em;margin:18px 0 16px;max-width:800px}
+.rainbowText{background:linear-gradient(90deg,var(--purple),var(--pink) 45%,var(--coral) 72%,#e3a300);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:660px;color:var(--muted);font-size:clamp(1.02rem,2vw,1.22rem);margin:0}
+.trustRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.chip{padding:8px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:800;font-size:.84rem;color:#52495e}
+.storyChooser{margin-top:24px}
+.choiceRail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.choiceCard{position:relative;min-height:245px;border:0;border-radius:24px;overflow:hidden;padding:0;cursor:pointer;text-align:left;background:#26202e;box-shadow:var(--shadow);isolation:isolate}
+.choiceCard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.choiceCard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,#17132110 45%,#171321e8 100%);z-index:1}
+.choiceCard.recommend{background:
+  radial-gradient(circle at 78% 18%,#ffd564 0 8%,transparent 9%),
+  radial-gradient(circle at 22% 24%,#55e8ff 0 11%,transparent 12%),
+  radial-gradient(circle at 72% 72%,#ff6aac 0 15%,transparent 16%),
+  linear-gradient(135deg,#7c3aed,#3d2d91)}
+.choiceCard.recommend:after{background:linear-gradient(180deg,#ffffff08,#171321b5)}
+.choiceCard.selected{outline:4px solid #fff;box-shadow:0 0 0 4px var(--purple),var(--shadow)}
+.choiceContent{position:absolute;z-index:2;left:16px;right:16px;bottom:15px;color:#fff}
+.choiceKicker{display:block;font-size:.7rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;opacity:.84}
+.choiceTitle{display:block;font-size:1.55rem;font-weight:950;line-height:1;margin-top:4px;letter-spacing:-.04em}
+.choiceSub{display:block;font-size:.82rem;margin-top:6px;color:#f6effa}
+.stageRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.stageBtn{min-height:44px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:850;cursor:pointer}
+.stageBtn.selected{background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;border-color:transparent}
+.heroAction{display:inline-flex;margin-top:14px;min-height:52px;align-items:center;justify-content:center;padding:13px 18px;border-radius:16px;text-decoration:none;font-weight:950;background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;box-shadow:0 16px 38px #9f3dba30}
+.phoneMock{background:linear-gradient(160deg,#1a1522,#2b1f3d);border-radius:34px;padding:13px;box-shadow:0 28px 90px #3c245640;transform:rotate(2deg)}
+.phoneScreen{position:relative;overflow:hidden;aspect-ratio:9/16;border-radius:26px;background:
+  radial-gradient(circle at 20% 12%,#ff72b7 0 12%,transparent 13%),
+  radial-gradient(circle at 84% 22%,#79ddff 0 14%,transparent 15%),
+  linear-gradient(160deg,#f8d6ff,#d9e1ff 48%,#fff0d3)}
+.mockCard{position:absolute;left:12%;right:12%;bottom:9%;background:#ffffffeb;border-radius:22px;padding:16px;box-shadow:0 18px 50px #3b25562b}
+.mockPill{display:inline-block;padding:6px 9px;border-radius:999px;background:#171321;color:#fff;font-size:.7rem;font-weight:900}
+.mockTitle{font-size:1.55rem;line-height:1.02;font-weight:950;letter-spacing:-.045em;margin:10px 0 6px}
+.mockText{font-size:.82rem;color:#6b6073}
+.mockDots{display:flex;gap:5px;margin-top:12px}.mockDots span{width:22px;height:6px;border-radius:99px}.mockDots span:nth-child(1){background:var(--purple)}.mockDots span:nth-child(2){background:var(--pink)}.mockDots span:nth-child(3){background:var(--cyan)}
+.formats{padding:34px 0}
+.formatGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.formatCard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 12px 34px #6d45a50c}
+.formatCard strong{display:block;font-size:1.05rem}.formatCard span{display:block;color:var(--muted);font-size:.86rem;margin-top:3px}
+.order{padding:34px 0 56px}
+.orderShell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start}
+.formCard,.summaryCard{background:var(--card);border:1px solid #ffffff;border-radius:var(--r);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+.formCard{padding:20px}
+.summaryCard{padding:18px;position:sticky;top:80px}
+.summaryColor{height:8px;border-radius:999px;background:linear-gradient(90deg,var(--purple),var(--pink),var(--coral),#f0bf36,var(--cyan));margin-bottom:16px}
+.summaryCard h3{margin:0 0 12px;font-size:1.2rem}
+.summaryLine{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}.summaryLine span{color:var(--muted)}.summaryLine b{text-align:right}
+.progressHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.progressHead strong{font-size:1rem}.progressText{font-size:.84rem;color:var(--muted);font-weight:800}
+.bar{height:7px;background:#eee9f4;border-radius:99px;overflow:hidden;margin-bottom:22px}.bar span{display:block;height:100%;width:33.333%;background:linear-gradient(90deg,var(--purple),var(--pink),var(--coral));transition:width .25s ease}
+.stepPane{display:none}.stepPane.active{display:block}
+.stepTitle{font-size:1.6rem;letter-spacing:-.04em;margin:0 0 5px}.stepCopy{margin:0 0 18px;color:var(--muted)}
+.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}
+label{font-weight:850;font-size:.92rem}
+input,select,textarea{width:100%;min-height:48px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);padding:12px 13px;outline:none}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #bfa6ff;outline-offset:2px;border-color:#9f67ff}
+.req{color:var(--pink)}
+.uploadBox{border:2px dashed #ccbaf0;border-radius:20px;padding:16px;background:linear-gradient(135deg,#fbf7ff,#fff8fc)}
+.uploadBox input{background:#fff}
+.thumbGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}.thumb{aspect-ratio:1;border-radius:13px;overflow:hidden;position:relative;background:#eee}.thumb img{width:100%;height:100%;object-fit:cover}.thumb span{position:absolute;left:5px;right:5px;bottom:5px;padding:4px 6px;background:#171321c9;color:#fff;border-radius:8px;font-size:.66rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fileNote{margin-top:12px;padding:12px 13px;border-radius:15px;background:#fff4d8;border:1px solid #f4d586;color:#684e13;font-size:.9rem}
+.consent{display:flex;gap:9px;align-items:flex-start;margin-top:12px}.consent input{width:auto;min-height:auto;margin-top:4px}.consent label{font-weight:650;color:#5d5566}
+.actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:20px}.actionsRight{display:flex;gap:10px;margin-left:auto}
+.btn{min-height:48px;border-radius:15px;border:1px solid var(--line);padding:11px 16px;font-weight:900;cursor:pointer;background:#fff;color:var(--ink)}
+.btn.primary{border:0;color:#fff;background:linear-gradient(135deg,var(--purple),var(--pink),var(--coral));box-shadow:0 14px 32px #9f3dba26}
+.btn.ghost{background:#fff}
+.status{min-height:22px;margin:12px 0 0;color:var(--muted);font-size:.88rem}.status.ok{color:var(--ok);font-weight:800}.status.error{color:var(--danger);font-weight:800}
+.contactCard{margin-top:14px;padding:14px;border-radius:18px;background:linear-gradient(135deg,#f4edff,#fff0f7);border:1px solid #eadcf7}.contactCard strong{display:block}.contactCard a{display:inline-block;margin-top:7px;font-weight:900;color:var(--purple)}
+.modal{position:fixed;inset:0;z-index:100;background:#21152e99;backdrop-filter:blur(9px);display:grid;place-items:end center;padding:14px}.modal.hidden{display:none}.modalCard{width:min(100%,520px);background:#fff;border-radius:28px;padding:20px;box-shadow:0 28px 90px #2e1e3f55}.modalCard h3{font-size:1.65rem;letter-spacing:-.04em;margin:0 0 7px}.modalCard p{color:var(--muted);margin:0 0 16px}.modalActions{display:grid;gap:9px}
+.success{display:none;text-align:center;padding:34px 16px}.success.show{display:block}.successMark{width:76px;height:76px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--lime),var(--cyan));font-size:2rem;font-weight:950}.success h3{font-size:2rem;letter-spacing:-.045em;margin:0 0 8px}.success p{color:var(--muted);max-width:520px;margin:0 auto 18px}
+footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #eee6f3}.footerIn{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.footerLinks{display:flex;gap:12px;flex-wrap:wrap}.footerLinks a{font-weight:800}
+.mobileCta{display:none}.hidden{display:none!important}
+@media(hover:hover) and (pointer:fine){.choiceCard:hover img{transform:scale(1.04)}.heroAction:hover,.btn.primary:hover{filter:saturate(1.12)}}
+@media(max-width:860px){.heroGrid,.orderShell{grid-template-columns:1fr}.phoneMock{max-width:360px;margin:auto;transform:none}.summaryCard{position:static}.formatGrid{grid-template-columns:1fr 1fr 1fr}}
 @media(max-width:640px){
-  .wrap{width:min(calc(100% - 22px),var(--max))}.topin{min-height:56px}.brand{font-size:.95rem}.lab{font-size:.66rem;padding:6px 8px}
-  .hero{padding:38px 0 28px}h1{font-size:clamp(2.9rem,14vw,4.8rem)}.lead{font-size:1.02rem}.heroActions .btn{width:100%}
-  .proofGrid,.faq,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formCard,.sideCard{border-radius:18px}.formActions{flex-direction:column}.formActions .right{width:100%;margin-left:0}.formActions .btn,.formActions .right .btn{width:100%}.thumbGrid{grid-template-columns:repeat(3,minmax(0,1fr))}.transferSteps{grid-template-columns:1fr}.choiceRail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 8px;gap:10px}.choiceCard{flex:0 0 82%;min-height:330px;scroll-snap-align:center}.storyChooserHead span{display:none}
-  .mobileCta{position:fixed;z-index:60;display:flex;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));background:#08111bea;border:1px solid #ffffff18;backdrop-filter:blur(16px);border-radius:16px;padding:8px;box-shadow:0 18px 45px #0009;transition:transform .2s ease,opacity .2s ease}.mobileCta .btn{width:100%}
-  .mobileCta.hide{transform:translateY(130%);opacity:0;pointer-events:none}
+  .wrap{width:min(calc(100% - 20px),var(--max))}.topin{min-height:56px}.contactTop{font-size:.8rem;padding:8px 10px}
+  .hero{padding:32px 0 22px}h1{font-size:clamp(2.8rem,14vw,4.4rem)}
+  .heroGrid{gap:20px}.phoneMock{display:none}
+  .choiceRail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:3px 3px 9px}.choiceCard{flex:0 0 82%;min-height:320px;scroll-snap-align:center}
+  .formatGrid,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formats{padding:24px 0}.order{padding-top:24px}
+  .actions{flex-direction:column}.actionsRight{width:100%;margin-left:0}.actions .btn,.actionsRight .btn{width:100%}.thumbGrid{grid-template-columns:repeat(3,1fr)}
+  .summaryCard{display:none}.formCard{padding:16px;border-radius:22px}
+  .mobileCta{position:fixed;display:flex;z-index:55;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));padding:7px;border-radius:18px;background:#ffffffea;border:1px solid #fff;box-shadow:0 18px 48px #5e3e7b30;backdrop-filter:blur(16px);transition:.2s}.mobileCta .heroAction{width:100%;margin:0}.mobileCta.hide{transform:translateY(130%);opacity:0;pointer-events:none}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap topin"><div class="brand">Primer pedido gratis</div><div class="lab">Muestra gratis</div></div></div>
+<div class="topbar">
+  <div class="wrap topin">
+    <div class="brand">Muestra gratis</div>
+    <a class="contactTop" href="https://wa.me/522491211725" target="_blank" rel="noopener">WhatsApp · 249 121 1725</a>
+  </div>
+</div>
 
 <main>
 <header class="hero">
   <div class="wrap heroGrid">
     <div>
-      <div class="eyebrow"><span class="dot"></span><span id="eyebrowText">Muestra gratis para negocios</span></div>
-      <h1><span class="gradient" id="heroLine1">¿Qué quieres publicar?</span><br><span id="heroLine2">Toca una opción.</span></h1>
-      <p class="lead" id="heroLead">Sin aprender diseño. Elige visualmente, sube tu foto real y te recomiendo la pieza.</p>
+      <div class="badge"><span class="badgeDot"></span><span id="channelBadge">Primera muestra gratis</span></div>
+      <h1><span class="rainbowText">Sube una foto.</span><br>Te preparo algo listo para publicar.</h1>
+      <p class="lead">Elige qué vendes, agrega lo básico y prueba una pieza real antes de pagar.</p>
 
-      <div class="storyChooser" aria-label="Elige el tipo de negocio">
-        <div class="storyChooserHead"><strong>1 · Elige</strong><span>desliza si estás en móvil</span></div>
+      <div class="storyChooser">
         <div class="choiceRail">
           <button class="choiceCard" type="button" data-mode="Producto">
             <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Tartine_bakery_opera_cake_in_2007.jpg" alt="Ejemplo de producto: pastel">
@@ -119,295 +152,233 @@ footer{padding:34px 0 100px;color:var(--muted);border-top:1px solid #ffffff0e}
           </button>
           <button class="choiceCard" type="button" data-mode="Servicio">
             <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Barber_shop_haircutting_session_%2851210342653%29.jpg" alt="Ejemplo de servicio: barbería">
-            <span class="choiceContent"><span class="choiceKicker">Hago algo</span><span class="choiceTitle">Servicio</span><span class="choiceSub">Barbería · taller · estética · instalación</span></span>
+            <span class="choiceContent"><span class="choiceKicker">Hago algo</span><span class="choiceTitle">Servicio</span><span class="choiceSub">Taller · estética · instalación · oficio</span></span>
           </button>
-          <button class="choiceCard noImg" type="button" data-mode="No sé qué publicar">
-            <span class="choiceContent"><span class="choiceKicker">Estoy empezando</span><span class="choiceTitle">Recomiéndame</span><span class="choiceSub">Yo pongo la foto. Tú dime qué conviene.</span></span>
+          <button class="choiceCard recommend" type="button" data-mode="Recomiéndame">
+            <span class="choiceContent"><span class="choiceKicker">No sé qué publicar</span><span class="choiceTitle">Recomiéndame</span><span class="choiceSub">Subo mi foto y tú eliges lo que conviene.</span></span>
           </button>
         </div>
-
-        <div class="stageRow" aria-label="Experiencia publicando">
+        <div class="stageRow">
           <button class="stageBtn" type="button" data-stage="Ya publico">Ya publico</button>
           <button class="stageBtn" type="button" data-stage="Voy empezando">Voy empezando</button>
         </div>
-
-        <div class="formatHint" id="formatHint">
-          <span class="formatShape" aria-hidden="true"></span>
-          <div><strong>Te recomiendo el formato.</strong><span>Historia/post para foto real. Si después tienes video, podemos llevarlo a Reel corto.</span></div>
-        </div>
+        <a class="heroAction" id="primaryCta" href="#pedido">Crear mi muestra gratis</a>
       </div>
 
-      <div class="heroActions">
-        <a class="btn primary" id="primaryCta" href="#pedido">Usar esta idea</a>
-      </div>
       <div class="trustRow">
-        <span class="chip">1 muestra gratis</span>
-        <span class="chip">Sin cuenta</span>
-        <span class="chip">Foto real</span>
+        <span class="chip">Foto real</span><span class="chip">Sin cuenta</span><span class="chip">Por WhatsApp</span>
       </div>
     </div>
 
-    <aside class="heroCard" aria-label="Resumen de la experiencia">
-      <div class="refBox">
-        <div class="refLabel" id="channelLabel">Muestra gratis</div>
-        <div class="refText" id="refHeadline">Como probar antes de comprar.</div>
-        <p class="refSub" id="refSub">No tienes que contratar primero. Prueba con un producto real y decide después de ver el resultado.</p>
-      </div>
-      <div class="miniFlow">
-        <div class="mini"><span class="num">1</span><span>Fotos + datos reales</span></div>
-        <div class="mini"><span class="num">2</span><span>Pedido listo para WhatsApp</span></div>
-        <div class="mini"><span class="num">3</span><span>Propuesta revisada</span></div>
+    <aside class="phoneMock" aria-label="Ejemplo visual de una pieza para redes">
+      <div class="phoneScreen">
+        <div class="mockCard">
+          <span class="mockPill">TU NEGOCIO</span>
+          <div class="mockTitle">Una foto puede verse mucho mejor.</div>
+          <div class="mockText">Producto real · información real · formato recomendado</div>
+          <div class="mockDots"><span></span><span></span><span></span></div>
+        </div>
       </div>
     </aside>
   </div>
 </header>
 
-<section id="como-funciona">
+<section class="formats">
   <div class="wrap">
-    <h2 class="sectionTitle">Lo que más conviene hoy.</h2>
-    <p class="sectionIntro">No necesitas elegir entre veinte plantillas. La muestra empieza con lo más útil para tu material real.</p>
-    <div class="proofGrid">
-      <div class="proof"><strong>Historia / vertical</strong><span>Rápida para Facebook, Instagram y WhatsApp.</span></div>
-      <div class="proof"><strong>Post de producto</strong><span>Para mostrar qué vendes con una foto clara.</span></div>
-      <div class="proof"><strong>Reel corto</strong><span>Lo priorizamos cuando tengas video real suficiente.</span></div>
+    <div class="formatGrid">
+      <div class="formatCard"><strong>Historia</strong><span>Vertical y rápida.</span></div>
+      <div class="formatCard"><strong>Post</strong><span>Producto claro.</span></div>
+      <div class="formatCard"><strong>Reel</strong><span>Si tienes video real.</span></div>
     </div>
   </div>
 </section>
 
-<section id="pedido">
-  <div class="wrap">
-    <h2 class="sectionTitle">Haz la prueba.</h2>
-    <p class="sectionIntro">Tres pasos. Los campos obligatorios son mínimos. Lo demás solo se usa si quieres que aparezca en tu pieza.</p>
-
-    <div class="orderLayout">
-      <form class="formCard" id="orderForm" novalidate>
-        <div class="progressHead"><div class="progressTitle" id="progressTitle">Paso 1 · Tu negocio</div><div class="progressText" id="progressText">1 de 3</div></div>
-        <div class="bar" aria-hidden="true"><span id="progressBar"></span></div>
+<section class="order" id="pedido">
+  <div class="wrap orderShell">
+    <form class="formCard" id="orderForm" novalidate>
+      <div id="formFlow">
+        <div class="progressHead"><strong id="progressTitle">1 · Tu negocio</strong><span class="progressText" id="progressText">1 de 3</span></div>
+        <div class="bar"><span id="progressBar"></span></div>
 
         <div class="stepPane active" data-step="1">
-          <h3 class="stepTitle">¿Qué quieres promocionar?</h3>
-          <p class="stepCopy">Empieza con lo esencial. No necesitas preparar todo antes.</p>
+          <h2 class="stepTitle">¿Qué quieres mostrar?</h2>
+          <p class="stepCopy">Solo lo básico.</p>
           <div class="formGrid">
-            <div class="field"><label for="customerName">Tu nombre</label><input id="customerName" autocomplete="name" placeholder="Ej. Carlos"></div>
-            <div class="field"><label for="brand">Marca o negocio <span class="req">*</span></label><input id="brand" required placeholder="Ej. Mi negocio / Sin marca"></div>
-            <div class="field full"><label for="product">Producto o servicio <span class="req">*</span></label><input id="product" required placeholder="Ej. Tapa de cisterna 60x60"></div>
-            <div class="field"><label for="piece">Qué necesitas</label>
+            <div class="field"><label for="customerName">Tu nombre</label><input id="customerName" autocomplete="name" placeholder="Opcional"></div>
+            <div class="field"><label for="brand">Negocio <span class="req">*</span></label><input id="brand" required placeholder="Nombre de tu negocio"></div>
+            <div class="field full"><label for="product">Producto o servicio <span class="req">*</span></label><input id="product" required placeholder="Ej. Pastel de chocolate"></div>
+            <div class="field"><label for="piece">Formato</label>
               <select id="piece">
-                <option value="Recomiéndame el formato">Recomiéndame el formato</option>
-                <option value="Flyer comercial">Flyer comercial</option>
-                <option value="Historia vertical 1080x1920">Historia vertical</option>
-                <option value="Post para redes">Post para redes</option>
-                <option value="Marketplace / publicación de venta">Marketplace / publicación de venta</option>
-                <option value="Catálogo / WhatsApp">Catálogo / WhatsApp</option>
-                <option value="Copy o descripción comercial">Copy o descripción comercial</option>
+                <option value="Recomiéndame el formato">Recomiéndame</option>
+                <option value="Historia vertical">Historia vertical</option>
+                <option value="Post para redes">Post</option>
+                <option value="Reel corto">Reel corto</option>
+                <option value="Marketplace">Marketplace</option>
+                <option value="Catálogo WhatsApp">Catálogo WhatsApp</option>
               </select>
             </div>
-            <div class="field"><label for="availability">¿Está disponible?</label>
+            <div class="field"><label for="availability">Disponible</label>
               <select id="availability">
                 <option value="Sí, disponible">Sí</option>
-                <option value="No confirmado">No estoy seguro</option>
                 <option value="No mostrar">No mostrar</option>
-                <option value="No disponible">No disponible</option>
+                <option value="No confirmado">No estoy seguro</option>
               </select>
             </div>
           </div>
         </div>
 
         <div class="stepPane" data-step="2">
-          <h3 class="stepTitle">Agrega solo datos confirmados.</h3>
-          <p class="stepCopy">Si algo no está seguro, déjalo vacío. No se inventará.</p>
+          <h2 class="stepTitle">¿Qué quieres que aparezca?</h2>
+          <p class="stepCopy">Lo que no pongas, no se inventa.</p>
           <div class="formGrid">
             <div class="field"><label for="price">Precio</label><input id="price" placeholder="Opcional"></div>
-            <div class="field"><label for="contact">Contacto a mostrar</label><input id="contact" placeholder="Teléfono, Facebook, TikTok..."></div>
-            <div class="field full"><label for="location">Ubicación</label><input id="location" placeholder="Ciudad, zona o dirección"></div>
-            <div class="field full"><label for="maps">Google Maps</label><input id="maps" type="url" inputmode="url" placeholder="https://maps.google.com/..."></div>
-            <div class="field full"><label for="confirmed">Datos confirmados</label><textarea id="confirmed" placeholder="Ej. Calibre 14, fácil de instalar, entrega inmediata..."></textarea></div>
-            <div class="field full"><label for="notes">Qué quieres lograr</label><textarea id="notes" placeholder="Ej. Quiero venderlo. Diseño industrial. Sin iconos."></textarea></div>
+            <div class="field"><label for="contact">Contacto</label><input id="contact" placeholder="Teléfono o red social"></div>
+            <div class="field full"><label for="location">Ubicación</label><input id="location" placeholder="Ciudad o zona"></div>
+            <div class="field full"><label for="confirmed">Datos importantes</label><textarea id="confirmed" placeholder="Ingredientes, medidas, características, qué incluye..."></textarea></div>
+            <div class="field full"><label for="notes">Objetivo</label><textarea id="notes" placeholder="Ej. Quiero venderlo / conseguir pedidos / anunciar un servicio"></textarea></div>
           </div>
         </div>
 
         <div class="stepPane" data-step="3">
-          <h3 class="stepTitle">Selecciona tus fotos.</h3>
-          <p class="stepCopy">Aquí podrás comprobar exactamente qué archivos elegiste antes de salir a WhatsApp.</p>
-
-          <div class="uploadHero">
-            <label for="images">Fotos reales <span class="req">*</span></label>
-            <small>Selecciona una o varias fotos reales de tu producto, servicio o resultado. Verás una vista previa abajo.</small>
+          <h2 class="stepTitle">Sube tus fotos.</h2>
+          <p class="stepCopy">Usa fotos reales.</p>
+          <div class="uploadBox">
+            <label for="images">Fotos <span class="req">*</span></label>
             <input id="images" type="file" accept="image/*" multiple required>
             <div class="thumbGrid hidden" id="imagePreview"></div>
           </div>
-
-          <div class="field full" style="margin-top:14px">
-            <label for="logo">Logo, si existe</label>
+          <div class="field full" style="margin-top:12px">
+            <label for="logo">Logo</label>
             <input id="logo" type="file" accept="image/*,.svg,.pdf">
-            <small id="logoStatus">Opcional.</small>
           </div>
-
-          <div class="transferAlert" id="transferAlert">
-            <strong>Importante: seleccionar una foto aquí no la adjunta automáticamente a WhatsApp.</strong>
-            <p>PRUEBA01 confirmó esta limitación. Antes de enviar, te mostraremos dos formas de continuar.</p>
-            <div class="transferSteps">
-              <div class="transferStep"><b>1 · Selecciona</b>Comprueba tus fotos aquí.</div>
-              <div class="transferStep"><b>2 · Comparte</b>Usa compartir archivos si tu móvil lo permite.</div>
-              <div class="transferStep"><b>3 · Verifica</b>En WhatsApp confirma que la foto aparezca antes de enviar.</div>
-            </div>
-          </div>
-
-          <div class="notice"><b>Privacidad:</b> las fotos se mantienen en tu dispositivo durante esta prueba. Tú decides qué archivos compartir al salir de la página.</div>
-          <div class="consent"><input id="consent" type="checkbox" required><label for="consent">Acepto compartir estos datos y archivos para preparar mi pedido y recibir seguimiento relacionado con esta solicitud.</label></div>
+          <div class="fileNote"><strong>Último paso:</strong> WhatsApp abrirá el chat al 249 121 1725. Adjunta ahí estas mismas fotos antes de enviar.</div>
+          <div class="consent"><input id="consent" type="checkbox" required><label for="consent">Acepto enviar esta información por WhatsApp.</label></div>
         </div>
 
-        <div class="formActions">
+        <div class="actions">
           <button class="btn ghost hidden" id="back" type="button">Atrás</button>
-          <div class="right">
+          <div class="actionsRight">
             <button class="btn primary" id="next" type="button">Continuar</button>
-            <button class="btn primary hidden" id="send" type="submit">Revisar envío</button>
+            <button class="btn primary hidden" id="send" type="submit">Abrir WhatsApp y enviar</button>
           </div>
         </div>
-        <p class="status" id="status" aria-live="polite">Primera prueba gratis. Completa solo información que quieras usar.</p>
-      </form>
+        <p class="status" id="status" aria-live="polite"></p>
+      </div>
 
-      <aside class="sideCard">
-        <div class="eyebrow"><span class="dot"></span>Tu pedido</div>
-        <h3 id="orderId">PEDIDO pendiente</h3>
-        <div class="preview" id="preview">Tu resumen aparecerá aquí mientras completas el formulario.</div>
-        <p class="sideNote">Al final podrás compartir archivos desde el móvil si el navegador lo permite. Si no, abrirás WhatsApp con el texto y adjuntarás las fotos manualmente.</p>
-      </aside>
-    </div>
-  </div>
-</section>
+      <div class="success" id="success">
+        <div class="successMark">✓</div>
+        <h3>¡Listo! Pedido enviado.</h3>
+        <p>Revisaré tus fotos y datos. La respuesta llegará por WhatsApp.</p>
+        <a class="heroAction" href="https://wa.me/522491211725" target="_blank" rel="noopener">Abrir conversación</a>
+      </div>
+    </form>
 
-<section>
-  <div class="wrap">
-    <h2 class="sectionTitle">Antes de enviar.</h2>
-    <div class="faq">
-      <details><summary>¿La primera muestra cuesta?</summary><p>No. La primera pieza funciona como una muestra gratis para que pruebes el servicio con un producto real antes de decidir si quieres contratar.</p></details>
-      <details><summary>¿Qué pasa si no sé qué formato necesito?</summary><p>Elige “Recomiéndame el formato”. Se revisa el producto y se propone la pieza más útil.</p></details>
-      <details><summary>¿Inventan características o precios?</summary><p>No. La regla del flujo es usar únicamente información confirmada.</p></details>
-      <details><summary>¿Por qué termina en WhatsApp?</summary><p>Porque en esta etapa permite recibir el pedido, completar los archivos y dar seguimiento de forma directa.</p></details>
-      <details><summary>¿Las fotos se envían solas?</summary><p>No siempre. Si tu móvil permite compartir archivos desde el navegador, aparecerá esa opción. Si no, abre WhatsApp y adjunta manualmente las fotos seleccionadas antes de enviar.</p></details>
-    </div>
+    <aside class="summaryCard">
+      <div class="summaryColor"></div>
+      <h3>Tu muestra</h3>
+      <div class="summaryLine"><span>Tipo</span><b id="summaryType">Recomiéndame</b></div>
+      <div class="summaryLine"><span>Etapa</span><b id="summaryStage">No indicado</b></div>
+      <div class="summaryLine"><span>Formato</span><b id="summaryPiece">Recomiéndame</b></div>
+      <div class="summaryLine"><span>Fotos</span><b id="summaryPhotos">0</b></div>
+      <div class="contactCard"><strong>¿Prefieres hablar primero?</strong><a href="https://wa.me/522491211725" target="_blank" rel="noopener">WhatsApp 249 121 1725</a></div>
+    </aside>
   </div>
 </section>
 </main>
 
-<footer><div class="wrap">Entorno de prueba · Primer pedido gratis. Fotos de ejemplo: <a href="https://commons.wikimedia.org/wiki/File:Tartine_bakery_opera_cake_in_2007.jpg" target="_blank" rel="noopener">Arnold Gatilao / CC BY 2.0</a> y <a href="https://commons.wikimedia.org/wiki/File:Barber_shop_haircutting_session_(51210342653).jpg" target="_blank" rel="noopener">Hair Spies / CC BY 2.0</a>.</div></footer>
-
-<div class="mobileCta" id="mobileCta"><a class="btn primary" href="#pedido">Probar gratis</a></div>
-
-<div class="modal hidden" id="handoffModal" role="dialog" aria-modal="true" aria-labelledby="handoffTitle">
+<div class="modal hidden" id="returnModal" role="dialog" aria-modal="true" aria-labelledby="returnTitle">
   <div class="modalCard">
-    <div class="modalTop">
-      <div>
-        <div class="eyebrow"><span class="dot"></span>Último paso</div>
-        <h3 id="handoffTitle">Asegura que tus fotos sí lleguen.</h3>
-      </div>
-      <button class="closeBtn" id="closeModal" type="button" aria-label="Cerrar">×</button>
+    <h3 id="returnTitle">¿Ya enviaste el pedido?</h3>
+    <p>Confirma solo después de mandar el mensaje y las fotos en WhatsApp.</p>
+    <div class="modalActions">
+      <button class="btn primary" id="confirmSent" type="button">Sí, ya lo envié</button>
+      <button class="btn ghost" id="backToWhatsapp" type="button">Volver a WhatsApp</button>
+      <button class="btn ghost" id="closeReturn" type="button">Todavía no</button>
     </div>
-
-    <div class="handoffBox">
-      <b id="handoffCount">Tienes fotos seleccionadas.</b>
-      <ol class="handoffList">
-        <li>Elige una opción de envío.</li>
-        <li>Si usas WhatsApp directo, adjunta manualmente las mismas fotos.</li>
-        <li>No envíes hasta comprobar que las miniaturas aparecen dentro del chat.</li>
-      </ol>
-    </div>
-
-    <div class="handoffActions">
-      <button class="btn native hidden" id="nativeShare" type="button">Compartir fotos + pedido</button>
-      <button class="btn wa" id="openWhatsapp" type="button">Abrir WhatsApp con el pedido</button>
-      <button class="btn ghost" id="copyOrder" type="button">Copiar texto del pedido</button>
-    </div>
-    <p class="shareSupport" id="shareSupport">La opción de compartir archivos aparece solo en dispositivos y navegadores compatibles.</p>
   </div>
 </div>
+
+<div class="mobileCta" id="mobileCta"><a class="heroAction" href="#pedido">Crear muestra gratis</a></div>
+
+<footer>
+  <div class="wrap footerIn">
+    <div>Miguel Ángel Ruiz · WhatsApp 249 121 1725</div>
+    <div class="footerLinks">
+      <a href="https://wa.me/522491211725" target="_blank" rel="noopener">Contacto</a>
+      <span>Ejemplos: CC BY 2.0</span>
+    </div>
+  </div>
+</footer>
 
 <script>
 const WA_NUMBER="522491211725";
 const $=id=>document.getElementById(id);
 const params=new URLSearchParams(location.search);
-const campaign=(params.get("camp")||"MUESTRA_GRATIS").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
-const source=(params.get("src")||"directo").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,40);
+const source=(params.get("src")||"directo").replace(/[^a-zA-Z0-9_-]/g,"").slice(0,30);
 let currentOrderId="";
 let currentStep=1;
 let previewUrls=[];
 let businessMode="Recomiéndame";
 let publishingStage="No indicado";
+let whatsappOpened=false;
+let lastWhatsappUrl="";
 
 function val(id){return $(id).value.trim();}
 function orderId(){
   if(currentOrderId) return currentOrderId;
   const d=new Date(),p=n=>String(n).padStart(2,"0");
-  currentOrderId="PRB-"+d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+"-"+p(d.getHours())+p(d.getMinutes())+"-"+Math.random().toString(36).slice(2,6).toUpperCase();
+  currentOrderId="MUESTRA-"+d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+"-"+p(d.getHours())+p(d.getMinutes())+"-"+Math.random().toString(36).slice(2,6).toUpperCase();
   return currentOrderId;
 }
-function selectedFiles(){
+function files(){
   const photos=[...($("images").files||[])];
   const logos=[...($("logo").files||[])];
-  return {photos,logos,all:[...photos,...logos]};
+  return {photos,logos};
 }
-function counts(){
-  const f=selectedFiles();
-  return {images:f.photos.length,logo:f.logos.length?"Sí":"No"};
-}
-function compact(value,fallback="No indicado"){return value||fallback;}
 function buildMessage(){
-  const c=counts();
+  const f=files();
   const lines=[
-    "*NUEVO PEDIDO — PRIMERA PRUEBA GRATIS*",
-    "PEDIDO-ID: "+orderId(),
-    "CAMPAÑA: "+campaign,
-    "ORIGEN: "+source,
+    "*NUEVO PEDIDO — MUESTRA GRATIS*",
+    "Pedido: "+orderId(),
     "",
-    "*TIPO:* "+businessMode,
-    "*ETAPA:* "+publishingStage,
-    "*PRODUCTO:* "+compact(val("product")),
-    "*NEGOCIO:* "+compact(val("brand")),
-    "*PIEZA:* "+$("piece").value,
-    "*DISPONIBLE:* "+$("availability").value,
-    val("price")?"*PRECIO:* "+val("price"):null,
-    val("contact")?"*CONTACTO:* "+val("contact"):null,
-    val("location")?"*UBICACIÓN:* "+val("location"):null,
-    val("maps")?"*MAPS:* "+val("maps"):null,
+    "*Negocio:* "+(val("brand")||"No indicado"),
+    "*Producto / servicio:* "+(val("product")||"No indicado"),
+    "*Tipo:* "+businessMode,
+    "*Formato:* "+$("piece").value,
+    val("price")?"*Precio:* "+val("price"):null,
+    val("contact")?"*Contacto:* "+val("contact"):null,
+    val("location")?"*Ubicación:* "+val("location"):null,
     "",
-    "FOTOS SELECCIONADAS: "+c.images,
-    "LOGO: "+c.logo,
-    "IMPORTANTE: confirmar que los archivos estén adjuntos en este chat antes de enviar.",
-    "",
-    val("confirmed")?"*DATOS CONFIRMADOS:*\n"+val("confirmed"):null,
-    val("notes")?"*OBJETIVO:* "+val("notes"):null,
-    "",
-    "REGLA: usar solo información confirmada; no inventar datos.",
-    "ESTADO: PEDIDO_RECIBIDO_PENDIENTE_DE_ARCHIVOS"
-  ].filter(v=>v!==null);
+    f.photos.length+" foto"+(f.photos.length===1?" seleccionada":"s seleccionadas")+(f.logos.length?" + logo":""),
+    val("confirmed")?"*Datos:* "+val("confirmed"):null,
+    val("notes")?"*Objetivo:* "+val("notes"):null
+  ].filter(Boolean);
   return lines.join("\n");
 }
-function renderPreview(){
-  $("orderId").textContent=orderId();
-  $("preview").textContent=buildMessage();
+function updateSummary(){
+  $("summaryType").textContent=businessMode;
+  $("summaryStage").textContent=publishingStage;
+  $("summaryPiece").textContent=$("piece").value;
+  $("summaryPhotos").textContent=files().photos.length;
 }
-function setStatus(text,type){
+function setStatus(text,type=""){
   $("status").className="status"+(type?" "+type:"");
   $("status").textContent=text;
 }
 function validateStep(step){
   if(step===1){
     const missing=[];
-    if(!val("brand")) missing.push("marca o negocio");
+    if(!val("brand")) missing.push("negocio");
     if(!val("product")) missing.push("producto o servicio");
     if(missing.length){setStatus("Falta: "+missing.join(", ")+".","error");return false;}
   }
-  if(step===2 && val("maps") && !$("maps").checkValidity()){
-    setStatus("Revisa el enlace de Google Maps.","error");return false;
-  }
   if(step===3){
     const missing=[];
-    if(!selectedFiles().photos.length) missing.push("al menos una foto");
-    if(!$("consent").checked) missing.push("aceptar el envío y seguimiento");
+    if(!files().photos.length) missing.push("al menos una foto");
+    if(!$("consent").checked) missing.push("aceptar el envío");
     if(missing.length){setStatus("Falta: "+missing.join(", ")+".","error");return false;}
   }
-  setStatus("Todo bien. Puedes continuar.","ok");
+  setStatus("");
   return true;
 }
 function showStep(step){
@@ -416,16 +387,16 @@ function showStep(step){
   $("back").classList.toggle("hidden",step===1);
   $("next").classList.toggle("hidden",step===3);
   $("send").classList.toggle("hidden",step!==3);
-  const titles=["","Paso 1 · Tu negocio","Paso 2 · Datos confirmados","Paso 3 · Fotos y envío"];
+  const titles=["","1 · Tu negocio","2 · Lo que quieres mostrar","3 · Tus fotos"];
   $("progressTitle").textContent=titles[step];
   $("progressText").textContent=step+" de 3";
   $("progressBar").style.width=(step/3*100)+"%";
-  setStatus(step===3?"Selecciona las fotos y comprueba la vista previa.":"Completa solo lo necesario.");
+  setStatus("");
   document.querySelector("#pedido").scrollIntoView({behavior:"smooth",block:"start"});
 }
-function renderImagePreview(){
+function renderImages(){
   previewUrls.forEach(URL.revokeObjectURL);previewUrls=[];
-  const grid=$("imagePreview"),photos=selectedFiles().photos;
+  const grid=$("imagePreview"),photos=files().photos;
   grid.innerHTML="";
   grid.classList.toggle("hidden",!photos.length);
   photos.slice(0,8).forEach(file=>{
@@ -435,170 +406,61 @@ function renderImagePreview(){
     const name=document.createElement("span");name.textContent=file.name;
     cell.append(img,name);grid.appendChild(cell);
   });
-  if(photos.length>8){
-    const cell=document.createElement("div");cell.className="thumb";
-    cell.style.display="grid";cell.style.placeItems="center";cell.textContent="+"+(photos.length-8);
-    grid.appendChild(cell);
-  }
-}
-function updateLogoStatus(){
-  const logos=selectedFiles().logos;
-  $("logoStatus").textContent=logos.length?("Seleccionado: "+logos[0].name):"Opcional.";
-}
-function canNativeShare(){
-  const files=selectedFiles().all;
-  if(!files.length||!navigator.share||!navigator.canShare) return false;
-  try{return navigator.canShare({files});}catch(e){return false;}
-}
-function openHandoff(){
-  const f=selectedFiles();
-  $("handoffCount").textContent="Seleccionaste "+f.photos.length+" foto"+(f.photos.length===1?"":"s")+(f.logos.length?" y 1 logo.":".");
-  const supported=canNativeShare();
-  $("nativeShare").classList.toggle("hidden",!supported);
-  $("shareSupport").textContent=supported
-    ?"Tu dispositivo permite compartir archivos desde el navegador. Elige WhatsApp y luego la conversación correcta."
-    :"En este dispositivo usa WhatsApp directo y adjunta manualmente las mismas fotos antes de enviar.";
-  $("handoffModal").classList.remove("hidden");
-}
-function closeHandoff(){$("handoffModal").classList.add("hidden");}
-async function nativeShare(){
-  const files=selectedFiles().all;
-  try{
-    await navigator.share({title:"Primer pedido gratis",text:buildMessage(),files});
-    setStatus("Se abrió el menú de compartir. Verifica que fotos y texto aparezcan antes de enviar.","ok");
-    closeHandoff();
-  }catch(e){
-    if(e&&e.name==="AbortError") return;
-    $("shareSupport").textContent="No se pudo compartir archivos desde el navegador. Usa WhatsApp directo y adjúntalos manualmente.";
-    $("nativeShare").classList.add("hidden");
-  }
+  updateSummary();
 }
 function openWhatsapp(){
-  const url="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage());
-  setStatus("WhatsApp abierto. Antes de enviar, adjunta las mismas fotos y confirma que las miniaturas aparezcan en el chat.","ok");
-  closeHandoff();
-  window.open(url,"_blank","noopener,noreferrer");
+  lastWhatsappUrl="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage());
+  whatsappOpened=true;
+  setStatus("WhatsApp abierto. Adjunta las fotos y envía el mensaje.","ok");
+  window.open(lastWhatsappUrl,"_blank","noopener,noreferrer");
 }
-async function copyOrder(){
-  try{
-    await navigator.clipboard.writeText(buildMessage());
-    $("shareSupport").textContent="Texto copiado. Puedes pegarlo manualmente si lo necesitas.";
-  }catch(e){
-    $("shareSupport").textContent="No se pudo copiar automáticamente. Selecciona el resumen del pedido y cópialo manualmente.";
-  }
+function showReturnCheck(){
+  if(whatsappOpened) $("returnModal").classList.remove("hidden");
+}
+function closeReturn(){$("returnModal").classList.add("hidden");}
+function markSuccess(){
+  whatsappOpened=false;
+  closeReturn();
+  $("formFlow").classList.add("hidden");
+  $("success").classList.add("show");
+  document.querySelector("#pedido").scrollIntoView({behavior:"smooth",block:"center"});
+}
+function chooseMode(btn){
+  document.querySelectorAll(".choiceCard").forEach(x=>x.classList.remove("selected"));
+  btn.classList.add("selected");
+  businessMode=btn.dataset.mode||"Recomiéndame";
+  updateSummary();
+}
+function chooseStage(btn){
+  document.querySelectorAll(".stageBtn").forEach(x=>x.classList.remove("selected"));
+  btn.classList.add("selected");
+  publishingStage=btn.dataset.stage||"No indicado";
+  updateSummary();
 }
 
 $("next").addEventListener("click",()=>{if(validateStep(currentStep))showStep(Math.min(3,currentStep+1));});
 $("back").addEventListener("click",()=>showStep(Math.max(1,currentStep-1)));
-$("orderForm").addEventListener("submit",e=>{
-  e.preventDefault();renderPreview();
-  if(!validateStep(3)) return;
-  openHandoff();
-});
-$("images").addEventListener("change",()=>{renderImagePreview();renderPreview();});
-$("logo").addEventListener("change",()=>{updateLogoStatus();renderPreview();});
-["customerName","brand","product","piece","availability","price","contact","location","maps","confirmed","notes","consent"].forEach(id=>{
-  $(id).addEventListener("input",renderPreview);
-  $(id).addEventListener("change",renderPreview);
-});
-$("closeModal").addEventListener("click",closeHandoff);
-$("handoffModal").addEventListener("click",e=>{if(e.target===$("handoffModal"))closeHandoff();});
-$("nativeShare").addEventListener("click",nativeShare);
-$("openWhatsapp").addEventListener("click",openWhatsapp);
-$("copyOrder").addEventListener("click",copyOrder);
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeHandoff();});
-
-document.querySelectorAll(".choiceCard").forEach(btn=>{
-  btn.addEventListener("click",()=>{
-    document.querySelectorAll(".choiceCard").forEach(x=>x.classList.remove("selected"));
-    btn.classList.add("selected");
-    businessMode=btn.dataset.mode||"Recomiéndame";
-    const hint=$("formatHint");
-    if(businessMode==="Servicio"){
-      hint.querySelector("strong").textContent="Servicio: muestra el resultado o la transformación.";
-      hint.querySelector("span:last-child").textContent="Historia/post con foto real; Reel corto si después agregas video del proceso.";
-    }else if(businessMode==="Producto"){
-      hint.querySelector("strong").textContent="Producto: haz que se entienda en un vistazo.";
-      hint.querySelector("span:last-child").textContent="Historia vertical + post de producto son una buena primera muestra.";
-    }else{
-      hint.querySelector("strong").textContent="No tienes que saber qué formato usar.";
-      hint.querySelector("span:last-child").textContent="Sube tu material y el sistema recomienda la primera pieza.";
-    }
-    renderPreview();
-  });
-});
-document.querySelectorAll(".stageBtn").forEach(btn=>{
-  btn.addEventListener("click",()=>{
-    document.querySelectorAll(".stageBtn").forEach(x=>x.classList.remove("selected"));
-    btn.classList.add("selected");
-    publishingStage=btn.dataset.stage||"No indicado";
-    renderPreview();
-  });
+$("orderForm").addEventListener("submit",e=>{e.preventDefault();if(validateStep(3))openWhatsapp();});
+$("images").addEventListener("change",renderImages);
+$("piece").addEventListener("change",updateSummary);
+document.querySelectorAll(".choiceCard").forEach(btn=>btn.addEventListener("click",()=>chooseMode(btn)));
+document.querySelectorAll(".stageBtn").forEach(btn=>btn.addEventListener("click",()=>chooseStage(btn)));
+$("confirmSent").addEventListener("click",markSuccess);
+$("backToWhatsapp").addEventListener("click",()=>{closeReturn();if(lastWhatsappUrl)window.open(lastWhatsappUrl,"_blank","noopener,noreferrer");});
+$("closeReturn").addEventListener("click",closeReturn);
+$("returnModal").addEventListener("click",e=>{if(e.target===$("returnModal"))closeReturn();});
+document.addEventListener("visibilitychange",()=>{
+  if(document.visibilityState==="visible"&&whatsappOpened) setTimeout(showReturnCheck,350);
 });
 
-const channelCopy={
-  facebook:{
-    eyebrow:"Llegaste desde Facebook",
-    line1:"Haz que tu producto",
-    line2:"se vea listo para publicar.",
-    lead:"Sube una foto real de tu producto y sus datos confirmados. Te preparo una primera pieza gratis para que veas cómo puede verse en Facebook antes de pagar.",
-    cta:"Probar con un producto de mi negocio",
-    label:"Para Facebook",
-    headline:"Una foto real. Una pieza lista para publicar.",
-    sub:"Ideal si ya vendes por Facebook y quieres probar una presentación más clara de uno de tus productos."
-  },
-  instagram:{
-    eyebrow:"Llegaste desde Instagram",
-    line1:"Convierte una foto real",
-    line2:"en contenido para vender.",
-    lead:"Sube una foto de tu producto y datos confirmados. Recibe una primera propuesta gratis y decide después si quieres seguir.",
-    cta:"Crear mi primera muestra",
-    label:"Para Instagram",
-    headline:"Prueba cómo puede verse tu producto.",
-    sub:"Sin contratar primero y sin inventar información."
-  },
-  whatsapp:{
-    eyebrow:"Muestra gratis para tu negocio",
-    line1:"Mándame un producto.",
-    line2:"Primero mira el resultado.",
-    lead:"Sube fotos reales y datos confirmados. Te preparo una primera pieza gratis y te la regreso por WhatsApp.",
-    cta:"Probar mi primera muestra gratis",
-    label:"Desde WhatsApp",
-    headline:"Prueba antes de pagar.",
-    sub:"Solo necesitas una foto real de tu producto y la información que sí quieras mostrar."
-  },
-  maps:{
-    eyebrow:"Negocio local · muestra gratis",
-    line1:"Prueba una pieza",
-    line2:"con tu negocio real.",
-    lead:"Si ya vendes un producto o servicio, puedes probar una primera pieza comercial gratis con tus propias fotos y datos.",
-    cta:"Probar con mi negocio",
-    label:"Negocio local",
-    headline:"Primero mira una muestra real.",
-    sub:"Después decides si quieres volver a usar el servicio."
-  },
-  presencial:{
-    eyebrow:"Muestra gratis · pruébalo ahora",
-    line1:"Escanea, sube una foto",
-    line2:"y mira qué podemos hacer.",
-    lead:"Usa un producto real de tu negocio. La primera pieza es una muestra gratis para que veas el resultado antes de pagar.",
-    cta:"Empezar mi muestra",
-    label:"Prueba presencial",
-    headline:"Una muestra real con tu producto.",
-    sub:"Sin registro y sin contratar primero."
-  }
-};
-const cc=channelCopy[source]||channelCopy.whatsapp;
-$("eyebrowText").textContent=cc.eyebrow;
-$("channelLabel").textContent=cc.label;
-$("refHeadline").textContent=cc.headline;
-$("refSub").textContent=cc.sub;
+const channelNames={facebook:"Desde Facebook",instagram:"Desde Instagram",whatsapp:"Desde WhatsApp",maps:"Negocio local",presencial:"Prueba presencial",directo:"Primera muestra gratis"};
+$("channelBadge").textContent=channelNames[source]||"Primera muestra gratis";
 
 const formObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>$("mobileCta").classList.toggle("hide",entry.isIntersecting));
-},{threshold:.15});
+},{threshold:.12});
 formObserver.observe($("orderForm"));
-renderPreview();
+updateSummary();
 </script>
 </body>
 </html>
