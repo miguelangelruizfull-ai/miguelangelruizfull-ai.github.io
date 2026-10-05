@@ -269,3 +269,8 @@ Flujo de salida:
 4. solo después de que el usuario confirme se muestra `¡Listo! Pedido enviado.`.
 
 No afirmar envío exitoso sin confirmación del usuario o sin una futura integración de WhatsApp Business API/backend.
+
+## Prompt operativo de pedidos reales
+- Prompt canónico: `docs/PROMPT_PEDIDO_REAL_V1.md`.
+- Aplica al cierre reproducible de cada pedido: analizar -> recomendar formato -> producir -> QA -> archivar -> publicar solo final autorizado -> recomendar una siguiente acción.
+- Reanudación: usar el PEDIDO-ID y continuar desde el último estado verificable.
