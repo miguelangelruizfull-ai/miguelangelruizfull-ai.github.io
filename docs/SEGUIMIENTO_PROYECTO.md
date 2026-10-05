@@ -337,3 +337,11 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Las atribuciones quedaron visibles en el footer.
 - El formulario usa lenguaje genérico para producto o servicio.
 - Siguiente prueba: entregar enlace a un negocio real y observar si logra elegir el camino visual sin explicación previa.
+
+
+## 2026-10-05 — Mensaje para compartir con familiares o personas cercanas
+- Estrategia: compartir la muestra como prueba del servicio, sin presentarla como referido ni venta agresiva.
+- Para alguien cercano con negocio: mencionar su producto/servicio concreto y ofrecer una muestra gratis.
+- Para alguien cercano sin negocio: pedirle que pruebe el flujo con algún producto/servicio real de un conocido o como prueba de usabilidad, sin sobreexplicar.
+- Regla de validación: no guiar paso a paso; observar si entiende la interfaz visual por sí sola.
+- Enlace general recomendado para WhatsApp: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
