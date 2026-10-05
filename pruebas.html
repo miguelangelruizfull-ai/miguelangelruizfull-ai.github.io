@@ -95,7 +95,12 @@ h1{font-size:clamp(3rem,7vw,6.1rem);line-height:.92;letter-spacing:-.065em;margi
 .formGrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}
 label{font-weight:850;font-size:.92rem}
 input,select,textarea{width:100%;min-height:48px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);padding:12px 13px;outline:none}
-textarea{min-height:96px;resize:vertical}
+textarea{min-height:78px;resize:vertical}
+.goalGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.goalBtn{min-height:52px;border:1px solid var(--line);border-radius:15px;background:#fff;color:var(--ink);padding:11px 12px;font-weight:900;text-align:left;cursor:pointer}
+.goalBtn.selected{border-color:transparent;color:#fff;background:linear-gradient(135deg,var(--purple),var(--pink),var(--coral));box-shadow:0 10px 26px #9f3dba22}
+.shareHint{margin-top:12px;padding:11px 12px;border-radius:14px;background:#f3edff;border:1px solid #e1d3fb;color:#594d67;font-size:.86rem}
+.logoState{margin-top:7px;color:var(--muted);font-size:.82rem;font-weight:750}
 input:focus,select:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px solid #bfa6ff;outline-offset:2px;border-color:#9f67ff}
 .req{color:var(--pink)}
 .uploadBox{border:2px dashed #ccbaf0;border-radius:20px;padding:16px;background:linear-gradient(135deg,#fbf7ff,#fff8fc)}
@@ -122,7 +127,8 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
   .choiceRail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:3px 3px 9px}.choiceCard{flex:0 0 82%;min-height:320px;scroll-snap-align:center}
   .formatGrid,.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formats{padding:24px 0}.order{padding-top:24px}
   .actions{flex-direction:column}.actionsRight{width:100%;margin-left:0}.actions .btn,.actionsRight .btn{width:100%}.thumbGrid{grid-template-columns:repeat(3,1fr)}
-  .summaryCard{display:none}.formCard{padding:16px;border-radius:22px}
+  .summaryCard{display:none}.formCard{padding:14px;border-radius:22px}
+  .formGrid{gap:10px}input,select,textarea{min-height:46px;padding:10px 12px}textarea{min-height:76px}.goalGrid{grid-template-columns:1fr 1fr}.goalBtn{min-height:50px;padding:10px}
   .mobileCta{position:fixed;display:flex;z-index:55;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));padding:7px;border-radius:18px;background:#ffffffea;border:1px solid #fff;box-shadow:0 18px 48px #5e3e7b30;backdrop-filter:blur(16px);transition:.2s}.mobileCta .heroAction{width:100%;margin:0}.mobileCta.hide{transform:translateY(130%);opacity:0;pointer-events:none}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
@@ -228,69 +234,58 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
   <div class="wrap orderShell">
     <form class="formCard" id="orderForm" novalidate>
       <div id="formFlow">
-        <div class="progressHead"><strong id="progressTitle">1 · Tu negocio</strong><span class="progressText" id="progressText">1 de 3</span></div>
+        <div class="progressHead"><strong id="progressTitle">1 · Qué quieres promocionar</strong><span class="progressText" id="progressText">1 de 3</span></div>
         <div class="bar"><span id="progressBar"></span></div>
 
         <div class="stepPane active" data-step="1">
-          <h2 class="stepTitle">¿Qué quieres mostrar?</h2>
-          <p class="stepCopy">Solo lo básico.</p>
+          <h2 class="stepTitle">¿Qué quieres promocionar?</h2>
+          <p class="stepCopy">Dinos qué vendes y agrega tus fotos reales.</p>
           <div class="formGrid">
-            <div class="field"><label for="customerName">Tu nombre</label><input id="customerName" autocomplete="name" placeholder="Opcional"></div>
-            <div class="field"><label for="brand">Negocio <span class="req">*</span></label><input id="brand" required placeholder="Nombre de tu negocio"></div>
-            <div class="field full"><label for="product">Producto o servicio <span class="req">*</span></label><input id="product" required placeholder="Ej. Pastel de chocolate"></div>
-            <div class="field"><label for="piece">Formato</label>
-              <select id="piece">
-                <option value="Recomiéndame el formato">Recomiéndame</option>
-                <option value="Historia vertical">Historia vertical</option>
-                <option value="Post para redes">Post</option>
-                <option value="Reel corto">Reel corto</option>
-                <option value="Marketplace">Marketplace</option>
-                <option value="Catálogo WhatsApp">Catálogo WhatsApp</option>
-              </select>
+            <div class="field"><label for="brand">Nombre del negocio</label><input id="brand" autocomplete="organization" placeholder="Opcional"></div>
+            <div class="field"><label for="product">Producto o servicio <span class="req">*</span></label><input id="product" required placeholder="Ej. Pasteles personalizados"></div>
+            <input id="piece" type="hidden" value="Recomiéndame el formato">
+            <div class="field full uploadBox">
+              <label for="images">Fotos <span class="req">*</span></label>
+              <input id="images" type="file" accept="image/*" multiple required>
+              <div class="thumbGrid hidden" id="imagePreview"></div>
             </div>
-            <div class="field"><label for="availability">Disponible</label>
-              <select id="availability">
-                <option value="Sí, disponible">Sí</option>
-                <option value="No mostrar">No mostrar</option>
-                <option value="No confirmado">No estoy seguro</option>
-              </select>
+            <div class="field full">
+              <label for="logo">Logo</label>
+              <input id="logo" type="file" accept="image/*,.svg,.pdf">
+              <div class="logoState" id="logoState">Opcional</div>
             </div>
           </div>
         </div>
 
         <div class="stepPane" data-step="2">
-          <h2 class="stepTitle">¿Qué quieres que aparezca?</h2>
-          <p class="stepCopy">Lo que no pongas, no se inventa.</p>
+          <h2 class="stepTitle">¿Cómo te contactan?</h2>
+          <p class="stepCopy">Solo lo necesario para que la propuesta sea útil.</p>
           <div class="formGrid">
-            <div class="field"><label for="price">Precio</label><input id="price" placeholder="Opcional"></div>
-            <div class="field"><label for="contact">Contacto</label><input id="contact" placeholder="Teléfono o red social"></div>
-            <div class="field full"><label for="location">Ubicación</label><input id="location" placeholder="Ciudad o zona"></div>
-            <div class="field full"><label for="confirmed">Datos importantes</label><textarea id="confirmed" placeholder="Ingredientes, medidas, características, qué incluye..."></textarea></div>
-            <div class="field full"><label for="notes">Objetivo</label><textarea id="notes" placeholder="Ej. Quiero venderlo / conseguir pedidos / anunciar un servicio"></textarea></div>
+            <div class="field full"><label for="contact">Tu WhatsApp <span class="req">*</span></label><input id="contact" inputmode="tel" autocomplete="tel" required placeholder="Ej. 249 123 4567"></div>
+            <div class="field full"><label for="location">Ubicación del negocio</label><input id="location" autocomplete="address-level2" placeholder="Ciudad, localidad o pega tu enlace de Maps"></div>
+            <div class="field full"><label for="confirmed">Cuéntame sobre tu producto o servicio</label><textarea id="confirmed" placeholder="Ej. Pasteles personalizados, tamaños, sabores, precios desde..."></textarea></div>
           </div>
         </div>
 
         <div class="stepPane" data-step="3">
-          <h2 class="stepTitle">Sube tus fotos.</h2>
-          <p class="stepCopy">Usa fotos reales.</p>
-          <div class="uploadBox">
-            <label for="images">Fotos <span class="req">*</span></label>
-            <input id="images" type="file" accept="image/*" multiple required>
-            <div class="thumbGrid hidden" id="imagePreview"></div>
+          <h2 class="stepTitle">¿Qué quieres lograr?</h2>
+          <p class="stepCopy">Elige una opción. Si no sabes, te recomendamos la mejor.</p>
+          <div class="goalGrid" role="group" aria-label="Objetivo del pedido">
+            <button class="goalBtn" type="button" data-goal="Vender más">Vender más</button>
+            <button class="goalBtn" type="button" data-goal="Conseguir pedidos">Conseguir pedidos</button>
+            <button class="goalBtn" type="button" data-goal="Dar a conocer mi negocio">Dar a conocer mi negocio</button>
+            <button class="goalBtn" type="button" data-goal="Recomiéndame">Recomiéndame</button>
           </div>
-          <div class="field full" style="margin-top:12px">
-            <label for="logo">Logo</label>
-            <input id="logo" type="file" accept="image/*,.svg,.pdf">
-          </div>
-          <div class="fileNote"><strong>Último paso:</strong> WhatsApp abrirá el chat al 249 121 1725. Adjunta ahí estas mismas fotos antes de enviar.</div>
-          <div class="consent"><input id="consent" type="checkbox" required><label for="consent">Acepto enviar esta información por WhatsApp.</label></div>
+          <input id="notes" type="hidden" value="">
+          <div class="shareHint"><strong>Fotos + logo:</strong> al enviar, el teléfono intentará compartir el pedido y los archivos juntos. En Android, elige WhatsApp cuando aparezcan las opciones para compartir.</div>
+          <div class="consent"><input id="consent" type="checkbox" required><label for="consent">Acepto enviar esta información y las imágenes para preparar mi muestra.</label></div>
         </div>
 
         <div class="actions">
           <button class="btn ghost hidden" id="back" type="button">Atrás</button>
           <div class="actionsRight">
             <button class="btn primary" id="next" type="button">Continuar</button>
-            <button class="btn primary hidden" id="send" type="submit">Abrir WhatsApp y enviar</button>
+            <button class="btn primary hidden" id="send" type="submit">Enviar mi pedido por WhatsApp</button>
           </div>
         </div>
         <p class="status" id="status" aria-live="polite"></p>
@@ -298,36 +293,23 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
 
       <div class="success" id="success">
         <div class="successMark">✓</div>
-        <h3>¡Listo! Pedido enviado.</h3>
-        <p>Revisaré tus fotos y datos. La respuesta llegará por WhatsApp.</p>
-        <a class="heroAction" href="https://wa.me/522491211725" target="_blank" rel="noopener">Abrir conversación</a>
+        <h3>Pedido recibido.</h3>
+        <p>Ahora prepararemos tu primera propuesta.</p>
+        <a class="heroAction" href="https://wa.me/522491211725" target="_blank" rel="noopener">Abrir WhatsApp</a>
       </div>
     </form>
 
     <aside class="summaryCard">
       <div class="summaryColor"></div>
-      <h3>Tu muestra</h3>
+      <h3>Tu pedido</h3>
       <div class="summaryLine"><span>Tipo</span><b id="summaryType">Recomiéndame</b></div>
-      <div class="summaryLine"><span>Etapa</span><b id="summaryStage">No indicado</b></div>
-      <div class="summaryLine"><span>Formato</span><b id="summaryPiece">Recomiéndame</b></div>
+      <div class="summaryLine"><span>Objetivo</span><b id="summaryGoal">Sin elegir</b></div>
       <div class="summaryLine"><span>Fotos</span><b id="summaryPhotos">0</b></div>
       <div class="contactCard"><strong>¿Prefieres hablar primero?</strong><a href="https://wa.me/522491211725" target="_blank" rel="noopener">WhatsApp 249 121 1725</a></div>
     </aside>
   </div>
 </section>
 </main>
-
-<div class="modal hidden" id="returnModal" role="dialog" aria-modal="true" aria-labelledby="returnTitle">
-  <div class="modalCard">
-    <h3 id="returnTitle">¿Ya enviaste el pedido?</h3>
-    <p>Confirma solo después de mandar el mensaje y las fotos en WhatsApp.</p>
-    <div class="modalActions">
-      <button class="btn primary" id="confirmSent" type="button">Sí, ya lo envié</button>
-      <button class="btn ghost" id="backToWhatsapp" type="button">Volver a WhatsApp</button>
-      <button class="btn ghost" id="closeReturn" type="button">Todavía no</button>
-    </div>
-  </div>
-</div>
 
 <div class="mobileCta" id="mobileCta"><a class="heroAction" href="#pedido">Crear muestra gratis</a></div>
 
@@ -351,10 +333,9 @@ let currentStep=1;
 let previewUrls=[];
 let businessMode="Recomiéndame";
 let publishingStage="No indicado";
-let whatsappOpened=false;
-let lastWhatsappUrl="";
+let selectedGoal="";
 
-function val(id){return $(id).value.trim();}
+function val(id){const el=$(id);return el&&typeof el.value==="string"?el.value.trim():"";}
 function orderId(){
   if(currentOrderId) return currentOrderId;
   const d=new Date(),p=n=>String(n).padStart(2,"0");
@@ -362,34 +343,35 @@ function orderId(){
   return currentOrderId;
 }
 function files(){
-  const photos=[...($("images").files||[])];
-  const logos=[...($("logo").files||[])];
-  return {photos,logos};
+  return {
+    photos:[...($("images").files||[])],
+    logos:[...($("logo").files||[])]
+  };
+}
+function allShareFiles(){
+  const f=files();
+  return [...f.photos,...f.logos];
 }
 function buildMessage(){
   const f=files();
-  const lines=[
+  return [
     "*NUEVO PEDIDO — MUESTRA GRATIS*",
     "Pedido: "+orderId(),
     "",
-    "*Negocio:* "+(val("brand")||"No indicado"),
     "*Producto / servicio:* "+(val("product")||"No indicado"),
+    val("brand")?"*Negocio:* "+val("brand"):null,
     "*Tipo:* "+businessMode,
-    "*Formato:* "+$("piece").value,
-    val("price")?"*Precio:* "+val("price"):null,
-    val("contact")?"*Contacto:* "+val("contact"):null,
+    "*Objetivo:* "+(selectedGoal||"Recomiéndame"),
+    val("contact")?"*WhatsApp:* "+val("contact"):null,
     val("location")?"*Ubicación:* "+val("location"):null,
+    val("confirmed")?"*Cuéntame:* "+val("confirmed"):null,
     "",
-    f.photos.length+" foto"+(f.photos.length===1?" seleccionada":"s seleccionadas")+(f.logos.length?" + logo":""),
-    val("confirmed")?"*Datos:* "+val("confirmed"):null,
-    val("notes")?"*Objetivo:* "+val("notes"):null
-  ].filter(Boolean);
-  return lines.join("\n");
+    f.photos.length+" foto"+(f.photos.length===1?"":"s")+" seleccionada"+(f.photos.length===1?"":"s")+(f.logos.length?" + logo":"")
+  ].filter(Boolean).join("\n");
 }
 function updateSummary(){
   $("summaryType").textContent=businessMode;
-  $("summaryStage").textContent=publishingStage;
-  $("summaryPiece").textContent=$("piece").value;
+  $("summaryGoal").textContent=selectedGoal||"Sin elegir";
   $("summaryPhotos").textContent=files().photos.length;
 }
 function setStatus(text,type=""){
@@ -397,17 +379,19 @@ function setStatus(text,type=""){
   $("status").textContent=text;
 }
 function validateStep(step){
+  const missing=[];
   if(step===1){
-    const missing=[];
-    if(!val("brand")) missing.push("negocio");
     if(!val("product")) missing.push("producto o servicio");
-    if(missing.length){setStatus("Falta: "+missing.join(", ")+".","error");return false;}
-  }
-  if(step===3){
-    const missing=[];
     if(!files().photos.length) missing.push("al menos una foto");
+  }
+  if(step===2 && !val("contact")) missing.push("tu WhatsApp");
+  if(step===3){
+    if(!selectedGoal) missing.push("qué quieres lograr");
     if(!$("consent").checked) missing.push("aceptar el envío");
-    if(missing.length){setStatus("Falta: "+missing.join(", ")+".","error");return false;}
+  }
+  if(missing.length){
+    setStatus("Falta: "+missing.join(", ")+".","error");
+    return false;
   }
   setStatus("");
   return true;
@@ -418,43 +402,45 @@ function showStep(step){
   $("back").classList.toggle("hidden",step===1);
   $("next").classList.toggle("hidden",step===3);
   $("send").classList.toggle("hidden",step!==3);
-  const titles=["","1 · Tu negocio","2 · Lo que quieres mostrar","3 · Tus fotos"];
+  const titles=["","1 · Qué quieres promocionar","2 · Tu contacto","3 · Tu objetivo"];
   $("progressTitle").textContent=titles[step];
   $("progressText").textContent=step+" de 3";
   $("progressBar").style.width=(step/3*100)+"%";
   setStatus("");
-  document.querySelector("#pedido").scrollIntoView({behavior:"smooth",block:"start"});
+  document.querySelector(".formCard").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function renderImages(){
-  previewUrls.forEach(URL.revokeObjectURL);previewUrls=[];
+  previewUrls.forEach(URL.revokeObjectURL);
+  previewUrls=[];
   const grid=$("imagePreview"),photos=files().photos;
   grid.innerHTML="";
   grid.classList.toggle("hidden",!photos.length);
   photos.slice(0,8).forEach(file=>{
-    const url=URL.createObjectURL(file);previewUrls.push(url);
-    const cell=document.createElement("div");cell.className="thumb";
-    const img=document.createElement("img");img.src=url;img.alt="Vista previa de "+file.name;
-    const name=document.createElement("span");name.textContent=file.name;
-    cell.append(img,name);grid.appendChild(cell);
+    const url=URL.createObjectURL(file);
+    previewUrls.push(url);
+    const cell=document.createElement("div");
+    cell.className="thumb";
+    const img=document.createElement("img");
+    img.src=url;
+    img.alt="Vista previa de "+file.name;
+    const name=document.createElement("span");
+    name.textContent=file.name;
+    cell.append(img,name);
+    grid.appendChild(cell);
   });
   updateSummary();
 }
-function openWhatsapp(){
-  lastWhatsappUrl="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage());
-  whatsappOpened=true;
-  setStatus("WhatsApp abierto. Adjunta las fotos y envía el mensaje.","ok");
-  window.open(lastWhatsappUrl,"_blank","noopener,noreferrer");
+function renderLogo(){
+  const logo=files().logos[0];
+  $("logoState").textContent=logo?"Logo seleccionado: "+logo.name:"Opcional";
 }
-function showReturnCheck(){
-  if(whatsappOpened) $("returnModal").classList.remove("hidden");
-}
-function closeReturn(){$("returnModal").classList.add("hidden");}
-function markSuccess(){
-  whatsappOpened=false;
-  closeReturn();
-  $("formFlow").classList.add("hidden");
-  $("success").classList.add("show");
-  document.querySelector("#pedido").scrollIntoView({behavior:"smooth",block:"center"});
+function chooseGoal(btn){
+  document.querySelectorAll(".goalBtn").forEach(x=>x.classList.remove("selected"));
+  btn.classList.add("selected");
+  selectedGoal=btn.dataset.goal||"";
+  $("notes").value=selectedGoal;
+  updateSummary();
+  setStatus("");
 }
 function chooseMode(btn){
   document.querySelectorAll(".choiceCard").forEach(x=>x.classList.remove("selected"));
@@ -466,23 +452,62 @@ function chooseStage(btn){
   document.querySelectorAll(".stageBtn").forEach(x=>x.classList.remove("selected"));
   btn.classList.add("selected");
   publishingStage=btn.dataset.stage||"No indicado";
-  updateSummary();
+}
+function markSuccess(){
+  $("formFlow").classList.add("hidden");
+  $("success").classList.add("show");
+  document.querySelector("#pedido").scrollIntoView({behavior:"smooth",block:"center"});
+}
+function openWhatsappFallback(reason=""){
+  const url="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(buildMessage());
+  window.open(url,"_blank","noopener,noreferrer");
+  setStatus((reason?reason+" ":"")+"WhatsApp se abrió con el pedido. Adjunta las fotos que ves arriba antes de enviarlo.","error");
+}
+async function shareOrder(){
+  const shareFiles=allShareFiles();
+  const data={title:"Pedido — "+(val("brand")||val("product")||"Muestra gratis"),text:buildMessage(),files:shareFiles};
+  if(navigator.share){
+    try{
+      if(!navigator.canShare || navigator.canShare({files:shareFiles})){
+        setStatus("Preparando tu pedido con fotos y logo…","ok");
+        await navigator.share(data);
+        markSuccess();
+        return;
+      }
+    }catch(err){
+      if(err && err.name==="AbortError"){
+        setStatus("Envío cancelado. Puedes intentarlo de nuevo.");
+        return;
+      }
+      openWhatsappFallback("El teléfono no permitió adjuntar los archivos automáticamente.");
+      return;
+    }
+  }
+  openWhatsappFallback("Este navegador no admite compartir archivos directamente.");
+}
+function keepActiveFieldVisible(el){
+  if(window.innerWidth>700) return;
+  setTimeout(()=>el.scrollIntoView({behavior:"smooth",block:"center"}),260);
 }
 
 $("next").addEventListener("click",()=>{if(validateStep(currentStep))showStep(Math.min(3,currentStep+1));});
 $("back").addEventListener("click",()=>showStep(Math.max(1,currentStep-1)));
-$("orderForm").addEventListener("submit",e=>{e.preventDefault();if(validateStep(3))openWhatsapp();});
+$("orderForm").addEventListener("submit",async e=>{e.preventDefault();if(validateStep(3))await shareOrder();});
 $("images").addEventListener("change",renderImages);
-$("piece").addEventListener("change",updateSummary);
+$("logo").addEventListener("change",renderLogo);
+document.querySelectorAll(".goalBtn").forEach(btn=>btn.addEventListener("click",()=>chooseGoal(btn)));
 document.querySelectorAll(".choiceCard").forEach(btn=>btn.addEventListener("click",()=>chooseMode(btn)));
 document.querySelectorAll(".stageBtn").forEach(btn=>btn.addEventListener("click",()=>chooseStage(btn)));
-$("confirmSent").addEventListener("click",markSuccess);
-$("backToWhatsapp").addEventListener("click",()=>{closeReturn();if(lastWhatsappUrl)window.open(lastWhatsappUrl,"_blank","noopener,noreferrer");});
-$("closeReturn").addEventListener("click",closeReturn);
-$("returnModal").addEventListener("click",e=>{if(e.target===$("returnModal"))closeReturn();});
-document.addEventListener("visibilitychange",()=>{
-  if(document.visibilityState==="visible"&&whatsappOpened) setTimeout(showReturnCheck,350);
+
+document.querySelectorAll("#orderForm input:not([type=hidden]):not([type=file]):not([type=checkbox]),#orderForm textarea,#orderForm select").forEach(el=>{
+  el.addEventListener("focus",()=>keepActiveFieldVisible(el));
 });
+if(window.visualViewport){
+  window.visualViewport.addEventListener("resize",()=>{
+    const el=document.activeElement;
+    if(el && $("orderForm").contains(el) && /INPUT|TEXTAREA|SELECT/.test(el.tagName)) keepActiveFieldVisible(el);
+  });
+}
 
 const channelNames={facebook:"Desde Facebook",instagram:"Desde Instagram",whatsapp:"Desde WhatsApp",maps:"Negocio local",presencial:"Prueba presencial",directo:"Primera muestra gratis"};
 $("channelBadge").textContent=channelNames[source]||"Primera muestra gratis";
@@ -492,6 +517,7 @@ const formObserver=new IntersectionObserver(entries=>{
 },{threshold:.12});
 formObserver.observe($("orderForm"));
 updateSummary();
+renderLogo();
 </script>
 </body>
 </html>
