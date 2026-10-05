@@ -361,3 +361,10 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Contacto visible agregado en barra superior, resumen y footer.
 - Recomendación: usar WhatsApp como contacto principal. No agregar LinkedIn hasta verificar una URL pública actual y útil para clientes. Un portafolio visual propio es más valioso para este funnel que un perfil profesional genérico.
 - Siguiente prueba: móvil Android real, completar muestra, abrir WhatsApp, adjuntar fotos, enviar, regresar y confirmar.
+
+
+## 2026-10-05 — Respuesta registrada: versión cliente V2
+- URL de prueba vigente: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
+- Contacto principal visible: WhatsApp 249 121 1725.
+- Recomendación de identidad: priorizar un botón `Ver trabajos` hacia un portafolio visual propio cuando existan 4–6 muestras autorizadas; LinkedIn queda como enlace secundario y no se agregó porque no hay URL pública confirmada.
+- Flujo de confirmación: abrir WhatsApp -> adjuntar fotos -> enviar -> volver -> confirmar `Sí, ya lo envié` -> pantalla de éxito.
