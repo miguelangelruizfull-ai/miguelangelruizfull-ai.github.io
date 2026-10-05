@@ -163,6 +163,41 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
   .resultActions{grid-template-columns:1fr}.resultBtn{width:100%;min-height:52px}
 }
 
+
+/* Recorrido compacto y caso real aprobado */
+h1{font-size:clamp(2.5rem,5vw,4.25rem);line-height:1.04;letter-spacing:-.045em}
+.hero{padding-top:32px}
+.choiceRail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;overflow:visible;padding:4px}
+.choiceCard,.choiceCard.recommend{min-height:112px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px #6d45a50c}
+.choiceCard img,.choiceCard:after{display:none}
+.choiceContent{position:static;display:block;padding:14px;color:var(--ink)}
+.choiceKicker{color:var(--muted);letter-spacing:0;text-transform:none}
+.choiceTitle{font-size:1.1rem;line-height:1.15;overflow-wrap:anywhere}
+.choiceSub{color:var(--muted);font-size:.76rem}
+.choiceCard.selected{outline:2px solid var(--purple);box-shadow:none;background:#f5efff}
+.formatGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.formats{padding:12px 0}
+.formatCard{padding:12px}
+.trialAction{margin:0 0 18px}
+.resultMedia{max-height:480px}
+.uploadHelp{font-size:.84rem;color:var(--muted);margin:6px 0}
+input[type=file]{font-size:.85rem;overflow:hidden}
+input[type=file]::file-selector-button{border:0;border-radius:9px;padding:9px 10px;background:#f0e7ff;color:#5420a6;font:inherit;font-weight:800;margin-right:8px;cursor:pointer}
+@media(max-width:640px){
+ .hero{padding:24px 0 18px}h1{font-size:clamp(2.2rem,9vw,3rem)}
+ .lead{font-size:1rem}.choiceCard{flex:initial;min-height:110px}
+ .choiceContent{padding:12px 8px}.choiceTitle{font-size:.98rem}
+ .choiceKicker{font-size:.65rem}.choiceSub{display:none}
+ .heroAction{width:100%}.formatCard strong{font-size:.92rem}.formatCard span{font-size:.76rem}
+ .resultCard{grid-template-columns:minmax(90px,30%) minmax(0,1fr);align-items:start}
+ .resultMedia{aspect-ratio:2/3;max-height:230px}
+ .resultCopy{padding:0}.resultCopy h3{font-size:1.3rem;line-height:1.12}
+ .resultCopy p{font-size:.9rem}.resultMeta{gap:5px}.resultMeta span{padding:5px 7px;font-size:.7rem}
+ .resultActions{grid-template-columns:1fr}.resultBtn{font-size:.88rem;padding:10px;min-height:44px}
+ .trialAction{font-size:.88rem;min-height:44px;padding:10px}
+ .resultShareHelp{display:none}.resultsTitle{font-size:1.7rem;line-height:1.1}
+}
+@media(max-width:360px){.resultCard{grid-template-columns:1fr}.resultMedia{max-width:150px}}
 </style>
 <link rel="canonical" href="https://miguelangelruizfull-ai.github.io/primer-pedido-gratis/">
 <script type="application/ld+json">
@@ -192,8 +227,8 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
   <div class="wrap heroGrid">
     <div>
       <div class="badge"><span class="badgeDot"></span><span id="channelBadge">Primera muestra gratis</span></div>
-      <h1><span class="rainbowText">Sube una foto.</span><br>Te preparo algo listo para publicar.</h1>
-      <p class="lead">Elige qué vendes, agrega lo básico y prueba una pieza real antes de pagar.</p>
+      <h1><span class="rainbowText">Tu foto,</span><br>lista para promocionar tu negocio.</h1>
+      <p class="lead">Comparte una foto y lo básico de tu negocio. Te preparo una primera muestra gratis, con atención directa por WhatsApp.</p>
 
       <div class="storyChooser">
         <div class="choiceRail">
@@ -213,7 +248,7 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
           <button class="stageBtn" type="button" data-stage="Ya publico">Ya publico</button>
           <button class="stageBtn" type="button" data-stage="Voy empezando">Voy empezando</button>
         </div>
-        <a class="heroAction" id="primaryCta" href="#pedido">Crear mi muestra gratis</a>
+        <a class="heroAction" id="primaryCta" href="#pedido">Solicitar muestra gratis</a>
       </div>
 
       <div class="trustRow">
@@ -251,8 +286,8 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
     <div class="resultsIntro">
       <div class="resultsIntroText">
         <p class="resultsKicker">Trabajo real / negocio destacado</p>
-        <h2 class="resultsTitle" id="trabajos-title">Así quedó su primera muestra</h2>
-        <p class="resultsLead">Cada pedido terminado puede convertirse en una forma directa de descubrir y contactar al negocio.</p>
+        <h2 class="resultsTitle" id="trabajos-title">Doña Gloria se animó a probar 🪅</h2>
+        <p class="resultsLead">Nos compartió su idea, preparamos una muestra gratis y ella la aprobó. Un proceso rápido, sencillo y con atención directa.</p>
       </div>
     </div>
 
@@ -263,6 +298,7 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
       <div class="resultCopy">
         <h3>Piñatas personalizadas en Quecholac</h3>
         <p>Doña Gloria crea piñatas por pedido para cumpleaños y eventos. Elige tu personaje y haz tu pedido directo por WhatsApp.</p>
+        <a class="heroAction trialAction" href="#pedido">Yo también quiero probar</a>
         <div class="resultMeta" aria-label="Datos del negocio">
           <span>Quecholac, Puebla</span>
           <span>Pedido por WhatsApp</span>
@@ -272,7 +308,7 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
           <a class="resultBtn primary" href="https://wa.me/522491347063?text=Hola%20Do%C3%B1a%20Gloria%2C%20vi%20sus%20pi%C3%B1atas%20personalizadas%20en%20la%20p%C3%A1gina%20y%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">Pedir una piñata</a>
           <button class="resultBtn secondary" id="sharePinatasResult" type="button">Compartir en redes</button>
         </div>
-        <p class="resultShareHelp">En móvil, el botón de compartir abre las apps disponibles para enviar la pieza a WhatsApp, Facebook, Instagram o TikTok.</p>
+        <p class="resultShareHelp">Comparte la muestra con las apps que permita tu dispositivo.</p>
         <a class="resultDetailLink" href="https://miguelangelruizfull-ai.github.io/negocios/pinatas-personalizadas-quecholac/">Ver información de Piñatas en Quecholac →</a>
       </div>
     </article>
@@ -283,7 +319,7 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
   <div class="wrap orderShell">
     <form class="formCard" id="orderForm" novalidate>
       <div id="formFlow">
-        <div class="progressHead"><strong id="progressTitle">1 · Qué quieres promocionar</strong><span class="progressText" id="progressText">1 de 3</span></div>
+        <div class="progressHead"><strong id="progressTitle">Tu solicitud</strong><span class="progressText" id="progressText">1 de 3</span></div>
         <div class="bar"><span id="progressBar"></span></div>
 
         <div class="stepPane active" data-step="1">
@@ -295,7 +331,8 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
             <input id="piece" type="hidden" value="Recomiéndame el formato">
             <div class="field full uploadBox">
               <label for="images">Fotos <span class="req">*</span></label>
-              <input id="images" type="file" accept="image/*" multiple required>
+              <input id="images" type="file" accept="image/*" multiple required aria-describedby="photoHelp">
+              <p class="uploadHelp" id="photoHelp">Verás tus fotos aquí antes de continuar. Al terminar, podrás compartirlas por WhatsApp. Si tu navegador no permite adjuntarlas, agrégalas en el chat.</p>
               <div class="thumbGrid hidden" id="imagePreview"></div>
             </div>
             <div class="field full">
@@ -360,7 +397,7 @@ footer{padding:28px 0 90px;color:#81768d;font-size:.82rem;border-top:1px solid #
 </section>
 </main>
 
-<div class="mobileCta" id="mobileCta"><a class="heroAction" href="#pedido">Crear muestra gratis</a></div>
+<div class="mobileCta" id="mobileCta"><a class="heroAction" href="#pedido">Solicitar muestra gratis</a></div>
 
 <footer>
   <div class="wrap footerIn">
@@ -452,7 +489,7 @@ function showStep(step){
   $("next").classList.toggle("hidden",step===3);
   $("send").classList.toggle("hidden",step!==3);
   const titles=["","1 · Qué quieres promocionar","2 · Tu contacto","3 · Tu objetivo"];
-  $("progressTitle").textContent=titles[step];
+  $("progressTitle").textContent="Tu solicitud";
   $("progressText").textContent=step+" de 3";
   $("progressBar").style.width=(step/3*100)+"%";
   setStatus("");
@@ -593,7 +630,7 @@ $("channelBadge").textContent=channelNames[source]||"Primera muestra gratis";
 
 const formObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>$("mobileCta").classList.toggle("hide",entry.isIntersecting));
-},{threshold:.12});
+},{threshold:0});
 formObserver.observe($("orderForm"));
 updateSummary();
 renderLogo();
