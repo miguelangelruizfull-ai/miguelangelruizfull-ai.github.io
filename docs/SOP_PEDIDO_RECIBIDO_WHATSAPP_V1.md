@@ -110,3 +110,19 @@ Por tanto, al recibir cada pedido:
 2. comprobar visualmente que exista un adjunto real en el chat;
 3. si no existe, pedir la imagen antes de producir;
 4. mantener el estado `PEDIDO_RECIBIDO_PENDIENTE_DE_ARCHIVOS` hasta recibirla.
+
+## CIERRE_REPRODUCIBLE_DEL_PEDIDO
+
+Después de producir cada pedido real:
+
+1. Validar que todos los datos usados estén confirmados y que no se haya inventado precio, contacto, ubicación, características, logo ni promoción.
+2. Elegir una sola versión final. Las versiones anteriores se conservan únicamente como historial privado de producción; no se muestran como resultados públicos.
+3. Crear o reutilizar una carpeta privada por `PEDIDO-ID`.
+4. Guardar en esa carpeta: registro del pedido, material recibido que corresponda, versión inicial relevante y versión final.
+5. En repositorios públicos no guardar la ficha privada del cliente. Publicar únicamente el resultado final autorizado y texto comercial mínimo.
+6. Cambiar el estado a `MUESTRA_ENVIADA` cuando la entrega esté hecha.
+7. Al terminar, recomendar exactamente una siguiente acción concreta según el estado: confirmar recepción -> pedir feedback -> ofrecer segunda pieza/paquete -> pedir autorización para portafolio si todavía no existe.
+8. No generar trabajo adicional no solicitado solo por cerrar el pedido.
+
+### Autorización operativa del flujo
+Cuando el usuario entrega un pedido y pide operarlo/actualizarlo, se considera autorizada la ejecución de los pasos ordinarios de este SOP dentro del proyecto: analizar, producir, revisar, archivar, actualizar el registro técnico y preparar/publicar el resultado expresamente autorizado. No se extiende a acciones externas ajenas al pedido ni sustituye permisos exigidos por las herramientas.
