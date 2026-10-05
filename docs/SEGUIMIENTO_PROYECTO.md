@@ -368,3 +368,14 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Contacto principal visible: WhatsApp 249 121 1725.
 - Recomendación de identidad: priorizar un botón `Ver trabajos` hacia un portafolio visual propio cuando existan 4–6 muestras autorizadas; LinkedIn queda como enlace secundario y no se agregó porque no hay URL pública confirmada.
 - Flujo de confirmación: abrir WhatsApp -> adjuntar fotos -> enviar -> volver -> confirmar `Sí, ya lo envié` -> pantalla de éxito.
+
+## 2026-10-05 — PRIMER_RESULTADO_REAL_PUBLICADO
+- Estrategia activa: `SAMPLE_FIRST`.
+- Se completó la primera muestra real con un negocio de piñatas personalizadas.
+- El expediente completo y sus versiones se conservan en almacenamiento privado; el repositorio público no guarda la ficha privada del pedido.
+- La versión inicial queda como historial de producción y control de calidad.
+- La versión final es la única pieza seleccionada para exposición pública.
+- `pruebas.html` muestra ahora una sección de “Primer resultado real”.
+- Regla vigente: cada nuevo pedido terminado se archiva por PEDIDO-ID en privado; públicamente solo se agrega el resultado final autorizado.
+- Estado operativo: `MUESTRA_ENVIADA / PRIMER_RESULTADO_REAL`.
+- Siguiente acción recomendada: entregar la pieza final al cliente, confirmar recepción y pedir una sola observación de feedback antes de ofrecer la segunda pieza.
