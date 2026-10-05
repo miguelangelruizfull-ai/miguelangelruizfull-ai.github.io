@@ -20,3 +20,7 @@ Investigación: ejemplos de personalización por personaje y temática; sin dato
 ## Ajuste vigente — 2026-10-05 04:41 America/Mexico_City
 
 La nueva instrucción del usuario retira temporalmente el enlace a su portafolio de la página de Doña Gloria. Se simplificó la presentación al cartel creado como imagen protagonista, bloque de información de pedido, botón directo WhatsApp y acceso fijo inferior en móvil. Se conservan metadatos SEO y opciones para compartir. No restaurar el crédito hasta nueva instrucción. La tarjeta del inicio del portafolio sigue retirada. La versión anterior permanece en Git. Validación: lectura del HTML actualizado; no se pudo realizar comprobación visual porque el entorno no dispone de Chromium.
+
+## Presentación vigente — actualización UX y reclutadores
+
+El inicio prioriza perfil profesional, capacidades y una muestra interactiva con datos ficticios. Los casos operativos y el cronograma dejan de aparecer en el recorrido principal. La página comercial permanece independiente y sin crédito al portafolio. La consulta por WhatsApp permite indicar personaje, fecha y tamaño opcionales. Ver `docs/ACTUALIZACION_UX_PORTAFOLIO_2026-10-05.md`.
