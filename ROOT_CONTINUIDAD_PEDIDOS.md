@@ -249,3 +249,23 @@ Para video real suficiente:
 - Reel corto.
 
 Las imágenes de ejemplo deben ser propias, autorizadas o con licencia reutilizable y atribución correspondiente.
+
+
+## UX comercial cliente V2
+Estado: `CLIENT_FACING_COLORFUL_V2`.
+
+Principios vigentes:
+- interfaz colorida y visual, inspirada en herramientas creativas sencillas;
+- menos texto y menos información interna;
+- no mostrar al cliente estados operativos, campañas, reglas internas ni mensajes de checkpoint;
+- mantener solo datos necesarios para solicitar una muestra;
+- contacto público principal: WhatsApp 249 121 1725;
+- no publicar enlaces de LinkedIn o portafolio hasta contar con una URL pública confirmada y apropiada para clientes.
+
+Flujo de salida:
+1. el botón final abre directamente WhatsApp al número configurado `522491211725` con el pedido precargado;
+2. las fotos no pueden adjuntarse automáticamente mediante `wa.me`; el cliente debe adjuntarlas en WhatsApp;
+3. al volver a la página, se pregunta si ya envió el pedido;
+4. solo después de que el usuario confirme se muestra `¡Listo! Pedido enviado.`.
+
+No afirmar envío exitoso sin confirmación del usuario o sin una futura integración de WhatsApp Business API/backend.
