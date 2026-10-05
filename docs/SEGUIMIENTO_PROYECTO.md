@@ -345,3 +345,19 @@ La landing `pruebas.html` y el ROOT ya fueron actualizados para eliminar el enfo
 - Para alguien cercano sin negocio: pedirle que pruebe el flujo con algún producto/servicio real de un conocido o como prueba de usabilidad, sin sobreexplicar.
 - Regla de validación: no guiar paso a paso; observar si entiende la interfaz visual por sí sola.
 - Enlace general recomendado para WhatsApp: `https://miguelangelruizfull-ai.github.io/pruebas.html?src=whatsapp&camp=MUESTRA_GRATIS`.
+
+
+## 2026-10-05 — Rediseño comercial colorido + WhatsApp directo
+- `pruebas.html` rediseñado con HTML/CSS3, fondo claro, gradientes violeta/rosa/coral/cian y tarjetas visuales.
+- Se eliminó lenguaje visible de laboratorio y la vista del mensaje operativo interno.
+- Se redujo el texto y se mantuvo la selección visual `Producto / Servicio / Recomiéndame`.
+- Formulario simplificado a tres pasos.
+- Se eliminaron del mensaje visible: `CAMPAÑA`, `ORIGEN`, `ESTADO` y la regla interna de operación.
+- WhatsApp público configurado: `249 121 1725` / enlace `wa.me/522491211725`.
+- El botón final abre directamente ese chat con el pedido precargado.
+- Limitación técnica conservada: `wa.me` no puede transferir automáticamente los archivos seleccionados del navegador.
+- Al regresar de WhatsApp aparece confirmación `¿Ya enviaste el pedido?`.
+- Solo si el usuario responde `Sí, ya lo envié` aparece la pantalla `¡Listo! Pedido enviado.`.
+- Contacto visible agregado en barra superior, resumen y footer.
+- Recomendación: usar WhatsApp como contacto principal. No agregar LinkedIn hasta verificar una URL pública actual y útil para clientes. Un portafolio visual propio es más valioso para este funnel que un perfil profesional genérico.
+- Siguiente prueba: móvil Android real, completar muestra, abrir WhatsApp, adjuntar fotos, enviar, regresar y confirmar.
