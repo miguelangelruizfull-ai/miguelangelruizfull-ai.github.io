@@ -84,3 +84,14 @@ Solo después de validar:
 
 ## Privacidad
 No registrar PII en GitHub público.
+
+## ARQUITECTURA_PEDIDOS_REALES
+
+Modelo recomendado para escalar sin mezclar datos privados con la página pública:
+
+- **Drive privado:** una carpeta por pedido real, nombrada con `PEDIDO-ID`. Conserva registro, material de trabajo, V1 y FINAL.
+- **GitHub público:** landing, método, prompts sanitizados y únicamente piezas finales autorizadas para portafolio.
+- **Versiones:** nunca borrar el original útil ni la primera versión que explique una mejora; marcarla como historial. Solo la FINAL se promociona.
+- **Portafolio:** agregar resultados conforme se terminen. Mostrar pocos y buenos; cuando existan 4–6 resultados autorizados, separar un `resultados.html` o galería ligera.
+- **Conversión:** después de la muestra gratis, la siguiente oferta no es otra muestra gratis indefinida. Primero confirmar recepción/feedback y luego proponer una segunda pieza pagada o paquete sencillo.
+- **Métrica mínima:** pedido completo -> muestra terminada -> entrega confirmada -> respuesta/feedback -> segunda pieza solicitada.
