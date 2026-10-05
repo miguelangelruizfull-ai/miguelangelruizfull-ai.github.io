@@ -1,8 +1,0 @@
-{
-  "version": "retired",
-  "updated_at": "2026-09-20",
-  "visibility": "PUBLIC_SANITIZED",
-  "status": "RETIRED",
-  "message": "Legacy public state removed. Use /root/ for the current sanitized public console.",
-  "public_url": "/root/"
-}
