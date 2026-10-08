@@ -198,6 +198,22 @@ input[type=file]::file-selector-button{border:0;border-radius:9px;padding:9px 10
  .resultShareHelp{display:none}.resultsTitle{font-size:1.7rem;line-height:1.1}
 }
 @media(max-width:360px){.resultCard{grid-template-columns:1fr}.resultMedia{max-width:150px}}
+
+/* FLUJO_MUESTRAS_EN_REVISION_V1: sin material de pedidos privados */
+.processPreview{padding:4px 0 34px}
+.processGrid{display:grid;grid-template-columns:minmax(190px,.85fr) minmax(0,1.4fr);gap:clamp(18px,3vw,32px);align-items:center;border-radius:28px;border:1px solid #eadde7;background:linear-gradient(130deg,#fffdfa,#fff6ea 68%,#fff3f8);padding:clamp(15px,3vw,28px)}
+.processArt{min-height:260px;border-radius:23px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle at 76% 16%,#fff8d9,#fce0b5 44%,#dca06d);isolation:isolate}
+.processArt::before{content:"";width:180px;height:36px;border-radius:50%;background:#8e522c38;position:absolute;bottom:32px;filter:blur(10px)}
+.processCup{width:144px;height:125px;background:linear-gradient(90deg,#f3d9b3,#fff5dc 48%,#dab687);border-radius:18px 18px 41px 41px;box-shadow:inset 4px 0 8px #ffffffa9,10px 16px 30px #7e4a3847;position:relative;transform:rotate(-5deg);margin-top:28px}
+.processCup::before{content:"";position:absolute;left:-7px;right:-7px;top:-33px;height:70px;background:radial-gradient(ellipse at 35% 25%,#ffe6a6,#c57b31 65%,#9f511e);border:7px solid #fff8e9;border-radius:50%;box-shadow:0 5px 9px #6c381641}
+.processArtLabel{margin-top:27px;z-index:1;background:#fffdf3e8;color:#734525;border:1px solid #ead7be;padding:5px 12px;border-radius:99px;font-size:.76rem;font-weight:850}
+.processContent h2{font-size:clamp(1.6rem,3vw,2.1rem);line-height:1.12;letter-spacing:-.035em;margin:0 0 11px}
+.processContent p{color:var(--muted);margin:0 0 15px}
+.processSteps{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 17px;padding:0;list-style:none}
+.processSteps li{font-size:.78rem;font-weight:850;padding:7px 10px;border-radius:999px;border:1px solid #e8d4bf;background:#fffdf9;color:#604834}
+.processLegal{font-size:.77rem!important;color:#756674!important;max-width:570px}
+@media(max-width:640px){.processPreview{padding:3px 0 24px}.processGrid{grid-template-columns:1fr;padding:13px}.processArt{min-height:215px}.processContent{padding:0 6px 6px}.processContent h2{font-size:1.65rem}}
+
 </style>
 <link rel="canonical" href="https://miguelangelruizfull-ai.github.io/primer-pedido-gratis/">
 <script type="application/ld+json">
@@ -312,6 +328,31 @@ input[type=file]::file-selector-button{border:0;border-radius:9px;padding:9px 10
         <a class="resultDetailLink" href="https://miguelangelruizfull-ai.github.io/negocios/pinatas-personalizadas-quecholac/">Ver información de Piñatas en Quecholac →</a>
       </div>
     </article>
+  </div>
+</section>
+
+
+<!-- MUESTRAS_EN_REVISION_V1: explicación genérica; sin exponer pedidos privados -->
+<section class="processPreview" aria-labelledby="process-preview-title">
+  <div class="wrap">
+    <div class="processGrid">
+      <div class="processArt" role="img" aria-label="Ilustración conceptual de postre casero, no fotografía ni trabajo de un cliente">
+        <div class="processCup" aria-hidden="true"></div>
+        <span class="processArtLabel">Ejemplo ilustrativo · sin datos reales</span>
+      </div>
+      <div class="processContent">
+        <p class="resultsKicker">Tu muestra antes de publicar</p>
+        <h2 id="process-preview-title">Diseñamos, revisas y tú decides.</h2>
+        <p>A partir de una foto real podemos proponer nombre, estilo y texto comercial. Primero recibes una vista previa. El resultado se muestra públicamente como caso real solo si autorizas la versión final.</p>
+        <ol class="processSteps" aria-label="Etapas de la muestra">
+          <li>1. Comparte tu foto</li>
+          <li>2. Revisa la propuesta</li>
+          <li>3. Autoriza o solicita cambios</li>
+        </ol>
+        <a class="heroAction trialAction" href="#pedido">Quiero mi primera muestra</a>
+        <p class="processLegal">Esta ilustración no muestra fotografías, nombres, contactos ni trabajos privados de otras personas. Solicitar una muestra no implica permiso para publicar el resultado.</p>
+      </div>
+    </div>
   </div>
 </section>
 
